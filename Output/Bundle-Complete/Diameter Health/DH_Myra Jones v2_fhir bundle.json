@@ -10,7 +10,8 @@
 		"relation": "first",
 		"url": "http://fhir:3447/4_0_0/Patient/62f17e29b7532c0009e217b7/$everything?_count=100"
 	}],
-	"entry": [{
+	"entry": [
+	{
 		"fullUrl": "http://fhir:3447/4_0_0/DocumentReference/62f17e29b7532c0009e217b7",
 		"resource": {
 			"resourceType": "DocumentReference",
