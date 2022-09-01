@@ -7,6 +7,8 @@ let fhir_schema = JSON.parse(fs.readFileSync('./fhir.schema.json', 'utf-8'));
 
 let main_directory = fs.readdirSync('../Output');
 
+if (!fs.existsSync('../Reformatted')) fs.mkdirSync('../Reformatted');
+
 const reformat_json = function (filepath) {
   if (filepath.slice(-4).toLowerCase() !== 'json' ) {
     console.log(chalk.yellow(`skipping file which is not JSON ${filepath}`));
@@ -33,8 +35,8 @@ const reformat_json = function (filepath) {
           }
         }
       }
-      console.log(chalk.green(`writing reformatted resource ${filepath}`));
-      fs.writeFileSync(filepath, pd.json(newResource));
+      console.log(chalk.green(`writing reformatted resource ${filepath.replace('../Output', '../Reformatted')}`));
+      fs.writeFileSync(filepath.replace('../Output', '../Reformatted'), pd.json(newResource));
     }
     else if (oldResource === null) console.log(chalk.red(`Error due to JSON parsing error ${filepath}`));
     else console.log(chalk.red(`Error due to non-specified resource on file ${filepath}`));
@@ -42,6 +44,10 @@ const reformat_json = function (filepath) {
 }
 
 const recurse_directories = function (filepath) {
+  if (!fs.existsSync(`${filepath.replace('../Output', '../Reformatted')}`)) {
+    console.log(`mkdir ${filepath.replace('../Output', '../Reformatted')}`);
+    fs.mkdirSync(`${filepath.replace('../Output', '../Reformatted')}`);
+  }
   let files = fs.readdirSync(filepath);
   for (let i = 0; i < files.length; i++) {
     fs.stat(`${filepath}/${files[i]}`, (err, stats) => {
