@@ -1,5 +1,5 @@
 {
-  "fullUrl": "urn:uuid:3aab24d8-9ccb-4972-83ff-88ee8a04fda0",
+  "fullUrl": "urn:uuid:c8fb1060-2ad3-45a5-8439-9cedb245aa2b",
   "resource": {
     "resourceType": "AllergyIntolerance",
     "identifier": [
@@ -43,10 +43,10 @@
       ]
     },
     "patient": {
-      "reference": "urn:uuid:f0cac5f6-4517-46c0-a4d6-3ff8648cb59f"
+      "reference": "urn:uuid:a4986486-6599-4bb2-a7fb-e2deb8d50b5e"
     },
     "encounter": {
-      "reference": "urn:uuid:154096a5-fb4e-43d3-8f98-d0610b6bf2e8"
+      "reference": "urn:uuid:e465963c-13fb-4b87-857a-4d2433728762"
     },
     "onsetDateTime": "2008-05-01",
     "reaction": [

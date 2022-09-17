@@ -1,5 +1,5 @@
 {
-  "fullUrl": "urn:uuid:c6cf1d0a-e6b3-4f1e-9723-c205adf9ce1c",
+  "fullUrl": "urn:uuid:83bf95d4-01d6-4548-87fe-3212860d9c62",
   "resource": {
     "resourceType": "Immunization",
     "identifier": [
@@ -19,10 +19,10 @@
       ]
     },
     "patient": {
-      "reference": "urn:uuid:f0cac5f6-4517-46c0-a4d6-3ff8648cb59f"
+      "reference": "urn:uuid:a4986486-6599-4bb2-a7fb-e2deb8d50b5e"
     },
     "encounter": {
-      "reference": "urn:uuid:154096a5-fb4e-43d3-8f98-d0610b6bf2e8"
+      "reference": "urn:uuid:e465963c-13fb-4b87-857a-4d2433728762"
     },
     "occurrenceDateTime": "2010-08-15",
     "lotNumber": "1",
