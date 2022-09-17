@@ -1,0 +1,38 @@
+{
+  "fullUrl": "urn:uuid:c6cf1d0a-e6b3-4f1e-9723-c205adf9ce1c",
+  "resource": {
+    "resourceType": "Immunization",
+    "identifier": [
+      {
+        "value": "urn:uuid:e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92",
+        "system": "urn:ietf:rfc:3986"
+      }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+      "text": "Influenza Virus Vaccine",
+      "coding": [
+        {
+          "code": "88",
+          "system": "http://hl7.org/fhir/sid/cvx"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "urn:uuid:f0cac5f6-4517-46c0-a4d6-3ff8648cb59f"
+    },
+    "encounter": {
+      "reference": "urn:uuid:154096a5-fb4e-43d3-8f98-d0610b6bf2e8"
+    },
+    "occurrenceDateTime": "2010-08-15",
+    "_primarySource": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "unknown"
+        }
+      ]
+    },
+    "lotNumber": "1"
+  }
+}
