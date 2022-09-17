@@ -1,5 +1,5 @@
 {
-  "fullUrl": "urn:uuid:f0cac5f6-4517-46c0-a4d6-3ff8648cb59f",
+  "fullUrl": "urn:uuid:a4986486-6599-4bb2-a7fb-e2deb8d50b5e",
   "resource": {
     "resourceType": "Patient",
     "extension": [
@@ -46,11 +46,11 @@
     ],
     "name": [
       {
-        "use": "official",
-        "family": "Jones",
         "given": [
           "Myra"
-        ]
+        ],
+        "family": "Jones",
+        "use": "official"
       }
     ],
     "gender": "female",
@@ -66,8 +66,22 @@
         "use": "home"
       }
     ],
+    "communication": [
+      {
+        "language": {
+          "text": "en",
+          "coding": [
+            {
+              "code": "en",
+              "system": "urn:ietf:bcp:47"
+            }
+          ]
+        },
+        "preferred": true
+      }
+    ],
     "managingOrganization": {
-      "reference": "urn:uuid:c53701ab-d28c-4fa0-80fd-b479d7f90992"
+      "reference": "urn:uuid:ab1e6bb9-1eb9-4c86-ba25-e3df2579c405"
     }
   }
 }
