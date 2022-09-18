@@ -1576,13 +1576,16 @@
           }
         ],
         "context": {
+          "period": {
+            "low": "2016-09-08"
+          },
           "encounter": [
             {
               "reference": "urn:uuid:e465963c-13fb-4b87-857a-4d2433728762"
             }
           ]
         },
-        "date": "2016-09-08T00:00:00.000Z",
+        "date": "2016-09-08T08:32:15-05:00",
         "status": "current",
         "author": [
           {
