@@ -1,5 +1,6 @@
 # Why this repo was created?
 The HL7 Cross Group Project workgroup (https://confluence.hl7.org/display/CGP/Cross-Group+Projects+Home) launched a project (https://confluence.hl7.org/display/CGP/C-CDA+to+and+from+US+Core+Mapping) to develop a mapping between the C-CDA 2.1 and FHIR R4 US Core standards. Because various vendors have developed their own mappings of the C-CDA documents to FHIR resources, there is a need to coordinate these efforts and to align them with the guideline that is currently under development. For this reason, we created this repo to host a non-PHI CCD construct as a shared inbound document, and asked vendors to use their mapping engine to produce outbound FHIR resources/bundle/composition. This allows for comparison of the mapping outcomes for the same source document across different vendors in the field. To help align the mappings, we have also hosted weekly calls and FHIR Connectathon track to discuss the different perspectives. For more information, please visit https://confluence.hl7.org/pages/viewpage.action?pageId=139662703.
+Because of the iterative nature, the mappings in this repo represent vendors' output at the time of the upload, but do NOT necessarily represent the current or final version what the vendors' engine will produce, nor does it represent HL7's final recommendation. 
 
 # What is in this repo?
 This repo includes an inbound CCD construct, and outbound FHIR mappings. 
@@ -9,6 +10,7 @@ The "Input" folder hosts the shared input CCD, the Output and Reformatted folder
 
 # How may I use the repo?
 Start with the input CCD to understand the inbound data, and then check out the Output or Reformatted folder for the FHIR resources of the respective clinical domains. 
+NOTE: Because of the iterative nature, the mappings in this repo represent vendors' output at the time of the upload, but do NOT necessarily represent the current or final version what the vendors' engines will produce, nor does it represent HL7's final recommendation. 
 
 # How may I contribute?
 The easiest way to contribute is to download the input CCD from the "Input" folder, run it through your C-CDA to FHIR mapping engine, and upload the outbound composition/bundle in the Output/Bundle-Complete folder (please create a new folder to represent your company). 
