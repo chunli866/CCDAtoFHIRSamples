@@ -5,9 +5,9 @@ import chalk from 'chalk'
 
 let fhir_schema = JSON.parse(fs.readFileSync('./fhir.schema.json', 'utf-8'));
 
-let main_directory = fs.readdirSync('../Output');
+let main_directory = fs.readdirSync('../Raw_Output');
 
-if (!fs.existsSync('../Reformatted')) fs.mkdirSync('../Reformatted');
+if (!fs.existsSync('../Reformatted_Output')) fs.mkdirSync('../Reformatted_Output');
 
 const reformat_json = function (filepath) {
   if (filepath.slice(-4).toLowerCase() !== 'json' ) {
@@ -35,8 +35,8 @@ const reformat_json = function (filepath) {
           }
         }
       }
-      console.log(chalk.green(`writing reformatted resource ${filepath.replace('../Output', '../Reformatted')}`));
-      fs.writeFileSync(filepath.replace('../Output', '../Reformatted'), pd.json(newResource));
+      console.log(chalk.green(`writing Reformatted_Output resource ${filepath.replace('../Raw_Output', '../Reformatted_Output')}`));
+      fs.writeFileSync(filepath.replace('../Raw_Output', '../Reformatted_Output'), pd.json(newResource));
     }
     else if (oldResource === null) console.log(chalk.red(`Error due to JSON parsing error ${filepath}`));
     else console.log(chalk.red(`Error due to non-specified resource on file ${filepath}`));
@@ -44,9 +44,9 @@ const reformat_json = function (filepath) {
 }
 
 const recurse_directories = function (filepath) {
-  if (!fs.existsSync(`${filepath.replace('../Output', '../Reformatted')}`)) {
-    console.log(`mkdir ${filepath.replace('../Output', '../Reformatted')}`);
-    fs.mkdirSync(`${filepath.replace('../Output', '../Reformatted')}`);
+  if (!fs.existsSync(`${filepath.replace('../Raw_Output', '../Reformatted_Output')}`)) {
+    console.log(`mkdir ${filepath.replace('../Raw_Output', '../Reformatted_Output')}`);
+    fs.mkdirSync(`${filepath.replace('../Raw_Output', '../Reformatted_Output')}`);
   }
   let files = fs.readdirSync(filepath);
   for (let i = 0; i < files.length; i++) {
@@ -63,5 +63,5 @@ const recurse_directories = function (filepath) {
 }
 
 for (let i = 0; i < main_directory.length; i++) {
-  recurse_directories(`../Output/${main_directory[i]}`);
+  recurse_directories(`../Raw_Output/${main_directory[i]}`);
 }
