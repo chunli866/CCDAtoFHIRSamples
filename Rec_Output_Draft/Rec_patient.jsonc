@@ -47,6 +47,7 @@
     ],
     "name": [
       {
+	  // Source CCD has name use = "L"
         "use": "official",
         "family": "Jones",
         "given": [
@@ -72,7 +73,7 @@
         "language": {
           "coding": [
             {
-              "system": "urn:oid:2.16.840.1.113883.6.316",
+              "system": "urn:ietf:bcp:47",
               "code": "en"
             }
           ]
