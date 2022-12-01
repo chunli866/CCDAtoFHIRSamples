@@ -56,7 +56,8 @@
           "code": "87580",
           "system": "urn:oid:2.16.840.1.113883.3.247.1.1"
         }
-      ]
+      ],
+	   "text": "Pneumonia"
     },
     "subject": {
       "reference": "Patient/62f17e29b7532c0009e217b7"

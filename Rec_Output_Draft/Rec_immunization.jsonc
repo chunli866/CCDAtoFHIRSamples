@@ -18,7 +18,8 @@
           "code": "88",
           "display": "Influenza virus vaccine"
         }
-      ]
+      ],
+	   "text": "Influenza Virus Vaccine"
     },
     "patient": {
       "reference": "Patient/62f17e29b7532c0009e217b7"
