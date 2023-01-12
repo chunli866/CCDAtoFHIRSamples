@@ -30,9 +30,8 @@
       ]
     },
     "subject": {
-      "reference": "Patient/62f17e29b7532c0009e217b7",
-      "display": "Myra Jones"
-    },
+      "reference": "Patient/62f17e29b7532c0009e217b7"
+	  },
     "performedPeriod": {
       "extension": [
         {

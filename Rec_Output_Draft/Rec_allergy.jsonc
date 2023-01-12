@@ -53,7 +53,8 @@
                 "system": "http://snomed.info/sct",
                 "code": "247472004"
               }
-            ]
+            ],
+			"text": "Hives"
           }
         ],
         "severity": "severe"
