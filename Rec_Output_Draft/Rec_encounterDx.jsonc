@@ -5,7 +5,8 @@
     "id": "62f17e2aa2392d0008fbb232",
     "identifier": [
       {
-        "system": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e704"
+        "value": "urn:uuid:db734647-fc99-424c-a864-7e3cda82e704",
+		"system": "urn:ietf:rfc:3986"
       }
     ],
     "category": [
