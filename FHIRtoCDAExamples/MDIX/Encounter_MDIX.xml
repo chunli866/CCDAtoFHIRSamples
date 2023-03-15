@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:cda="urn:hl7-org:v3"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <realmCode code="US" />
+   <typeId nullFlavor="UNK" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.2" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.1" />
+   <id nullFlavor="UNK" />
+   <code nullFlavor="UNK" />
+   <title />
+   <effectiveTime nullFlavor="UNK" />
+   <confidentialityCode nullFlavor="UNK" />
+   <languageCode nullFlavor="UNK" />
+   <componentOf>
+      <encompassingEncounter>
+         <id root="8359ba36-e2c7-46a0-8449-aa0850c6aa0d" />
+         <id extension="urn:uuid:2a620155-9d11-439e-92b3-5d9815ff4de8" root="urn:ietf:rfc:3986" />
+         <effectiveTime nullFlavor="UNK" />
+      </encompassingEncounter>
+   </componentOf>
+   <component>
+      <structuredBody>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.22.1" />
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.22" />
+               <code nullFlavor="UNK" />
+               <title>Encounters</title>
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2>Encounters</h2>
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Encounters Dates</th>
+                                          <th>Location</th>
+                                          <th>Diagnoses</th>
+                                          <th>Providers</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td>,</td>
+                                       <td>Office outpatient visit 15 minutes</td>
+                                       <td />
+                                       <td />
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <encounter classCode="ENC" moodCode="EVN">
+                     <realmCode nullFlavor="UNK" />
+                     <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.49" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+                     <id root="8359ba36-e2c7-46a0-8449-aa0850c6aa0d" />
+                     <id extension="urn:uuid:2a620155-9d11-439e-92b3-5d9815ff4de8"
+                         root="urn:ietf:rfc:3986" />
+                     <code code="99213"
+                           codeSystem="http://www.ama-assn.org/go/cpt"
+                           displayName="Office outpatient visit 15 minutes"
+                           xsi:type="CD">
+                        <originalText>Office outpatient visit</originalText>
+                     </code>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low />
+                     </effectiveTime>
+                     <performer>
+                        <assignedEntity />
+                     </performer>
+                     <entryRelationship inversionInd="true" typeCode="RSON">
+                        <observation classCode="OBS" moodCode="EVN">
+                           <id nullFlavor="UNK" />
+                           <code nullFlavor="UNK" />
+                           <statusCode code="completed"
+                                       codeSystem="2.16.840.1.113883.5.14"
+                                       displayName="completed" />
+                        </observation>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.2.10" />
+               <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+               <code nullFlavor="UNK" />
+               <title />
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2 />
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Encounters Dates</th>
+                                          <th>Location</th>
+                                          <th>Diagnoses</th>
+                                          <th>Providers</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td />
+                                       <td />
+                                       <td />
+                                       <td>active</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <encounter classCode="ENC">
+                     <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.40" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.40" />
+                     <id nullFlavor="UNK" />
+                     <statusCode code="active" />
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

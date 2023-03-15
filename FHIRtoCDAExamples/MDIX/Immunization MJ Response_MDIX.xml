@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                  xmlns:cda="urn:hl7-org:v3"
+                  xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <realmCode code="US" />
+   <typeId nullFlavor="UNK" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.2" />
+   <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.1.1" />
+   <id nullFlavor="UNK" />
+   <code nullFlavor="UNK" />
+   <title />
+   <effectiveTime nullFlavor="UNK" />
+   <confidentialityCode nullFlavor="UNK" />
+   <languageCode nullFlavor="UNK" />
+   <component>
+      <structuredBody>
+         <component>
+            <section xmlns="urn:hl7-org:v3">
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.2.1" />
+               <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.2.2" />
+               <code nullFlavor="UNK" />
+               <title>Immunizations</title>
+               <text>
+                  <html xmlns:n1="urn:hl7-org:v3">
+                     <body>
+                        <h2>Immunizations</h2>
+                        <table border="1">
+                           <tr>
+                              <td width="100%">
+                                 <table border="2">
+                                    <thead>
+                                       <tr>
+                                          <th>Medication</th>
+                                          <th>Instructions</th>
+                                          <th>Effective Date</th>
+                                          <th>Status</th>
+                                       </tr>
+                                    </thead>
+                                    <tr>
+                                       <td>Influenza virus vaccine</td>
+                                       <td />
+                                       <td>August 15, 2010</td>
+                                       <td />
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </body>
+                  </html>
+               </text>
+               <entry>
+                  <substanceAdministration classCode="SBADM" negationInd="">
+                     <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.52" />
+                     <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+                     <id root="6a8afb00-625e-4091-b3dc-2a79ad263e2f" />
+                     <id extension="urn:uuid:e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+                         root="urn:ietf:rfc:3986" />
+                     <statusCode code="completed"
+                                 codeSystem="2.16.840.1.113883.1.11.159331"
+                                 displayName="completed" />
+                     <effectiveTime value="20100815" />
+                     <consumable>
+                        <manufacturedProduct>
+                           <manufacturedMaterial>
+                              <code code="88"
+                                    codeSystem="http://hl7.org/fhir/sid/cvx"
+                                    displayName="Influenza virus vaccine">
+                                 <originalText>Influenza Virus Vaccine</originalText>
+                              </code>
+                              <lotNumberText>1</lotNumberText>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                     <performer>
+                        <assignedEntity>
+                           <id extension="#1" />
+                        </assignedEntity>
+                     </performer>
+                     <author>
+                        <templateId root="2.16.840.1.113883.10.20.22.4.119" />
+                        <time />
+                     </author>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>
