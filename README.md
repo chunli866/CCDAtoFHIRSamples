@@ -23,3 +23,5 @@ For FHIR to C-CDA mapping - start with a fhir bundle (produced by your engine or
 # How may I get additional information or assistance?
 You may contact Chun Li at chun.li@availity.com. 
 
+# UPDATE
+We published our mapping guidance in the May 2023 ballot: http://hl7.org/fhir/us/ccda/2023May/. To support the ballot, we have migrated content from this repo to the IG github path: https://github.com/HL7/ccda-on-fhir/tree/master/mappings/examples for future update and maintenance.
