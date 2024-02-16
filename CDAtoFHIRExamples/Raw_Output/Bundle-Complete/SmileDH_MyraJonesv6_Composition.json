@@ -1,0 +1,331 @@
+{
+    "resourceType": "Bundle",
+    "id": "b2fbc2fb-a1b4-405a-bd6e-4cea35a39cc3",
+    "meta": {
+        "lastUpdated": "2024-02-16T17:54:08.334+00:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "http://localhost:8000/Composition"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "http://localhost:8000/Composition/2792",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "2792",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+                    "source": "#GqINef9uN1SPEjfS"
+                },
+                "identifier": {
+                    "use": "official",
+                    "value": "973c7e16-05dd-484f-a780-e80904fd8ff0"
+                },
+                "status": "preliminary",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34133-9"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/ValueSet/doc-classcodes",
+                                "code": "LP173421-7",
+                                "display": "Note"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/2805"
+                },
+                "encounter": {
+                    "reference": "Encounter/2808"
+                },
+                "date": "2016-10-03T18:27:10Z",
+                "author": [
+                    {
+                        "reference": "Practitioner/2806"
+                    }
+                ],
+                "title": "Continuity of Care Document",
+                "confidentiality": "N",
+                "attester": [
+                    {
+                        "time": "2016-10-03T18:27:10Z"
+                    }
+                ],
+                "custodian": {
+                    "reference": "Organization/2804"
+                },
+                "event": [
+                    {
+                        "period": {
+                            "start": "2016-10-03T14:30:00",
+                            "end": "2016-10-03T18:27:10Z"
+                        }
+                    }
+                ],
+                "section": [
+                    {
+                        "title": "Problems",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "11450-4"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table><colgroup><col width=\"40%\"></col><col width=\"20%\"></col><col width=\"40%\"></col></colgroup><tbody styleCode=\"xRowGroup\"><tr><td><content ID=\"_5011447a-e27f-471d-9e1f-541148c5282f\">Pneumonia</content><content styleCode=\"xSecondary\">(486) (J18.9)</content><br></br></td><td><content styleCode=\"xLabel xSecondary\">Onset: </content><content>6-Aug-2012</content><br></br></td><td></td></tr></tbody><tbody styleCode=\"xRowGroup\"><tr><td><content ID=\"_4f1a62c2-9353-455a-bf3a-40f46a6115f4\">Asthma</content><content styleCode=\"xSecondary\">(493.90) (J45.909)</content><br></br></td><td></td><td></td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "Condition/2810"
+                            },
+                            {
+                                "reference": "Condition/2811"
+                            },
+                            {
+                                "reference": "Condition/2812"
+                            },
+                            {
+                                "reference": "Condition/2814"
+                            },
+                            {
+                                "reference": "Condition/2815"
+                            },
+                            {
+                                "reference": "Condition/2816"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Allergies and Adverse Reactions",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "48765-2"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table><colgroup><col width=\"40%\"></col><col width=\"20%\"></col><col width=\"40%\"></col></colgroup><tbody><tr><td><content ID=\"_6db75b62-deb2-4bab-b597-00c8ae86f6b4\">Aspirin TABS</content><content styleCode=\"xSecondary\"> (propensity to adverse reactions to drug)</content></td><td><content styleCode=\"xSecondary\">Onset: 1-May-2008</content></td><td><content><content styleCode=\"xLabel xSecondary\">Reaction</content>:\n                                            <content ID=\"_8a7ed342-967a-400e-88d5-2f8c2b7cdda0\" styleCode=\"xAlert\">Hives</content><content styleCode=\"xAlert\"> (Severe)</content></content></td><td><content styleCode=\"xSecondary\">Criticality: high criticality</content></td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "AllergyIntolerance/2817"
+                            },
+                            {
+                                "reference": "AllergyIntolerance/2818"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "MEDICATIONS",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "HISTORY OF MEDICATION USE"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table border=\"1\" width=\"100\"><thead><tr><th>Medication</th><th>Directions</th><th>Start Date</th><th>Status</th></tr></thead><tbody><tr><td>Albuterol 0.09 MG/ACTUAT inhalant powder</td><td><content ID=\"MedicationSig_PRN_222222\">0.09 MG/ACTUAT inhalant powder, 2 puffs every 4-6 hours as needed</content></td><td>20120806</td><td>Posted</td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "MedicationRequest/2819"
+                            },
+                            {
+                                "reference": "MedicationRequest/2821"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Procedures",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "47519-4"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table><colgroup><col width=\"40%\"></col><col width=\"20%\"></col><col width=\"40%\"></col></colgroup><tbody styleCode=\"xRowGroup\"><tr><td><content ID=\"_dfcf353c-538f-498a-9a53-80dda209e456\">H/O chest x-ray</content></td><td></td><td></td></tr><tr><td><content ID=\"_dfcf353c-538f-498a-9a53-80dda209e457\">Exercise stress test</content></td><td></td><td></td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "Procedure/2826"
+                            },
+                            {
+                                "reference": "Procedure/2828"
+                            },
+                            {
+                                "reference": "Procedure/2829"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "IMMUNIZATIONS",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "11369-6",
+                                    "display": "History of immunizations"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><content ID=\"immunSect\"></content><table border=\"1\" width=\"100%\"><thead><tr><th>Vaccine</th><th>Lot Number</th><th>Date</th><th>Status</th></tr></thead><tbody><tr ID=\"immun1\"><td ID=\"ImmunizationProduct_100\">Influenza Virus Vaccine</td><td>1</td><td>8/15/2010</td><td>Completed</td></tr><tr ID=\"immun2\"><td ID=\"ImmunizationProduct_200\">Influenza Virus Vaccine</td><td>1</td><td>11/15/2015</td><td>Noo given (patient objection)</td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "Immunization/2832"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Social History",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "29762-2",
+                                    "display": "Social History"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><list><caption>Smoking Status</caption><item ID=\"SmokingStatus\"><content>Status: Current every day smoker</content><content ID=\"SmokingDetail1\">Detail: Moderate smoker (10-19 cigs/day)</content><content>Started: 1992</content><content>Stopped:</content><content>Recorded June 6, 2014 10:32am</content></item></list></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "Observation/2833"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "PLAN OF CARE",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "18776-5",
+                                    "display": "Plan of care note"
+                                }
+                            ]
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "CarePlan/2802"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Results",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "30954-2"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table>\n\t\t\t\t\t\t\t\tcol 1: Result Organizer detail, containing the ordered test, date/time\n\t\t\t\t\t\t\t\tcol 2: the name and result of the items that are resulted\n\t\t\t\t\t\t\t\tcol 3: additional result details, such as ranges, interpretations, comments\n                            <colgroup><col width=\"20%\"></col><col width=\"40%\"></col><col width=\"40%\"></col></colgroup><tbody styleCode=\"xRowGroup\"><tr><td><content ID=\"_3ffb46b1-9fe4-45f3-9a0f-e0e492563e7b\" styleCode=\"xLabel xContentWrapping\">Urinanalysis macro (dipstick) panel</content><br></br><content styleCode=\"xSecondary xContentWrapping\">22-Jun-2015</content></td><td><content styleCode=\"xLabel\">Laboratory: </content><content> Value Labs</content><content> 2474, Rocky place Beaverton OR 97006</content><content> tel:+1-(555)666-1002</content></td><td></td></tr><tr ID=\"_13a52df8-79ed-4689-a9da-14c5905de830\"><td></td><td><content ID=\"_ea838e08-d5eb-4ed4-a176-e5f9a831a780\" styleCode=\"xSecondary\">Specific gravity of Urine by Test strip</content><content styleCode=\"xSecondary\"> 1.015</content></td><td><content styleCode=\"xLabel xSecondary\">Range: </content><content ID=\"_08b7d0ee-aff1-4144-a3a5-c89d56d855ad\"><content styleCode=\"xSecondary\">1.005</content><content styleCode=\"xSecondary\"> - </content><content styleCode=\"xSecondary\">1.030</content></content><br></br></td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "DiagnosticReport/2835"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Vital Signs (Last Filed)",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8716-3",
+                                    "display": "Vital Signs"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><table><thead><tr><th>Date</th><th>Pulse</th></tr></thead><tbody><tr><td>05/20/2014 7:36pm</td><td ID=\"Pulse_1\">80 /min</td></tr></tbody></table></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "section": [
+                            {
+                                "entry": [
+                                    {
+                                        "reference": "Observation/2836"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Consultation Notes",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "11488-4",
+                                    "display": "Consultation note"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><text><list><item ID=\"ConsultNote1\"><paragraph>Dr. Specialist - September 8, 2016</paragraph><paragraph> Dear Dr. Henry Leven: Thank you for referring Ms. Jones for evaluation. Approximately 18 years ago, she was hospitalized with a bleeding\n                    ulcer. She had a CT scan of the abdomen, which revealed findings consistent with\n                    focal nodular hyperplasia (FNH). She has had epigastric abdominal pain as well\n                    as a significant change in her bowel movements from baseline constipation to\n                    frequent diarrhea. The past medical history is otherwise negative. She takes no\n                    prescription medications. The remainder of the history is not contributory. </paragraph><paragraph>Physical examination revealed a well-appearing woman. The vital signs\n                    were normal. The head and neck were unremarkable. The lung fields were clear.\n                    The heart exam was normal. The abdomen was obese with normal bowel sounds. There\n                    was no tenderness, mass, or hepatosplenomegaly. </paragraph><paragraph>Endoscopic evaluation revealed a normal colonoscopy. Biopsies taken\n                    throughout the colon were essentially unremarkable. Stool tests for pathogenic\n                    organisms were negative. Of note, on the upper endoscopy examination, no\n                    significant abnormalities were seen; however, upon biopsy, features of celiac\n                    disease were noted.</paragraph><paragraph> In summary, this patient has evidence of celiac disease. We\n                    discussed the diagnosis in detail in the office. She was advised to undertake a\n                    lifelong gluten-free diet. Followup laboratories in my office were notable for a\n                    low serum iron with a low-normal ferritin. The bone density was normal. Repeat\n                    triple-phase CT scan of the liver revealed no change in the right hepatic lobe\n                    lesion, which is consistent with FNH. I advised periodic reevaluation of the\n                    liver with imaging, as well as followup for any potential development of\n                    nutritional deficiencies. She should take an iron supplement and continue on a\n                    lifelong gluten-free diet. </paragraph><paragraph>Thank you for the courtesy of this referral. I would be pleased to see\n                    Ms. Jones in followup.</paragraph></item></list></text></div>"
+                        },
+                        "mode": "snapshot",
+                        "entry": [
+                            {
+                                "reference": "DocumentReference/2803"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}
