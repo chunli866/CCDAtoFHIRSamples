@@ -16,7 +16,12 @@ const reformat_json = function (filepath) {
   else {
     let oldResource = null;
     try {
-      oldResource =  JSON.parse(fs.readFileSync(filepath, 'utf-8'));
+      // MDIX has a BOM, this removes it. 
+      let data = fs.readFileSync(filepath, 'utf-8');
+      if (data.charCodeAt(0) === 0xFEFF) {
+        data = data.substr(1)
+      }
+      oldResource =  JSON.parse(data);
     }
     catch (e) {
       console.log(`JSON parsing issue ${e}`);
