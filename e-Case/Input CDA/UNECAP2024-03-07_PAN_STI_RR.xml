@@ -1,0 +1,585 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:cda="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="http://www.lantanagroup.com/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ../../schema/infrastructure/cda/CDA_SDTC.xsd">
+	<realmCode code="US"/>
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+	<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.1.2"/>
+	<id root="83c8ced7-b654-4299-a20c-b15ec7ae9940"/>
+	<code code="88085-6" codeSystem="2.16.840.1.113883.6.1" displayName="Reportability response report Document Public health"/>
+	<title>Reportability Response</title>
+	<effectiveTime value="20240307193643+0000"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="Normal"/>
+	<languageCode code="en-US"/>
+	<recordTarget>
+		<patientRole>
+			<id assigningAuthorityName="EPI" extension="110708090" root="1.2.840.114350.1.13.500.2.7.3.737384.14"/>
+			<addr use="HP">
+				<streetAddressLine>777 PIXIE HOLLOW</streetAddressLine>
+				<county>HILLSDALE</county>
+				<city>NEVERLAND</city>
+				<state>MI</state>
+				<postalCode>48439</postalCode>
+				<country>US</country>
+				<useablePeriod xsi:type="IVL_TS">
+					<low value="20240215"/>
+					<high value="20240214"/>
+				</useablePeriod>
+			</addr>
+			<addr use="HP">
+				<streetAddressLine>777 PIXIE HOLLOW</streetAddressLine>
+				<city>NEVERLAND</city>
+				<state>MI</state>
+				<postalCode>48439</postalCode>
+				<country>US</country>
+				<useablePeriod xsi:type="IVL_TS">
+					<low value="20240215"/>
+					<high value="20240214"/>
+				</useablePeriod>
+			</addr>
+			<telecom use="MC" value="tel:+1-517-555-6111"/>
+			<telecom value="mailto:pansfav70@gmail.com"/>
+			<patient>
+				<name use="L">
+					<given>TINKER</given>
+					<family>BELL</family>
+					<validTime>
+						<low nullFlavor="NA"/>
+						<high nullFlavor="NA"/>
+					</validTime>
+				</name>
+				<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode" displayName="Female"/>
+				<birthTime value="19901110"/>
+				<sdtc:deceasedInd value="false"/>
+				<maritalStatusCode code="S" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatusCode" displayName="Single"/>
+				<raceCode code="1002-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity" displayName="American Indian or Alaska Native"/>
+				<ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race and Ethnicity" displayName="Not Hispanic or Latino"/>
+				<languageCommunication>
+					<languageCode code="eng"/>
+					<preferenceInd value="true"/>
+				</languageCommunication>
+			</patient>
+			<providerOrganization>
+				<id extension="104" root="1.2.840.114350.1.13.500.2.7.2.696570"/>
+				<name>Happy Health Oaknut Hospital</name>
+				<telecom use="WP" value="tel:+1-248-858-3000"/>
+				<addr use="WP">
+					<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+					<city>Neverwood</city>
+					<state>MI</state>
+					<postalCode>48923-5020</postalCode>
+				</addr>
+			</providerOrganization>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20240307193643+0000"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.114222.4.1.217446"/>
+			<addr>
+				<streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+				<city>Silver Spring</city>
+				<state>MD</state>
+				<postalCode>20910</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1(844)836-8377"/>
+			<assignedAuthoringDevice>
+				<manufacturerModelName displayName="APHL"/>
+				<softwareName displayName="AIMS"/>
+			</assignedAuthoringDevice>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.114222.4.1.217446"/>
+				<name>APHL | Association of Public Health Laboratories.</name>
+				<telecom use="WP" value="tel:+1(844)836-8377"/>
+				<addr>
+					<streetAddressLine>8515 Georgia Avenue, Suite 700</streetAddressLine>
+					<city>Silver Spring</city>
+					<state>MD</state>
+					<postalCode>20910</postalCode>
+					<country>US</country>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<informationRecipient typeCode="PRCP">
+		<intendedRecipient>
+			<id extension="KMKB8784" root="PROVID"/>
+			<id root="2.16.840.1.113883.4.6"/>
+			<addr use="WP">
+				<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+				<city>Neverwood</city>
+				<state>MI</state>
+				<postalCode>48923-5020</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="WP" value="tel:+1-248-858-3000"/>
+			<telecom use="" value="fax:+1-248-858-3244"/>
+			<informationRecipient>
+				<name>
+					<given>TIGER</given>
+					<family>LILLY</family>
+				</name>
+			</informationRecipient>
+			<receivedOrganization>
+				<name>Happy Health Oaknut Hospital</name>
+				<addr use="WP">
+					<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+					<city>Neverwood</city>
+					<state>MI</state>
+					<postalCode>48923-5020</postalCode>
+				</addr>
+			</receivedOrganization>
+		</intendedRecipient>
+	</informationRecipient>
+	<componentOf>
+		<encompassingEncounter>
+			<id extension="1000331477262" root="1.2.840.114350.1.13.500.2.7.3.698084.8"/>
+			<code code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="Inpatient Encounter">
+				<originalText>Hospital Encounter</originalText>
+				<translation code="IMP" codeSystem="2.16.840.1.113883.5.4" displayName="Inpatient Encounter"/>
+				<translation code="1" codeSystem="1.2.840.114350.1.72.1.30.1"/>
+			</code>
+			<effectiveTime>
+				<low value="20240305181500-0500"/>
+			</effectiveTime>
+			<responsibleParty>
+				<assignedEntity>
+					<id extension="KMKB8784" root="PROVID"/>
+					<id nullFlavor="NA" root="2.16.840.1.113883.4.6"/>
+					<addr use="WP">
+						<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+						<city>Neverwood</city>
+						<state>MI</state>
+						<postalCode>48923-5020</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1-248-858-3000"/>
+					<telecom value="fax:+1-248-858-3244"/>
+					<assignedPerson>
+						<name>
+							<given>TIGER</given>
+							<family>LILLY</family>
+						</name>
+					</assignedPerson>
+					<representedOrganization>
+						<name>Happy Health Oaknut Hospital</name>
+						<addr use="WP">
+							<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+							<city>Neverwood</city>
+							<state>MI</state>
+							<postalCode>48923-5020</postalCode>
+						</addr>
+					</representedOrganization>
+				</assignedEntity>
+			</responsibleParty>
+			<encounterParticipant typeCode="ATND">
+				<time value="20240305181500-0500"/>
+				<assignedEntity>
+					<id extension="21291" root="PROVID"/>
+					<id nullFlavor="NA" root="2.16.840.1.113883.4.6"/>
+					<code code="207V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Obstetrics and Gynecology">
+						<originalText>Obstetrics and Gynecology</originalText>
+						<translation code="42" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4160" codeSystemName="Epic.DXC.StandardProviderSpecialtyType" displayName="Obstetrics &amp; Gynecology"/>
+						<translation code="22" codeSystem="1.2.840.114350.1.13.502.2.7.10.836982.1050" codeSystemName="Epic.SER.ProviderSpecialty" displayName="Obstetrics and Gynecology"/>
+					</code>
+					<addr use="WP">
+						<streetAddressLine>222 PIRATE ISLAND</streetAddressLine>
+						<streetAddressLine>STE 305</streetAddressLine>
+						<county>OAKLAND</county>
+						<city>AUBURN HILLS</city>
+						<state>MI</state>
+						<postalCode>48326</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1-248-340-0350"/>
+					<telecom value="fax:+1-248-340-0866"/>
+					<assignedPerson>
+						<name use="L">
+							<given>PETER</given>
+							<family>PAN</family>
+							<suffix qualifier="AC"> MD</suffix>
+							<validTime>
+								<low nullFlavor="UNK"/>
+								<high nullFlavor="UNK"/>
+							</validTime>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<encounterParticipant typeCode="ATND">
+				<time value="20240305181500-0500"/>
+				<assignedEntity>
+					<id extension="12708" root="PROVID"/>
+					<id nullFlavor="NA" root="2.16.840.1.113883.4.6"/>
+					<code code="207V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Obstetrics and Gynecology">
+						<originalText>Obstetrics and Gynecology</originalText>
+						<translation code="42" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4160" codeSystemName="Epic.DXC.StandardProviderSpecialtyType" displayName="Obstetrics &amp; Gynecology"/>
+						<translation code="22" codeSystem="1.2.840.114350.1.13.502.2.7.10.836982.1050" codeSystemName="Epic.SER.ProviderSpecialty" displayName="Obstetrics and Gynecology"/>
+					</code>
+					<addr use="WP">
+						<streetAddressLine>222 PIRATE ISLAND</streetAddressLine>
+						<streetAddressLine>STE 305</streetAddressLine>
+						<city>AUBURN HILLS</city>
+						<state>MI</state>
+						<postalCode>48326</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1-248-340-0350"/>
+					<telecom value="fax:+1-248-340-0866"/>
+					<assignedPerson>
+						<name use="L">
+							<given>LUNA</given>
+							<given>M</given>
+							<family>MERMAID</family>
+							<suffix qualifier="AC"> MD</suffix>
+							<validTime>
+								<low nullFlavor="UNK"/>
+								<high nullFlavor="UNK"/>
+							</validTime>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<encounterParticipant typeCode="ADM">
+				<time value="20240305181500-0500"/>
+				<assignedEntity>
+					<id extension="21291" root="PROVID"/>
+					<id nullFlavor="NA" root="2.16.840.1.113883.4.6"/>
+					<code code="207V00000X" codeSystem="2.16.840.1.113883.6.101" displayName="Obstetrics and Gynecology">
+						<originalText>Obstetrics and Gynecology</originalText>
+						<translation code="42" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4160" codeSystemName="Epic.DXC.StandardProviderSpecialtyType" displayName="Obstetrics &amp; Gynecology"/>
+						<translation code="22" codeSystem="1.2.840.114350.1.13.502.2.7.10.836982.1050" codeSystemName="Epic.SER.ProviderSpecialty" displayName="Obstetrics and Gynecology"/>
+					</code>
+					<addr use="WP">
+						<streetAddressLine>222 PIRATE ISLAND</streetAddressLine>
+						<streetAddressLine>STE 305</streetAddressLine>
+						<county>OAKLAND</county>
+						<city>AUBURN HILLS</city>
+						<state>MI</state>
+						<postalCode>48326</postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+1-248-340-0350"/>
+					<telecom value="fax:+1-248-340-0866"/>
+					<assignedPerson>
+						<name use="L">
+							<given>PETER</given>
+							<family>PAN</family>
+							<suffix qualifier="AC"> MD</suffix>
+							<validTime>
+								<low nullFlavor="UNK"/>
+								<high nullFlavor="UNK"/>
+							</validTime>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<location>
+				<healthCareFacility>
+					<id extension="1041000124" root="1.2.840.114350.1.13.500.2.7.2.686980"/>
+					<code code="1205-4" codeSystem="2.16.840.1.113883.6.259" displayName="Antenatal Care Ward">
+						<originalText>Obstetrics and Gynecology</originalText>
+						<translation code="42" codeSystem="1.2.840.114350.1.72.1.7.7.10.688867.4150" codeSystemName="Epic.DepartmentSpecialty" displayName="Obstetrics &amp; Gynecology"/>
+					</code>
+					<location>
+						<name>Trinity Health Obstetrics - Oakland Hospital</name>
+						<addr use="WP">
+							<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+							<city>Neverwood</city>
+							<state>MI</state>
+							<postalCode>48923-5020</postalCode>
+							<country>US</country>
+						</addr>
+					</location>
+					<serviceProviderOrganization>
+						<id extension="1041000" root="1.2.840.114350.1.13.500.2.7.2.696570"/>
+						<name>Happy Health Oaknut Hospital</name>
+						<telecom use="WP" value="tel:+1-248-858-3000"/>
+						<addr use="WP">
+							<streetAddressLine>4440 Woodtree Ave</streetAddressLine>
+							<city>Neverwood</city>
+							<state>MI</state>
+							<postalCode>48923-5020</postalCode>
+							<country>US</country>
+						</addr>
+						<asOrganizationPartOf>
+							<wholeOrganization>
+								<name>Happy Health Oaknut Hospital</name>
+								<addr nullFlavor="NA"/>
+							</wholeOrganization>
+						</asOrganizationPartOf>
+					</serviceProviderOrganization>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.1"/>
+					<code code="88084-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>.</title>
+					<text>
+						<br/>
+						<content styleCode="Bold">Subject:</content>
+						<paragraph>Public Health Reporting Communication: one or more conditions are reportable, or may be reportable, to public health. </paragraph>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="INT">
+							<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20"/>
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.7"/>
+							<id root="37e898fa-4abe-401e-ac81-bd2528f34cff"/>
+							<code code="131195008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Subject of information"/>
+							<text>Public Health Reporting Communication: one or more conditions are reportable, or may be reportable, to public health.</text>
+							<statusCode code="completed"/>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.3"/>
+					<code code="88082-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial case report processing information Document"/>
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.9"/>
+							<id root="6bff7990-f218-4f9d-a5aa-eb7afa6e9a3c"/>
+							<code code="RR5" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Received eICR Information"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20240307193643+0000"/>
+							<reference typeCode="REFR">
+								<externalDocument classCode="DOCCLIN" moodCode="EVN">
+									<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.115"/>
+									<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.10"/>
+									<id assigningAuthorityName="EPC" root="1.2.840.114350.1.13.500.2.7.8.688883.1346739253"/>
+									<code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report (eICR)"/>
+									<setId assigningAuthorityName="EPC" extension="00000000-1e85-b6ad-585d-43805dab5a88" root="1.2.840.114350.1.13.500.2.7.1.1"/>
+									<versionNumber value="4"/>
+								</externalDocument>
+							</reference>
+						</act>
+					</entry>
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.29"/>
+							<id root="39d966b9-8a3a-4024-93d8-138e97d5898a"/>
+							<code code="RRVS19" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="eICR processed"/>
+							<entryRelationship typeCode="SPRT">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.33"/>
+									<id root="80f7b4ff-4d96-46ef-ae8f-af1f9c1f206e"/>
+									<code code="RR10" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="eICR Validation Output"/>
+									<value mediaType="text/xml" xsi:type="ED">
+										<Report xmlns="urn:aims-org:val"> </Report>
+									</value>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.2.2"/>
+					<code code="55112-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>.</title>
+					<text>
+						<content styleCode="Bold">Summary:</content>
+						<paragraph>Your organization electronically submitted an initial case report to determine if reporting to public health is needed for a patient.</paragraph>
+						<paragraph>"Syphilis (disorder)" is reportable to "Michigan Department of Community Health". The initial case report was sent to "Michigan Department of Community Health". Additional information may be required for this report.<br/>
+						</paragraph>
+						<paragraph>
+							<content styleCode="Bold">"Syphilis (disorder)" for "Michigan Department of Community Health" </content>
+						</paragraph>
+						<paragraph>Reporting is required immediately.  Reporting to this Public Health Agency is based on "Patient home address"<br/>
+						</paragraph>
+						<paragraph>
+							<content>&gt; If you have additional questions regarding Syphilis or STI reporting, please contact MDHHS Disease Intervention Specialists (DIS) at 313-446-8957. (<linkHtml href="https://www.michigan.gov/mdhhs">Information only</linkHtml>)<br/>
+								<br/>
+							</content>
+						</paragraph>
+						<paragraph>Additional Resources:<br/>
+						</paragraph>
+						<paragraph>
+							<content>&gt; Syphilis, Primary 2018 Case Definition (<linkHtml href="https://ndc.services.cdc.gov/case-definitions/syphilis-primary-2018/">Information only</linkHtml>)<br/>
+								<br/>
+							</content>
+							<content>&gt; Syphilis, secondary 2018 Case Definition (<linkHtml href="https://ndc.services.cdc.gov/case-definitions/syphilis-secondary-2018/">Information only</linkHtml>)<br/>
+								<br/>
+							</content>
+						</paragraph>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="INT">
+							<templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.20"/>
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.8"/>
+							<id root="a1edf0aa-9115-4165-81c8-ba9fa2b2c7fb"/>
+							<code code="304561000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Informing health care professional (procedure)"/>
+							<text>Your organization electronically submitted an initial case report to determine if reporting to public health is needed for a patient. </text>
+							<statusCode code="completed"/>
+						</act>
+					</entry>
+					<entry typeCode="DRIV">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.30"/>
+							<code code="RR9" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Reportability response priority"/>
+							<value code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Information Only" xsi:type="CD"/>
+						</observation>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.34"/>
+							<code code="RR11" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Reportability Response Coded Information"/>
+							<statusCode code="completed"/>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.12"/>
+									<id root="9036d3c7-073f-4de8-a3a8-b70036f10427"/>
+									<code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Condition">
+										<translation code="75323-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition"/>
+									</code>
+									<value code="76272004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Syphilis (disorder)" xsi:type="CD"/>
+									<entryRelationship typeCode="COMP">
+										<organizer classCode="CLUSTER" moodCode="EVN">
+											<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.13"/>
+											<id root="0425993f-75bf-4392-8c49-c82c60858728"/>
+											<code code="RRVS5" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="Location Relevance" displayName="Patient home address"/>
+											<statusCode code="completed"/>
+											<participant typeCode="LOC">
+												<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.3"/>
+												<participantRole>
+													<id extension="mi" root="2.16.840.1.113883.4.6"/>
+													<code code="RR12" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Rules Authoring Agency"/>
+													<addr use="WP">
+														<streetAddressLine>333 South Grand Ave.
+3rd Floor</streetAddressLine>
+														<city>Lansing</city>
+														<state>MI</state>
+														<postalCode nullFlavor="NI"/>
+													</addr>
+													<telecom nullFlavor="NI"/>
+													<playingEntity>
+														<name>Michigan Department of Community Health</name>
+													</playingEntity>
+													<telecom use="WP" value="MDHHS_MDSS@michigan.gov"/>
+													<telecom use="WP" value="517-335-8165"/>
+													<telecom use="WP" value="517-335-8263"/>
+												</participantRole>
+											</participant>
+											<participant typeCode="LOC">
+												<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.4.1"/>
+												<participantRole>
+													<id extension="mi" root="2.16.840.1.113883.4.6"/>
+													<code code="RR7" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Routing Entity"/>
+													<addr use="WP">
+														<streetAddressLine>333 South Grand Ave.
+3rd Floor</streetAddressLine>
+														<city>Lansing</city>
+														<state>MI</state>
+														<postalCode nullFlavor="NI"/>
+													</addr>
+													<playingEntity>
+														<name>Michigan Department of Community Health</name>
+													</playingEntity>
+													<telecom use="WP" value="MDHHS_MDSS@michigan.gov"/>
+													<telecom use="WP" value="517-335-8165"/>
+													<telecom use="WP" value="517-335-8263"/>
+												</participantRole>
+											</participant>
+											<component typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.19"/>
+													<id root="94a542ed-af03-4e47-aa3a-15847b55ce66"/>
+													<code code="RR1" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Determination of reportability"/>
+													<value code="RRVS1" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Reportable" xsi:type="CD"/>
+													<entryRelationship typeCode="RSON">
+														<observation classCode="OBS" moodCode="EVN">
+															<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.27"/>
+															<id root="e0f0e27f-3516-4c6e-b37e-614fde11ed47"/>
+															<code code="RR3" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Determination of reportability rule"/>
+															<value xsi:type="ST">Detection of treponemal or non-treponemal antibody in a clinical specimen by any method (e.g., Rapid Plasma Reagin (RPR), Venereal Disease Research Laboratory (VDRL), Fluorescent Treponemal Antibody Absorbed (FTA-ABS), T. pallidum Particle Agglutination (TP-PA), Enzyme Immunoassay (EIA), Chemiluminescence Immunoassay (CIA), or equivalent serologic methods) </value>
+														</observation>
+													</entryRelationship>
+												</observation>
+											</component>
+											<component typeCode="COMP">
+												<act classCode="ACT" moodCode="EVN">
+													<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.20"/>
+													<id root="9ad53ec1-ba17-4765-86ce-2100a00835ac"/>
+													<code code="RRVS12" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="PHA Contact Information"/>
+													<priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Information only"/>
+													<reference typeCode="REFR">
+														<externalDocument classCode="DOC" moodCode="EVN">
+															<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.17"/>
+															<code nullFlavor="OTH">
+																<originalText>If you have additional questions regarding Syphilis or STI reporting, please contact MDHHS Disease Intervention Specialists (DIS) at 313-446-8957.</originalText>
+															</code>
+															<text mediaType="text/html">
+																<reference value="https://www.michigan.gov/mdhhs"/>
+															</text>
+														</externalDocument>
+													</reference>
+												</act>
+											</component>
+											<component typeCode="COMP">
+												<act classCode="ACT" moodCode="EVN">
+													<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.20"/>
+													<id root="c5f523cf-055d-46c6-a687-9f7d1a42cdc7"/>
+													<code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Additional Resources"/>
+													<priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Information only"/>
+													<reference typeCode="REFR">
+														<externalDocument classCode="DOC" moodCode="EVN">
+															<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.17"/>
+															<code nullFlavor="OTH">
+																<originalText>Syphilis, Primary 2018 Case Definition</originalText>
+															</code>
+															<text mediaType="text/html">
+																<reference value="https://ndc.services.cdc.gov/case-definitions/syphilis-primary-2018/"/>
+															</text>
+														</externalDocument>
+													</reference>
+												</act>
+											</component>
+											<component typeCode="COMP">
+												<act classCode="ACT" moodCode="EVN">
+													<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.20"/>
+													<id root="10987b6e-7be4-40ec-9639-3d45dcc80850"/>
+													<code code="RRVS11" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Additional Resources"/>
+													<priorityCode code="RRVS15" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VS (CDC Local Coding System)" displayName="Information only"/>
+													<reference typeCode="REFR">
+														<externalDocument classCode="DOC" moodCode="EVN">
+															<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.17"/>
+															<code nullFlavor="OTH">
+																<originalText>Syphilis, secondary 2018 Case Definition</originalText>
+															</code>
+															<text mediaType="text/html">
+																<reference value="https://ndc.services.cdc.gov/case-definitions/syphilis-secondary-2018/"/>
+															</text>
+														</externalDocument>
+													</reference>
+												</act>
+											</component>
+											<component typeCode="COMP">
+												<observation classCode="OBS" moodCode="EVN">
+													<templateId extension="2017-04-01" root="2.16.840.1.113883.10.20.15.2.3.14"/>
+													<id root="830c9d84-2b76-4ee3-a70a-df44a99a6f4b"/>
+													<code code="RR4" codeSystem="2.16.840.1.114222.4.5.232" codeSystemName="PHIN Questions" displayName="Timeframe to report (urgency)"/>
+													<value unit="min" value="0" xsi:type="PQ">
+														<translation code="88694003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Immediate (qualifier value)"/>
+													</value>
+												</observation>
+											</component>
+										</organizer>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>

@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet  type="text/xsl" href="cda.xsl"?><!--*******  This sample eICR file is compiled by an eICR generator utility.  *******--><!--File:      CDAR2_IG_PHCASERPT_R2_STU1dot1_GeneratedSample_eICR_TC-eCR-TC-COVID_DX.xml--><!--Specification:      Public Health Case Report, Release 1, STU Release 1.1 - US Realm--><!--Disclaimer: 
+    This sample file is informative only.
+    This sample file contains representative data elements from the eICR IG. 
+    The file depicts a fictional character's health data. Any resemblance to a real person is coincidental.
+    To illustrate as many data elements as possible, the clinical scenario may not be entirely plausible. 
+    The data in this sample file is not intended to represent a real patients, people or clinical events. 
+    This sample is designed to be used in conjunction with the eICR IG.
+     
+    Where guidance has been given to the conformance or cardinality of elements or
+    attributes and there is a discrepancy with the IG, the IG is always the normative
+    source of truth.
+    
+    Please note:  This sample is valid against the Schema and Schematron for ERRORS (not warnings). 
+    Logical schematron WARNINGS will generate from the sample file. 
+    It is logical to generate a samples file from a system with valid warnings.--><!--    Templates are identified in comments above their template id.  
+    The IG in which the template version was first published is identified in square brackets before the template name.
+    
+    e.g.: [C-CDA 2.1] Continuity of Care (CCD) (V3)       indicates that the Discharge Summary (V3) template was first published in IG C-CDA R2.1
+          [C-CDA R2.0] Plan of Treatment Section (V2)     indicates that the Plan of Treatment Section (V2) template was first published in IG C-CDA R2.0
+          [C-CDA R1.1] History of Present Illness Section indicates that the Hospital Course Section was first published in IG C-CDA R1.1
+          
+    Even though all 3 templates above are included in IG C-CDA 2.1, because there have been no new versions of 
+    the History of Present Illness Section template in IGs later than C-CDA R1.1, it is considered to be published in R1.1. 
+    Similarly, there have been no new versions of the Plan of Treatment Section template later than C-CDA R.2 so it 
+    is considered to be published in R2.0.--><!--    While assertion of conformance with both C-CDA R2.1 and C-CDA R1.1 is NOT a requirement of the eICR IG, it is recommended that, if the 
+    originating system includes both the versioned and un-versioned templateId, then both these templateIds SHOULD be preserved in the eICR document.
+    The examples and sample file included with this IG illustrate the optional use of the C-CDA R1.1 templateId.--><!--******************************************************** CDA Header ********************************************************--><!--US Realm Header template-->
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 ../../schema/infrastructure/cda/CDA_SDTC.xsd"
+    xmlns:sdtc="urn:hl7-org:sdtc" xmlns:cda="urn:hl7-org:v3" xmlns="urn:hl7-org:v3"
+    xmlns:voc="http://www.lantanagroup.com/voc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="US"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"
+        ><!--[C-CDA R1.1] US Realm Header--></typeId>
+    <templateId root="2.16.840.1.113883.10.20.22.1.1"
+        ><!-- [C-CDA R2.1] US Realm Header (V3) --></templateId>
+    <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"
+        ><!--[eICR R2 STU1.1] Initial Public Health Case Report Document (eICR) (V2) --></templateId>
+    <templateId root="2.16.840.1.113883.10.20.15.2" extension="2016-12-01"/>
+    <id root="38e6a983-38ad-484f-a7d2-b294cdbe5435"
+        ><!--Globally unique document ID (extension) is scoped by vendor/software--></id>
+    <code code="55751-2" displayName="Public Health Case Report" codeSystem="2.16.840.1.113883.6.1"
+        codeSystemName="LOINC"><!--Document Code--></code>
+    <title>Initial Public Health Case Report</title>
+    <effectiveTime value="20200505110515-0400"/>
+    <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="en-US"/>
+    <recordTarget>
+        <!--******************************************************** recordTarget: The patient ********************************************************-->
+        <patientRole>
+            <id extension="PT-470127" root="2.16.840.1.113883.19.5"><!--Patient ID--></id>
+            <!--SSN-->
+            <id extension="222-22-2222" root="2.16.840.1.113883.4.1" />
+            <addr use="H"><streetAddressLine>2222 Home Street</streetAddressLine>
+                <city>Sacramento</city>
+                <state>CA</state>
+                <postalCode>94203</postalCode>
+                <county>Sacramento County</county>
+                <country>US</country>
+            </addr>
+            <telecom use="HP" value="tel:555-555-2003"/>
+            <telecom use="HP" value="mailto:jose@email.com"/>
+            <patient>
+                <name use="L"><given>Jose</given>
+                    <family>Cuervo</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"
+                    displayName="Male"/>
+                <birthTime value="19890730"/>
+                <sdtc:deceasedInd value="false"/>
+                <raceCode code="2106-3" displayName="WHITE" codeSystem="2.16.840.1.113883.6.238"
+                    codeSystemName="Race &amp; Ethnicity - CDC"/>
+                <ethnicGroupCode code="2135-2" displayName="Hispanic or Latino"
+                    codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>
+                <languageCommunication>
+                    <languageCode code="es"/>
+                    <preferenceInd value="true"/>
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <!--Author/authenticator may be software or may be a provider such as "infection control professional"-->
+        <time value="20200505110515-0400"/>
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.3.72.5.20"/>
+            <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                <city>Sacramento</city>
+                <state>CA</state>
+                <postalCode>94203</postalCode>
+                <county/>
+                <country/>
+            </addr>
+            <telecom use="WP" value="tel:555-777-0123"/>
+            <telecom use="WP" value="fax:555-777-0987"/>
+            <assignedAuthoringDevice>
+                <manufacturerModelName displayName="TBD Device"/>
+                <softwareName/>
+            </assignedAuthoringDevice>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id extension="TBDFacility#" root="2.16.840.1.113883.4.6"><!--Custodian ID--></id>
+                <name>Sacramento Hospital</name>
+                <telecom use="WP" value="tel:555-777-0123"/>
+                <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                    <city>Sacramento</city>
+                    <state>CA</state>
+                    <postalCode>94203</postalCode>
+                    <county/>
+                    <country/>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <componentOf>
+        <!--******************************************************** componentOf: contains the encompassingEncouter and the provider and facility infomation for the case ********************************************************-->
+        <encompassingEncounter>
+            <id extension="9937016" root="2.16.840.1.113883.19"><!--encounter ID--></id>
+            <code code="IMP" displayName="inpatient encounter" codeSystem="2.16.840.1.113883.6.12"
+                codeSystemName="CPT-4">
+                <translation code="AMB" displayName="Ambulatory" codeSystem="2.16.840.1.113883.5.4"
+                    codeSystemName="HL7 ActEncounterCode"
+                    ><!--ActClassEncounterCodes - high level--></translation>
+            </code>
+            <effectiveTime>
+                <low value="20200513"/>
+                <high value="20200513"/>
+            </effectiveTime>
+            <responsibleParty>
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.4.6" extension="66666666666"><!--Provider ID--></id>
+                    <addr use="H"><streetAddressLine>1234 Provider Street</streetAddressLine>
+                        <city>Sacramento</city>
+                        <state>CA</state>
+                        <postalCode>94203</postalCode>
+                        <county>Sacramento County</county>
+                        <country>US</country>
+                    </addr>
+                    <telecom use="WP" value="tel:555-777-0123"/>
+                    <telecom use="WP" value="fax:555-777-0987"/>
+                    <assignedPerson>
+                        <name><given>Carmen </given>
+                            <family>SanDiego</family>
+                            <suffix>MD</suffix>
+                        </name>
+                    </assignedPerson>
+                    <representedOrganization>
+                        <id extension="TBDFacility#" root="2.16.840.1.113883.4.6"
+                            ><!--Represented Organization--></id>
+                        <name>Sacramento Hospital<!--Provider Facility/Office Name--></name>
+                        <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                            <city>Sacramento</city>
+                            <state>CA</state>
+                            <postalCode>94203</postalCode>
+                            <county/>
+                            <country/>
+                        </addr>
+                    </representedOrganization>
+                </assignedEntity>
+            </responsibleParty>
+            <location>
+                <healthCareFacility>
+                    <id extension="8235" root="2.16.840.1.113883.4.6"><!--Facility ID--></id>
+                    <code code="HOSP" displayName="Hospital" codeSystem="2.16.840.1.113883.5.111"
+                        codeSystemName="HL7RoleCode"
+                        ><!--Facility location within larger healthcare organization e.g Kaiser Vacaville within Kaiser North--></code>
+                    <location>
+                        <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                            <city>Sacramento</city>
+                            <state>CA</state>
+                            <postalCode>94203</postalCode>
+                            <county/>
+                            <country/>
+                        </addr>
+                    </location>
+                    <serviceProviderOrganization>
+                        <name>Sacramento Hospital<!--Provider Facility/Office Name--></name>
+                        <telecom use="WP" value="tel:555-777-0123"/>
+                        <telecom use="WP" value="fax:555-777-0987"/>
+                        <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                            <city>Sacramento</city>
+                            <state>CA</state>
+                            <postalCode>94203</postalCode>
+                            <county/>
+                            <country/>
+                        </addr>
+                    </serviceProviderOrganization>
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <component>
+        <structuredBody>
+            <component>
+                <!--******************************************************** Encounters Section ********************************************************-->
+                <section>
+                    <!--[C-CDA R1.1] Encounters Section (entries optional)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+                    <!--[C-CDA R2.1] Encounters Section (entries optional) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+                    <!-- [C-CDA R2.1] Encounters Section (entries required) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+                    <code code="46240-8" displayName="History of encounters"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Encounters</title>
+                    <text><table>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <thead>
+                                <tr>
+                                    <th>Encounter</th>
+                                    <th>Date(s)</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_97793b4b-560e-468a-9235-19e720c1a438_ref">
+                                    <td>inpatient encounter</td>
+                                    <td>05/13/2020</td>
+                                    <td>Sacramento Hospital</td>
+                                </tr>
+                                <tr>
+                                    <td><list styleCode="none">
+                                            <item><paragraph>*** In the table below, row entries
+                                                  with values under RCTC columns triggered this
+                                                  Electronic Initial Case Report (eICR)</paragraph>
+                                                <table>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <thead>
+                                                  <tr>
+                                                  <th>Problem Type</th>
+                                                  <th>Problem</th>
+                                                  <th>Date(s)</th>
+                                                  <th>Code</th>
+                                                  <th>CodeSystem</th>
+                                                  <th>RCTC OID ***</th>
+                                                  <th>RCTC Version ***</th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr>
+                                                  <td>Diagnosis</td>
+                                                  <td>Coronavirus as the cause of diseases
+                                                  classified elsewhere</td>
+                                                  <td>05/14/2020</td>
+                                                  <td>B97.2</td>
+                                                  <td>ICD-10</td>
+                                                  <td>2.16.840.1.114222.4.11.7508</td>
+                                                  <td>20200429</td>
+                                                  </tr>
+                                                  </tbody>
+                                                </table>
+                                            </item>
+                                        </list>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <!---->
+                        <encounter moodCode="EVN" classCode="ENC">
+                            <!--[C-CDA R1.1] Encounter Activities-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+                            <!--[C-CDA R2.1] Encounter Activities (V3)-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.49"
+                                extension="2015-08-01"/>
+                            <id root="97793b4b-560e-468a-9235-19e720c1a438"/>
+                            <code code="IMP" displayName="inpatient encounter"
+                                codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+                            <effectiveTime value="20200513"/>
+                            <entryRelationship typeCode="COMP">
+                                <act moodCode="EVN" classCode="ACT">
+                                    <!--[C-CDA R1.1] Encounter Diagnosis-->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+                                    <!--[C-CDA R2.1] Encounter Diagnosis (V3)-->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.80"
+                                        extension="2015-08-01"/>
+                                    <code code="29308-4" displayName="Diagnosis"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20200513"/>
+                                    <entryRelationship typeCode="SUBJ">
+                                        <observation moodCode="EVN" classCode="OBS"
+                                            negationInd="false">
+                                            <!--[C-CDA R1.1] Problem Observation-->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.4"
+                                                extension="2015-08-01"/>
+                                            <templateId root="2.16.840.1.113883.10.20.15.2.3.3"
+                                                extension="2016-12-01"/>
+                                            <!--[eICR R2 STU1.1] Initial Case Report Trigger Code Problem Observation-->
+                                            <id root="e945f578-d795-4ec3-a403-ea8f3319f37c"/>
+                                            <code code="29308-4" displayName="DIAGNOSIS"
+                                                codeSystem="2.16.840.1.113883.6.1"
+                                                codeSystemName="LOINC">
+                                                <translation code="282291009"
+                                                  displayName="DIAGNOSIS"
+                                                  codeSystem="2.16.840.1.113883.6.96"
+                                                  codeSystemName="SNOMED CT"/>
+                                            </code>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime>
+                                                <low value="20200514"/>
+                                            </effectiveTime>
+                                            <value code="B97.2"
+                                                displayName="Coronavirus as the cause of diseases classified elsewhere"
+                                                codeSystem="2.16.840.1.113883.6.90"
+                                                codeSystemName="ICD-10" xsi:type="CD"
+                                                sdtc:valueSetVersion="20200429"
+                                                sdtc:valueSet="2.16.840.1.114222.4.11.7508"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </act>
+                            </entryRelationship>
+                        </encounter>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <!--******************************************************** History of Present Illness Section ********************************************************-->
+                <section>
+                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+                    <code code="10164-2" displayName="History of Present Illness"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>History of Present Illness</title>
+                    <text mediaType="text/x-hl7-text+xml"><paragraph>recent travel for vacation to
+                            Wuhan China from April 22, 2020 to May 5, 2020; </paragraph>
+                    </text>
+                </section>
+            </component>
+            <!--
+                ********************************************************
+                Medications Administered Section (V2)
+                ********************************************************
+            -->
+            <component>
+                <section>
+                    <!-- [C-CDA R1.1] Medications Administered Section -->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.38" />
+                    <!-- [C-CDA R2.0] Medications Administered Section (V2) -->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.38" extension="2014-06-09" />
+                    <code code="29549-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medications Administered" />
+                    <title>Medications Administered</title>
+                    <text>
+                        <table>
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <col width="10%" />
+                            <thead>
+                                <tr>
+                                    <th>Medication</th>
+                                    <th>Directions</th>
+                                    <th>Dose</th>
+                                    <th>Duration</th>
+                                    <th>Route</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_6c844c75-aa34-411c-b7bd-5e4a9f206e29_ref">
+                                    <td>AHydroxychloroquine Sulfate 200 MG Oral Tablet</td>
+                                    <td>200 mg every 12 hours for 4 days</td>
+                                    <td>200 mg</td>
+                                    <td>May 13 11:60</td>
+                                    <td>ORAL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                            <!-- [C-CDA R1.1] Medication Activity -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+                            <!-- [C-CDA R2.0] Medication Activity (V2) -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.16" extension="2014-06-09" />
+                            <id root="6c844c75-aa34-411c-b7bd-5e4a9f206e29" />
+                            <statusCode code="completed" />
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20200513"/>
+                            </effectiveTime>
+                            <effectiveTime xsi:type="PIVL_TS" institutionSpecified="true" operator="A">
+                                <period value="12" unit="h"/> </effectiveTime>
+                            <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="ORAL" />
+                            <doseQuantity value="200" unit="mg" />
+                            <consumable>
+                                <manufacturedProduct classCode="MANU">
+                                    <!-- [C-CDA R2.0] Medication Information (V2) -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09" />
+                                    <id root="2a620155-9d11-439e-92b3-5d9815ff4ee8" />
+                                    <manufacturedMaterial>
+                                        <code code="979092" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"
+                                            displayName="Hydroxychloroquine Sulfate 200 MG Oral Tablet" />
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+                <!--******************************************************** Problems Section ********************************************************-->
+            <component>    
+            <section>
+                    <!--[C-CDA R1.1] Problem Section (entries optional)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+                    <!--[C-CDA R2.1] Problem Section (entries optional) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01"/>
+                    <!--[C-CDA R1.1] Problem Section (entries required)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+                    <!-- [C-CDA R2.1] Problem Section (entries required) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+                    <code code="11450-4" displayName="Problem List"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Problem List</title>
+                    <text><table>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <thead>
+                                <tr>
+                                    <th>Concern</th>
+                                    <th>Concern Status</th>
+                                    <th>Date(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_9eb41d4f-32fb-4331-962b-ebcb26ad9f9e_ref">
+                                    <td>Problem</td>
+                                    <td>active</td>
+                                    <td>05/13/2020</td>
+                                </tr>
+                                <tr>
+                                    <td><list styleCode="none">
+                                            <item><paragraph>*** In the table below, row entries
+                                                  with values under RCTC columns triggered this
+                                                  Electronic Initial Case Report (eICR)</paragraph>
+                                                <table>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <thead>
+                                                  <tr>
+                                                  <th>Problem Type</th>
+                                                  <th>Problem</th>
+                                                  <th>Date(s)</th>
+                                                  <th>Code</th>
+                                                  <th>Code System</th>
+                                                  <th>RCTC OID ***</th>
+                                                  <th>RCTC Version ***</th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr>
+                                                  <td>symptom</td>
+                                                  <td>Difficulty Breathing )finding)</td>
+                                                  <td>05/13/2020</td>
+                                                  <td>230145002</td>
+                                                  <td>SNOMED-CT</td>
+                                                  <td/>
+                                                  <td/>
+                                                  </tr>
+                                                  <tr>
+                                                  <td>symptom</td>
+                                                  <td/>
+                                                  <td/>
+                                                  <td/>
+                                                  <td/>
+                                                  <td/>
+                                                  <td/>
+                                                  </tr>
+                                                  </tbody>
+                                                </table>
+                                            </item>
+                                        </list>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <act moodCode="EVN" classCode="ACT">
+                            <!--[C-CDA 1.1] Problem Concern Act-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+                            <!--[C-CDA 2.1] Problem Concern Act (V3)-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+                            <id root="9eb41d4f-32fb-4331-962b-ebcb26ad9f9e"/>
+                            <code code="CONC" displayName="Concern"
+                                codeSystem="2.16.840.1.113883.5.6"/>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20200513"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation moodCode="EVN" classCode="OBS" negationInd="false">
+                                    <!--[C-CDA R1.1] Problem Observation-->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"
+                                        extension="2015-08-01"/>
+                                    <id root="04c0e62e-f79b-4551-86d3-f1e5b51c510a"/>
+                                    <code code="75325-1" displayName="SYMPTOM"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                                        <translation code="418799008" displayName="SYMPTOM"
+                                            codeSystem="2.16.840.1.113883.6.96"
+                                            codeSystemName="SNOMED CT"/>
+                                    </code>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20200513"/>
+                                    </effectiveTime>
+                                    <value code="230145002"
+                                        displayName="Difficulty Breathing )finding)"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED-CT" xsi:type="CD"/>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <!--******************************************************** Reason for visit Section ********************************************************-->
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
+                    <code code="29299-5" displayName="Reason for visit"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Reason for visit</title>
+                    <text><paragraph>recent travel for vacation to Wuhan China from April 22, 2020
+                            to May 5, 2020 </paragraph>
+                    </text>
+                </section>
+            </component>
+            <component>
+                <!--******************************************************** Results Section ********************************************************-->
+                <section>
+                    <!--[C-CDA R1.1] Results Section (entries optional)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+                    <!--[C-CDA R2.1] Results Section (entries optional) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3" extension="2015-08-01"/>
+                    <!--[C-CDA R1.1] Results Section (entries required)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+                    <!-- [C-CDA R2.1] Results Section (entries required) (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+                    <code code="30954-2"
+                        displayName="Relevant diagnostic tests and/or laboratory data"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Results</title>
+                    <text><table>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <thead>
+                                <tr>
+                                    <th>Results Panel</th>
+                                    <th>Date(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_8804d278-ab10-4e00-a5cd-88dfa96ba83b_ref">
+                                    <td>SARS coronavirus 2 N gene [Presence] in Unspecified specimen
+                                        by Nucleic acid amplification using primer-probe set N2</td>
+                                    <td/>
+                                </tr>
+                                <tr>
+                                    <td><list styleCode="none">
+                                            <item><paragraph>*** In the table below, row entries
+                                                  with values under RCTC columns triggered this
+                                                  Electronic Initial Case Report (eICR)</paragraph>
+                                                <table>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <col width="15%"/>
+                                                  <thead>
+                                                  <tr>
+                                                  <th>Test</th>
+                                                  <th>Lab Test RCTC OID ***</th>
+                                                  <th>Lab Test RCTC Version ***</th>
+                                                  <th>Outcome</th>
+                                                  <th>Date(s)</th>
+                                                  <th>Lab Result RCTC OID ***</th>
+                                                  <th>Lab Result RCTC Version ***</th>
+                                                  </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                  <tr
+                                                  ID="id_077fe949-6bbb-44b2-9430-f4f00cc4877d_ref">
+                                                  <td>SARS coronavirus 2 N gene [Presence] in
+                                                  Unspecified specimen by Nucleic acid amplification
+                                                  using primer-probe set N2</td>
+                                                  <td/>
+                                                  <td/>
+                                                  <td>Detected (qualifier value)</td>
+                                                  <td>05/13/2020</td>
+                                                  <td/>
+                                                  <td/>
+                                                  </tr>
+                                                  </tbody>
+                                                </table>
+                                            </item>
+                                        </list>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <!---->
+                        <organizer moodCode="EVN" classCode="BATTERY">
+                            <!--[C-CDA R1.1] Result Organizer -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+                            <!--[C-CDA R2.1] Result Organizer (V3)-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+                            <id root="8804d278-ab10-4e00-a5cd-88dfa96ba83b"/>
+                            <code code="94308-4 "
+                                displayName="SARS coronavirus 2 N gene [Presence] in Unspecified specimen by Nucleic acid amplification using primer-probe set N2"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <low value="20200513"/>
+                                <high value="20200513"/>
+                            </effectiveTime>
+                            <component>
+                                <observation moodCode="EVN" classCode="OBS">
+                                    <!--[C-CDA R1.1] Result Observation -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                                    <!--[C-CDA R2.1] Result Observation (V3)-->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.2"
+                                        extension="2015-08-01"/>
+                                    <id root="077fe949-6bbb-44b2-9430-f4f00cc4877d"/>
+                                    <code code="94308-4 "
+                                        displayName="SARS coronavirus 2 N gene [Presence] in Unspecified specimen by Nucleic acid amplification using primer-probe set N2"
+                                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                                        xsi:type="CD"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20200513"/>
+                                    <value xsi:type="CD" code="260373001"
+                                        displayName="Detected (qualifier value)"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        codeSystemName="SNOMED-CT"/>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <!--******************************************************** Plan of Care/Treatment Section ********************************************************-->
+                <section>
+                    <!--[C-CDA R1.1] Plan of Care Section new-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2014-06-09"/>
+                    <code code="18776-5" displayName="Plan of Treatment"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Plan of Treatment</title>
+                    <text><paragraph>*** In the table below, row entries with values under RCTC
+                            columns triggered this Electronic Initial Case Report (eICR)</paragraph>
+                        <table>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <col width="15%"/>
+                            <thead>
+                                <tr>
+                                    <th>Lab Test Order</th>
+                                    <th>Code</th>
+                                    <th>CodeSystem</th>
+                                    <th>RCTC OID ***</th>
+                                    <th>RCTC Version ***</th>
+                                    <th>Ordered Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_f724d510-c8d7-4c30-851d-69e90a50ea7d_ref">
+                                    <td>SARS coronavirus 2 N gene [Presence] in Unspecified specimen
+                                        by Nucleic acid amplification using primer-probe set N2</td>
+                                    <td>94308-4 </td>
+                                    <td>LOINC</td>
+                                    <td/>
+                                    <td/>
+                                    <td>05/13/2020</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <!--This is a request for a test to be performed (a lab test order)-->
+                        <observation moodCode="RQO" classCode="OBS">
+                            <!--[C-CDA R1.1] Plan of Care Activity Observation-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+                            <!--[C-CDA R2.0] Planned Observation (V2)-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.44"
+                                extension="2014-06-09"/>
+                            <id root="f724d510-c8d7-4c30-851d-69e90a50ea7d"/>
+                            <code code="94308-4 "
+                                displayName="SARS coronavirus 2 N gene [Presence] in Unspecified specimen by Nucleic acid amplification using primer-probe set N2"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="active"/>
+                            <effectiveTime value="20200513"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            <component>
+                <!--******************************************************** Social History Section ********************************************************-->
+                <section>
+                    <!-- [C-CDA 1.1] Social History Section-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+                    <!--[C-CDA 2.1] Social History Section (V3)-->
+                    <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+                    <code code="29762-2" displayName="Social History"
+                        codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Social History</title>
+                    <text><table>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <thead>
+                                <tr>
+                                    <th>Birth Sex</th>
+                                    <th>Value</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sex Assigned At Birth</td>
+                                    <td>Male</td>
+                                    <td>07/30/1989</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <thead>
+                                <tr>
+                                    <th>Social History Observation Type</th>
+                                    <th>Value</th>
+                                    <th>Dates(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_9db6c612-f85d-4637-aaab-0db6a880dd4d_ref">
+                                    <td>Occupation / Employment details</td>
+                                    <td>Sales</td>
+                                    <td/>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <col width="10%"/>
+                            <thead>
+                                <tr>
+                                    <th>Travel History: Date(s)</th>
+                                    <th>Notes</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ID="id_91bd7807-66ea-4712-9dce-80207c3b3c45_ref">
+                                    <td>04/22/2020 - 05/05/2020</td>
+                                    <td>recent travel for vacation to Wuhan China from April 22,
+                                        2020 to May 5, 2020</td>
+                                    <td/>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    <entry typeCode="DRIV">
+                        <observation moodCode="EVN" classCode="OBS">
+                            <!--[C-CDA R2.1 Companion Guide] Birth Sex Observation -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.200"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.200"
+                                extension="2016-06-01"/>
+                            <code code="76689-9" displayName="Sex Assigned At Birth"
+                                codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="19890730"
+                                ><!--effectiveTime if present should match birthTime--></effectiveTime>
+                            <value code="M" displayName="Male" codeSystem="2.16.840.1.113883.5.1"
+                                codeSystemName="AdministrativeGender" xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <!--Occupation-->
+                        <observation moodCode="EVN" classCode="OBS">
+                            <!--[C-CDA R1.1] Social History Observation-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+                            <!--[C-CDA R2.1] Social History Observation (V3)-->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"
+                                extension="2015-08-01"/>
+                            <id root="9db6c612-f85d-4637-aaab-0db6a880dd4d"/>
+                            <code code="364703007" displayName="Employment detail"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                <translation code="11295-3"
+                                    displayName="Current employment - Reported"
+                                    codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                            </code>
+                            <statusCode code="completed"/>
+                            <effectiveTime/>
+                            <value code="159606005" displayName="Sales"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"
+                                xsi:type="CD"/>
+                        </observation>
+                    </entry>
+                    <entry typeCode="DRIV">
+                        <act moodCode="EVN" classCode="ACT">
+                            <!--[eICR R2 STU1.1] Travel History -->
+                            <templateId root="2.16.840.1.113883.10.20.15.2.3.1"/>
+                            <templateId root="2.16.840.1.113883.10.20.15.2.3.1"
+                                extension="2016-12-01"/>
+                            <id root="79565142-eae0-4213-a3b3-b73cdf474682"/>
+                            <code code="420008001" displayName="Travel"
+                                codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                            <text>recent travel for vacation to Wuhan China from April 22, 2020 to
+                                May 5, 2020</text>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <low value="20200422"/>
+                                <high value="20200505"/>
+                            </effectiveTime>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            <!-- ** Immunizations** -->
+            <component>
+                <section>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.1" extension="2015-08-01" /> 
+                    <!-- ******** Immunizations section template ******** -->
+                    <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+                        displayName="History of immunizations" /> 
+                    <title>Immunizations</title>
+                    <text>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Administration Dates</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <content ID="immunization1Name" />influenza, intradermal, quadrivalent, preservative free, injectable
+                                    </td>
+                                    <td>Nov 2019</td>
+                                    <td>Completed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                            <entry>
+                                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false"> 
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01" /> 
+                                    <id root="e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92" />
+                                    <text mediaType="text/xml">
+                                        <reference value="#immunization1"/>
+                                    </text>
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="19981215" />
+                                    <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
+                                        codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular injection" />
+                                    <doseQuantity value="50" unit="ug" /> <consumable>
+                                        <manufacturedProduct classCode="MANU">
+                                            <!-- ** Immunization medication information ** -->
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09" /> 
+                                         <manufacturedMaterial>
+                                             <code code="166" codeSystem="2.16.840.1.113883.6.59" displayName="influenza, intradermal, quadrivalent, preservative free, injectable" codeSystemName="CVX">
+                                             </code>
+                                                <lotNumberText>LOT12345</lotNumberText>
+                                         </manufacturedMaterial>
+                                            <manufacturerOrganization>
+                                                <name>Sanofi Pasteur</name> </manufacturerOrganization>
+                                        </manufacturedProduct>
+                                    </consumable>
+                                    <performer>
+                                        <assignedEntity>
+                                            <id root="2.16.840.1.113883.19.5.9999.456" extension="2981824" /> 
+                                            <addr use="WP"><streetAddressLine>1234 Facility Drive</streetAddressLine>
+                                                <city>Sacramento</city>
+                                                <state>CA</state>
+                                                <postalCode>94203</postalCode>
+                                                <county/>
+                                                <country/>
+                                            </addr>
+                                            <telecom use="WP" value="tel: +(555)-555-1030" /> <assignedPerson>
+                                                <name>
+                                                    <given>Harold</given>
+                                                    <family>Hippocrates</family>
+                                                </name>
+                                            </assignedPerson>
+                                            <representedOrganization>
+                                                <id root="2.16.840.1.113883.19.5.9999.1394" /> <name>Good Health Clinic</name>
+                                                <telecom use="WP" value="tel: +(555)-555-1030" /> 
+                                                <addr use="WP">
+                                                    <streetAddressLine>1234 Facility Drive</streetAddressLine>
+                                                    <city>Sacramento</city>
+                                                    <state>CA</state>
+                                                    <postalCode>94203</postalCode>
+                                                    <county/>
+                                                    <country/>
+                                                </addr>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </performer>
+                                </substanceAdministration>
+                            </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

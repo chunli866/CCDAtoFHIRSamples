@@ -1,0 +1,386 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "5560ec42-50e4-4803-87b0-a483c1cf2e2b",
+        "meta": {
+          "extension": [
+            {
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+              "valueUri": "urn:oid:2.16.840.1.113883"
+            }
+          ],
+          "source": "urn:oid:2.16.840.1.114222.4.1.217446",
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+              "code": "UNCERTREL",
+              "display": "uncertain reliability"
+            }
+          ],
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "1",
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:oid:2.16.840.1.114222.4.1.217446"
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "2",
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:oid:2.16.840.1.114222.4.1.217446"
+              }
+            ],
+            "name": "APHL | Association of Public Health Laboratories."
+          }
+        ],
+        "masterIdentifier": {
+          "system": "83c8ced7-b654-4299-a20c-b15ec7ae9940"
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:e7c22e2a-0be4-4a42-874b-b8789a9e816e"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+            "value": "5560ec42-50e4-4803-87b0-a483c1cf2e2b"
+          }
+        ],
+        "status": "current",
+        "docStatus": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "34133-9"
+            }
+          ],
+          "text": "Note Summary Documents"
+        },
+        "category": [
+          {
+            "text": "Clinical Note"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/18025725"
+        },
+        "date": "2021-09-23T19:33:56.448+00:00",
+        "author": [
+          {
+            "reference": "#1"
+          }
+        ],
+        "custodian": {
+          "reference": "#2"
+        },
+        "description": "Radiology Report",
+        "securityLabel": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "N"
+              }
+            ],
+            "text": "normal"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/xml;charset=UTF-8",
+              "title": "Reportability Response",
+              "creation": "2024-03-07T19:36:43Z"
+            },
+            "format": {
+              "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+              "code": "urn:hl7-org:sdwg:ccda-structuredBody:2.1"
+            }
+          }
+        ],
+        "context": {
+          "period": {
+            "end": "2021-09-23T19:33:56+00:00"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "b383883b-5ed9-406c-9143-f249480ea029",
+        "meta": {
+          "extension": [
+            {
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+              "valueUri": "urn:oid:2.16.840.1.113883"
+            }
+          ],
+          "source": "urn:oid:2.16.840.1.114222.4.1.217446",
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "N"
+            }
+          ],
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "ee"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "1",
+            "identifier": [
+              {
+                "system": "PROVID",
+                "value": "KMKB8784"
+              }
+            ],
+            "name": [
+              {
+                "family": "LILLY",
+                "given": [
+                  "TIGER"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "2",
+            "identifier": [
+              {
+                "system": "PROVID",
+                "value": "21291"
+              }
+            ],
+            "name": [
+              {
+                "use": "official",
+                "family": "PAN",
+                "given": [
+                  "PETER"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "3",
+            "identifier": [
+              {
+                "system": "PROVID",
+                "value": "12708"
+              }
+            ],
+            "name": [
+              {
+                "use": "official",
+                "family": "MERMAID",
+                "given": [
+                  "LUNA",
+                  "M"
+                ]
+              }
+            ]
+          },
+          {
+            "resourceType": "Organization",
+            "id": "4",
+            "name": "Happy Health Oaknut Hospital"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.840.114350.1.13.500.2.7.3.698084.8",
+            "value": "1000331477262"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+            "value": "b383883b-5ed9-406c-9143-f249480ea029"
+          }
+        ],
+        "status": "unknown",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+          "code": "I",
+          "display": "Inpatient Encounter"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0004",
+                "code": "I",
+                "display": "Inpatient Encounter"
+              }
+            ],
+            "text": "Hospital Encounter"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/18025725"
+        },
+        "participant": [
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "PART",
+                    "display": "Participation"
+                  }
+                ],
+                "text": "Participation"
+              }
+            ],
+            "individual": {
+              "reference": "#1"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ATND",
+                    "display": "Attender"
+                  }
+                ],
+                "text": "Attender"
+              }
+            ],
+            "individual": {
+              "reference": "#2"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ATND",
+                    "display": "Attender"
+                  }
+                ],
+                "text": "Attender"
+              }
+            ],
+            "individual": {
+              "reference": "#3"
+            }
+          },
+          {
+            "type": [
+              {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                    "code": "ADM",
+                    "display": "Admitter"
+                  }
+                ],
+                "text": "Admitter"
+              }
+            ],
+            "individual": {
+              "reference": "#2"
+            }
+          }
+        ],
+        "period": {
+          "start": "2024-03-05T18:15:00-05:00"
+        },
+        "serviceProvider": {
+          "reference": "#4"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Provenance",
+        "meta": {
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            }
+          ]
+        },
+        "contained": [
+          {
+            "resourceType": "Organization",
+            "id": "1",
+            "identifier": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "value": "urn:oid:2.16.840.1.113883"
+              }
+            ]
+          }
+        ],
+        "target": [
+          {
+            "reference": "Encounter/b383883b-5ed9-406c-9143-f249480ea029"
+          }
+        ],
+        "recorded": "2024-04-04T15:21:02.752+00:00",
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-provenance-participant-type",
+                  "code": "transmitter",
+                  "display": "Transmitter"
+                }
+              ],
+              "text": "Transmitter"
+            },
+            "who": {
+              "reference": "#1"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DocumentReference/5560ec42-50e4-4803-87b0-a483c1cf2e2b"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
