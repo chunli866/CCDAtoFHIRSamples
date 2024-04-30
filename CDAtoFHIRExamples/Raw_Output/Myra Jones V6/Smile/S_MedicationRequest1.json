@@ -1,0 +1,78 @@
+{
+            "fullUrl": "http://localhost:8000/MedicationRequest/2819",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "2819",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+                    "source": "#GqINef9uN1SPEjfS"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+                    }
+                ],
+                "status": "completed",
+                "intent": "order",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": "1190220",
+                            "display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2805"
+                },
+                "encounter": {
+                    "reference": "Encounter/2808"
+                },
+                "authoredOn": "2013-09-11T16:03:00-07:00",
+                "requester": {
+                    "reference": "Practitioner/2813"
+                },
+                "performer": {
+                    "reference": "Practitioner/2797"
+                },
+                "dosageInstruction": [
+                    {
+                        "text": "0.09 MG/ACTUAT inhalant powder, 2 puffs every 4-6 hours as needed",
+                        "route": {
+                            "coding": [
+                                {
+                                    "system": "http://ncicb.nci.nih.gov",
+                                    "code": "C38288",
+                                    "display": "Oral Route of Administration"
+                                }
+                            ]
+                        },
+                        "doseAndRate": [
+                            {
+                                "doseQuantity": {
+                                    "value": 1
+                                }
+                            }
+                        ],
+                        "maxDosePerPeriod": {
+                            "numerator": {
+                                "value": 6,
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{spray}"
+                            },
+                            "denominator": {
+                                "value": 1,
+                                "system": "http://unitsofmeasure.org",
+                                "code": "{day}"
+                            }
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }

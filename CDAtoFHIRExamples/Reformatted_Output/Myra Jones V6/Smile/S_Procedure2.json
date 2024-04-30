@@ -1,0 +1,52 @@
+{
+  "fullUrl": "http://localhost:8000/Procedure/2828",
+  "resource": {
+    "resourceType": "Procedure",
+    "id": "2828",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+      "source": "#GqINef9uN1SPEjfS"
+    },
+    "identifier": [
+      {
+        "use": "official",
+        "value": "d5b614bd-01ce-410d-8726-e1fd01dcc72a"
+      }
+    ],
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "73761001",
+          "display": "Colonoscopy"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/2805"
+    },
+    "performedPeriod": {
+      "start": "2003-05-12"
+    },
+    "bodySite": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "71854001",
+            "display": "Colon structure"
+          }
+        ]
+      }
+    ],
+    "focalDevice": [
+      {
+        "manipulated": {
+          "reference": "Device/2827"
+        }
+      }
+    ]
+  }
+}

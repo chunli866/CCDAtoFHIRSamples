@@ -1,0 +1,99 @@
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/46c061efb43c89b12d4e4f9680c4da4d"
+      },
+      "resource": {
+        "dosageInstruction": [
+          {
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "unit": "mg/kg",
+                  "value": 5
+                },
+                "rateQuantity": {
+                  "unit": "mL/h",
+                  "value": 200
+                }
+              }
+            ],
+            "route": {
+              "coding": [
+                {
+                  "code": "C38276",
+                  "display": "Intravenous Route of Administration",
+                  "system": "urn:oid:2.16.840.1.113883.3.26.1.1"
+                }
+              ]
+            },
+            "site": {
+              "coding": [
+                {
+                  "code": "127949000",
+                  "display": "Elbow region structure",
+                  "system": "urn:oid:2.16.840.1.113883.6.96"
+                }
+              ]
+            },
+            "timing": {
+              "event": [
+                "2012-08-01T00:00:00+00:00"
+              ]
+            }
+          }
+        ],
+        "id": "46c061efb43c89b12d4e4f9680c4da4d",
+        "identifier": [
+          {
+            "system": "urn:oid:google/reconciliation-stable-id",
+            "value": "00000000-47c6-6151-ffff-fffffd540bb4"
+          }
+        ],
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "1657066",
+              "display": "4 ML bevacizumab 25 MG/ML Injection",
+              "system": "urn:oid:2.16.840.1.113883.6.88"
+            }
+          ]
+        },
+        "meta": {
+          "extension": [
+            {
+              "url": "urn:oid:google/reconciliation-timestamp",
+              "valueInstant": "2012-08-01T00:00:00+00:00"
+            }
+          ],
+          "tag": [
+            {
+              "code": "/",
+              "system": "urn:oid:data-type/data-source"
+            }
+          ]
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "363406005",
+                "display": "Malignant neoplasm of colon",
+                "system": "urn:oid:2.16.840.1.113883.6.96"
+              }
+            ]
+          }
+        ],
+        "reasonReference": [
+          {
+            "reference": "Condition/b86e798c8961a10cc4340f9731db28c1"
+          }
+        ],
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+        }
+      }
+    }

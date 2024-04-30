@@ -1,0 +1,29 @@
+﻿{
+	"request" : {
+		"method" : "POST",
+		"url" : "MedicationAdministration"
+	},
+	"resource" : {
+		"identifier" : [
+			{
+				"system" : "urn:ietf:rfc:3986",
+				"value" : "6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+			}
+		],
+		"medicationReference" : {
+			"display" : "Medication/urn:ietf:rfc:3986::2a620155-9d11-439e-92b3-5d9815ff4ee8"
+		},
+		"meta" : {
+			"tag" : [
+				{
+					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+					"code" : "SUBSETTED",
+					"display" : "Resource encoded in summary mode"
+				}
+			]
+		},
+		"id" : "6c844c75-aa34-411c-b7bd-5e4a9f206e29",
+		"resourceType" : "MedicationAdministration"
+	},
+	"fullUrl" : "MedicationAdministration/6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+}

@@ -1,0 +1,88 @@
+{
+  "fullUrl": "http://localhost:8000/Immunization/2832",
+  "resource": {
+    "resourceType": "Immunization",
+    "id": "2832",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+      "source": "#GqINef9uN1SPEjfS"
+    },
+    "identifier": [
+      {
+        "use": "official",
+        "value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "88",
+          "display": "Influenza virus vaccine"
+        },
+        {
+          "system": "http://hl7.org/fhir/sid/ndc",
+          "code": "49281-0422-50",
+          "display": "Influenza vaccine"
+        }
+      ],
+      "text": "Influenza Virus Vaccine"
+    },
+    "patient": {
+      "reference": "Patient/2805"
+    },
+    "encounter": {
+      "reference": "Encounter/2808"
+    },
+    "occurrenceDateTime": "2010-08-15",
+    "manufacturer": {
+      "reference": "Organization/2830"
+    },
+    "lotNumber": "1",
+    "site": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "700022004",
+          "display": "Muscle and/or tendon structure of upper limb"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "http://ncicb.nci.nih.gov",
+          "code": "C28161",
+          "display": "Intramuscular Route of Administration"
+        }
+      ]
+    },
+    "doseQuantity": {
+      "value": 60,
+      "system": "http://unitsofmeasure.org",
+      "code": "ug"
+    },
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/2800"
+        }
+      }
+    ],
+    "reaction": [
+      {
+        "date": "2008-05-01",
+        "detail": {
+          "reference": "Observation/2831"
+        }
+      }
+    ],
+    "protocolApplied": [
+      {
+        "doseNumberPositiveInt": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+            "fullUrl": "http://localhost:8000/Procedure/2829",
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "2829",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+                    "source": "#GqINef9uN1SPEjfS"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "value": "64af26d5-88ef-4169-ba16-c6ef16a1824f"
+                    },
+                    {
+                        "use": "official",
+                        "value": "3700b3b0-fbed-11e2-b778-0800200c9a66"
+                    }
+                ],
+                "status": "completed",
+                "code": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "asked-declined"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2805"
+                },
+                "performedPeriod": {
+                    "start": "2010-09-09",
+                    "end": "2010-12-31"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }

@@ -1,0 +1,55 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "Procedure/0f6db2607a154136f3efeba0d350a90f"
+  },
+  "resource": {
+    "resourceType": "Procedure",
+    "id": "0f6db2607a154136f3efeba0d350a90f",
+    "meta": {
+      "extension": [
+        {
+          "url": "urn:oid:google/reconciliation-timestamp",
+          "valueInstant": "2003-05-12T00:00:00+00:00"
+        }
+      ],
+      "tag": [
+        {
+          "code": "/",
+          "system": "urn:oid:data-type/data-source"
+        }
+      ]
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:google/reconciliation-stable-id",
+        "value": "00000000-26f1-bc04-ffff-ffffb1852d21"
+      }
+    ],
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "code": "73761001",
+          "display": "Colonoscopy",
+          "system": "urn:oid:2.16.840.1.113883.6.96"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+    },
+    "performedDateTime": "2003-05-12T00:00:00+00:00",
+    "bodySite": [
+      {
+        "coding": [
+          {
+            "code": "71854001",
+            "display": "Colon structure",
+            "system": "urn:oid:2.16.840.1.113883.6.96"
+          }
+        ]
+      }
+    ]
+  }
+}

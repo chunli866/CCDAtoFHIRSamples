@@ -1,0 +1,32 @@
+﻿{
+	"request" : {
+		"method" : "POST",
+		"url" : "Practitioner"
+	},
+	"resource" : {
+		"identifier" : [
+			{
+				"system" : "urn:oid:2.16.840.1.113883.4.6",
+				"value" : "99999999214"
+			}
+		],
+		"meta" : {
+			"tag" : [
+				{
+					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+					"code" : "SUBSETTED",
+					"display" : "Resource encoded in summary mode"
+				}
+			]
+		},
+		"name" : [
+			{
+				"given" : [ "Henry" ],
+				"family" : "SevenJrObs"
+			}
+		],
+		"id" : "2f74a937-fed9-4c00-b3cb-454bb4f9659c",
+		"resourceType" : "Practitioner"
+	},
+	"fullUrl" : "Practitioner/2f74a937-fed9-4c00-b3cb-454bb4f9659c"
+}

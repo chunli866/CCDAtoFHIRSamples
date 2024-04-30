@@ -1,0 +1,121 @@
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "b1627ce9-60c4-4337-9b16-38a7fcb9e92f",
+        "meta": {
+          "extension": [
+            {
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+              "valueUri": "urn:oid:2.16.840.1.113883"
+            }
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "N"
+            }
+          ],
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+            "value": "b1627ce9-60c4-4337-9b16-38a7fcb9e92f"
+          }
+        ],
+        "status": "active",
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "text": "4 ML bevacizumab 25 MG/ML Injection"
+        },
+        "subject": {
+          "reference": "Patient/18025725"
+        },
+        "encounter": {
+          "reference": "Encounter/adf2de75-5fa6-48a4-a782-48a67baadc60"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "363406005",
+                "display": "Malignant neoplasm of colon"
+              }
+            ],
+            "text": "Malignant neoplasm of colon"
+          }
+        ],
+        "groupIdentifier": {
+          "system": "urn:ietf:rfc:3986",
+          "value": "urn:uuid:2a620155-9d11-439e-92b3-5d9815ff3cc2"
+        },
+        "dosageInstruction": [
+          {
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2012-08-01",
+                  "end": "2012-08-01"
+                }
+              }
+            },
+            "asNeededBoolean": false,
+            "site": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.6.96",
+                  "code": "127949000",
+                  "display": "Elbow region structure"
+                }
+              ],
+              "text": "Elbow region structure"
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "47625008",
+                  "display": "Intravenous Route of Administration"
+                }
+              ],
+              "text": "Intravenous Route of Administration"
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 5,
+                  "unit": "mg/kg",
+                  "system": "http://unitsofmeasure.org",
+                  "code": "mg/kg"
+                },
+                "rateQuantity": {
+                  "value": 200,
+                  "unit": "mL/h"
+                }
+              }
+            ]
+          }
+        ],
+        "dispenseRequest": {
+          "initialFill": {
+            "quantity": {
+              "value": 3
+            }
+          },
+          "numberOfRepeatsAllowed": 2,
+          "quantity": {
+            "value": 2
+          }
+        }
+      }
+    }

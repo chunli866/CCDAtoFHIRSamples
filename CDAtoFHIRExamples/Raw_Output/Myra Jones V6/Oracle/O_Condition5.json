@@ -1,0 +1,84 @@
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "733ea266-3773-4457-95a6-0c43c71205b9",
+        "meta": {
+          "extension": [
+            {
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+              "valueUri": "urn:oid:2.16.840.1.113883"
+            }
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "N"
+            }
+          ],
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.840.114350.1.13.6289.1.7.2.768076",
+            "value": "68993"
+          },
+          {
+            "system": "urn:uuid:093A5380-00CE-11E6-B4C5-0050568B000B",
+            "value": "1.1"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+            "value": "733ea266-3773-4457-95a6-0c43c71205b9"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ],
+          "text": "Active"
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code": "problem-list-item",
+                "display": "Problem List Item"
+              }
+            ],
+            "text": "Problem List Item"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445281000124101",
+              "display": "Nutrition impaired due to limited access to healthful foods (finding)"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.90",
+              "code": "Z59.48",
+              "display": "Other specified lack of adequate food"
+            }
+          ],
+          "text": "problem"
+        },
+        "subject": {
+          "reference": "Patient/18025725"
+        },
+        "encounter": {
+          "reference": "Encounter/adf2de75-5fa6-48a4-a782-48a67baadc60"
+        },
+        "onsetDateTime": "2010-09-09"
+      }
+    }

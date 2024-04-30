@@ -1,0 +1,67 @@
+{
+  "fullUrl": "http://fhir:3447/4_0_0/Immunization/6581e92f2d59f748d8c0f904",
+  "resource": {
+    "resourceType": "Immunization",
+    "id": "6581e92f2d59f748d8c0f904",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+      ]
+    },
+    "language": "en-US",
+    "identifier": [
+      {
+        "system": "urn:uuid:e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "43",
+          "display": "hepatitis B vaccine, adult dosage"
+        }
+      ],
+      "text": "hepatitis B vaccine"
+    },
+    "patient": {
+      "reference": "Patient/6581e92eb6ff5dadc088eae5",
+      "display": "Myra Jones"
+    },
+    "encounter": {
+      "reference": "Encounter/6581e92f2d59f710c5c0f900",
+      "display": "Office/outpatient established low mdm 20-29 min"
+    },
+    "occurrenceDateTime": "2015-11-15T17:00:00.000Z",
+    "_primarySource": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+          "valueCode": "unknown"
+        }
+      ]
+    },
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/6581e92f49c1974e2e579294",
+          "identifier": {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1234123400"
+          },
+          "display": "Provider abc"
+        }
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/6581e92f49c19738cf57929c",
+          "identifier": {
+            "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.3.3",
+            "value": "3"
+          }
+        }
+      }
+    ]
+  }
+}

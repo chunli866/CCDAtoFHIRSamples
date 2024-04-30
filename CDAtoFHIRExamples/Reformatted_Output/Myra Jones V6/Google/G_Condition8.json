@@ -1,0 +1,42 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "Condition/b86e798c8961a10cc4340f9731db28c1"
+  },
+  "resource": {
+    "resourceType": "Condition",
+    "id": "b86e798c8961a10cc4340f9731db28c1",
+    "meta": {
+      "extension": [
+        {
+          "url": "urn:oid:google/reconciliation-timestamp",
+          "valueInstant": "2012-08-01T00:00:00+00:00"
+        }
+      ],
+      "tag": [
+        {
+          "code": "/",
+          "system": "urn:oid:data-type/data-source"
+        }
+      ]
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:google/reconciliation-stable-id",
+        "value": "b86e798c8961a10cc4340f9731db28c1"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "code": "363406005",
+          "display": "Malignant neoplasm of colon",
+          "system": "urn:oid:2.16.840.1.113883.6.96"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+    }
+  }
+}

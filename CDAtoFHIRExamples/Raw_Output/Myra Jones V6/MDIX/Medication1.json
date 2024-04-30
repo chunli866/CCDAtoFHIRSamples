@@ -1,0 +1,30 @@
+﻿{
+	"request" : {
+		"method" : "POST",
+		"url" : "Medication"
+	},
+	"resource" : {
+		"code" : {
+			"coding" : [
+				{
+					"system" : "urn:oid:2.16.840.1.113883.6.88",
+					"code" : "1190220",
+					"display" : "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				}
+			],
+			"text" : "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+		},
+		"meta" : {
+			"tag" : [
+				{
+					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+					"code" : "SUBSETTED",
+					"display" : "Resource encoded in summary mode"
+				}
+			]
+		},
+		"id" : "46508c6d-4600-4b06-8b14-79fb8d2ef4de",
+		"resourceType" : "Medication"
+	},
+	"fullUrl" : "Medication/46508c6d-4600-4b06-8b14-79fb8d2ef4de"
+}

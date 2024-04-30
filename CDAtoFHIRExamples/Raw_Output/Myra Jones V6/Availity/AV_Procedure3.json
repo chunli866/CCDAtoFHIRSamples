@@ -1,0 +1,59 @@
+		{
+			"fullUrl": "http://fhir:3447/4_0_0/Procedure/6581e92f2d59f75ebac0f922",
+			"resource": {
+				"resourceType": "Procedure",
+				"id": "6581e92f2d59f75ebac0f922",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+					]
+				},
+				"language": "en-US",
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+						"value": "545069400001"
+					}
+				],
+				"status": "completed",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "252195001",
+							"display": "Exercise stress test - endocrine"
+						}
+					],
+					"text": "Exercise stress test"
+				},
+				"subject": {
+					"reference": "Patient/6581e92eb6ff5dadc088eae5",
+					"display": "Myra Jones"
+				},
+				"encounter": {
+					"reference": "Encounter/6581e92f2d59f710c5c0f900",
+					"display": "Office/outpatient established low mdm 20-29 min"
+				},
+				"performedDateTime": "2012-08-06T16:00:00.000Z",
+				"recorder": {
+					"reference": "Practitioner/6581e92f49c1974e2e579294",
+					"identifier": {
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1234123400"
+					},
+					"display": "Provider abc"
+				},
+				"performer": [
+					{
+						"actor": {
+							"reference": "Practitioner/6581e92f49c1974e2e579294",
+							"identifier": {
+								"system": "http://hl7.org/fhir/sid/us-npi",
+								"value": "1234123400"
+							},
+							"display": "Provider abc"
+						}
+					}
+				]
+			}
+		}

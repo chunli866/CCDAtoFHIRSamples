@@ -1,0 +1,57 @@
+    {
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "87accaa5-c862-4b66-b80a-09f534c92e73",
+        "meta": {
+          "extension": [
+            {
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+              "valueUri": "urn:oid:2.16.840.1.113883"
+            }
+          ],
+          "security": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+              "code": "N"
+            }
+          ],
+          "tag": [
+            {
+              "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+              "code": "FHIRr4-CR"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:64af26d5-88ef-4169-ba16-c6ef16a1824f"
+          },
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+            "value": "87accaa5-c862-4b66-b80a-09f534c92e73"
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "385767005",
+              "display": "Meals on wheels provision education"
+            }
+          ],
+          "text": "Meals on wheels provision education"
+        },
+        "subject": {
+          "reference": "Patient/18025725"
+        },
+        "encounter": {
+          "reference": "Encounter/adf2de75-5fa6-48a4-a782-48a67baadc60"
+        },
+        "performedPeriod": {
+          "start": "2010-09-09",
+          "end": "2010-12-31"
+        }
+      }
+    }

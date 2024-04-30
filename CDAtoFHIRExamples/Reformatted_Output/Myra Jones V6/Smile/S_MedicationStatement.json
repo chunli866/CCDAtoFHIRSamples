@@ -1,0 +1,48 @@
+{
+  "fullUrl": "http://localhost:8000/MedicationStatement/25215",
+  "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "25215",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2022-11-17T16:31:11.661+00:00"
+    },
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/3.0/StructureDefinition/extension-MedicationStatement.status",
+        "valueCode": "UNKNOWN"
+      }
+    ],
+    "identifier": [
+      {
+        "use": "official",
+        "value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+      }
+    ],
+    "status": "active",
+    "medicationReference": {
+      "reference": "Medication/25216",
+      "display": "Albuterol 0.09 MG/ACTUAT inhalant powder"
+    },
+    "subject": {
+      "reference": "Patient/25209",
+      "display": "Myra Jones"
+    },
+    "effectivePeriod": {
+      "start": "2012-08-06"
+    },
+    "dosage": [
+      {
+        "doseAndRate": [
+          {
+            "doseQuantity": {
+              "value": 1,
+              "unit": "1",
+              "system": "http://unitsofmeasure.org/ucum.html"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

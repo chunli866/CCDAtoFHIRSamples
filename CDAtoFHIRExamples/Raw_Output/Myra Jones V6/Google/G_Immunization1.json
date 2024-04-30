@@ -1,0 +1,93 @@
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Immunization/83307564e850877e31cd2fcd5acb9c2a"
+      },
+      "resource": {
+        "doseQuantity": {
+          "unit": "ug",
+          "value": 60
+        },
+        "id": "83307564e850877e31cd2fcd5acb9c2a",
+        "identifier": [
+          {
+            "system": "urn:oid:google/reconciliation-stable-id",
+            "value": "ffffffff-ecee-769a-0000-0000118f0d6a"
+          }
+        ],
+        "lotNumber": "1",
+        "manufacturer": {
+          "reference": "Organization/00000000-44a7-4cea-ffff-fffffe725fd1"
+        },
+        "meta": {
+          "extension": [
+            {
+              "url": "urn:oid:google/reconciliation-timestamp",
+              "valueInstant": "2010-08-15T00:00:00+00:00"
+            }
+          ],
+          "tag": [
+            {
+              "code": "/",
+              "system": "urn:oid:data-type/data-source"
+            }
+          ]
+        },
+        "occurrenceDateTime": "2010-08-15T00:00:00+00:00",
+        "patient": {
+          "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/ffffffff-9fe7-0837-0000-00001c9dfa04"
+            },
+            "function": {
+              "coding": [
+                {
+                  "code": "AP",
+                  "display": "Administering Provider",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0443"
+                }
+              ]
+            }
+          }
+        ],
+        "primarySource": true,
+        "protocolApplied": [
+          {
+            "doseNumberPositiveInt": 1
+          }
+        ],
+        "reaction": [
+          {
+            "date": "2008-05-01T00:00:00+00:00",
+            "detail": {
+              "reference": "Observation/48e3ed3a89f1ddd249ed2a5457204830"
+            }
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "code": "195967001",
+                "display": "asthma",
+                "system": "urn:oid:2.16.840.1.113883.6.96"
+              }
+            ]
+          }
+        ],
+        "recorded": "2010-08-15T00:00:00+00:00",
+        "resourceType": "Immunization",
+        "route": {
+          "coding": [
+            {
+              "code": "C28161",
+              "display": "Intramuscular Route of Administration",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1"
+            }
+          ]
+        }
+      }
+    }

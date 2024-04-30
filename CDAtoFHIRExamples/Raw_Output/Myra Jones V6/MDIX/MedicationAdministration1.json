@@ -1,0 +1,91 @@
+﻿{
+	"request" : {
+		"method" : "POST",
+		"url" : "MedicationAdministration"
+	},
+	"resource" : {
+		"identifier" : [
+			{
+				"system" : "urn:ietf:rfc:3986",
+				"value" : "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+			}
+		],
+		"dosage" : {
+			"dose" : {
+				"value" : 1
+			},
+			"route" : {
+				"coding" : [
+					{
+						"system" : "urn:oid:2.16.840.1.113883.3.26.1.1",
+						"code" : "C38288",
+						"display" : "Oral Route of Administration"
+					}
+				],
+				"text" : "Oral Route of Administration"
+			},
+			"method" : {
+				"coding" : [
+					{
+						"system" : "urn:oid:2.16.840.1.113883.3.26.1.1",
+						"code" : "C48501",
+						"display" : "Inhalation dosing unit"
+					}
+				],
+				"text" : "Inhalation dosing unit"
+			},
+			"rateQuantity" : {
+				"unit" : "mL/h",
+				"value" : 200
+			}
+		},
+		"performer" : [
+			{
+				"actor" : {
+					"display" : "Practitioner/2.16.840.1.113883.4.6::2222222222"
+				}
+			}
+		],
+		"effectivePeriod" : {
+			"start" : "2012-08-06"
+		},
+		"meta" : {
+			"tag" : [
+				{
+					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+					"code" : "SUBSETTED",
+					"display" : "Resource encoded in summary mode"
+				}
+			]
+		},
+		"subject" : {
+			"display" : "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+		},
+		"id" : "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
+		"reasonCode" : [
+			{
+				"coding" : [
+					{
+						"system" : "urn:oid:2.16.840.1.113883.6.96",
+						"code" : "56018004",
+						"display" : "wheezing"
+					}
+				],
+				"text" : "wheezing"
+			}
+		],
+		"medicationCodeableConcept" : {
+			"coding" : [
+				{
+					"system" : "urn:oid:2.16.840.1.113883.6.88",
+					"code" : "1190220",
+					"display" : "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				}
+			],
+			"text" : "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+		},
+		"resourceType" : "MedicationAdministration",
+		"status" : "in-progress"
+	},
+	"fullUrl" : "MedicationAdministration/cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+}

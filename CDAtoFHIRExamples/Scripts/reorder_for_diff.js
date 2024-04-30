@@ -53,6 +53,7 @@ const recurse_directories = function (filepath) {
     console.log(`mkdir ${filepath.replace('../Raw_Output', '../Reformatted_Output')}`);
     fs.mkdirSync(`${filepath.replace('../Raw_Output', '../Reformatted_Output')}`);
   }
+  if (filepath.endsWith('.DS_Store')) return;
   let files = fs.readdirSync(filepath);
   for (let i = 0; i < files.length; i++) {
     fs.stat(`${filepath}/${files[i]}`, (err, stats) => {

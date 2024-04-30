@@ -1,0 +1,46 @@
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Condition/fdb8603326d1d4c2d2db1e0c8b7ae965"
+      },
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "56018004",
+              "display": "wheezing",
+              "system": "urn:oid:2.16.840.1.113883.6.96"
+            }
+          ]
+        },
+        "id": "fdb8603326d1d4c2d2db1e0c8b7ae965",
+        "identifier": [
+          {
+            "system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.3",
+            "value": "44"
+          },
+          {
+            "system": "urn:oid:google/reconciliation-stable-id",
+            "value": "ffffffff-a50a-9a08-0000-000031c48152"
+          }
+        ],
+        "meta": {
+          "extension": [
+            {
+              "url": "urn:oid:google/reconciliation-timestamp",
+              "valueInstant": "2016-10-03T18:27:10.000+00:00"
+            }
+          ],
+          "tag": [
+            {
+              "code": "/",
+              "system": "urn:oid:data-type/data-source"
+            }
+          ]
+        },
+        "resourceType": "Condition",
+        "subject": {
+          "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+        }
+      }
+    }

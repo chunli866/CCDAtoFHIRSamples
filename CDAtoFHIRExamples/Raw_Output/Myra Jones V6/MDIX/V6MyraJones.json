@@ -1,0 +1,2340 @@
+{
+	"entry": [
+		{
+			"request": {
+				"method": "POST",
+				"url": "Practitioner"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+						"value": "92698"
+					},
+					{
+						"system": "urn:oid:2.16.840.1.113883.4.6",
+						"value": "1234123400"
+					}
+				],
+				"address": [
+					{
+						"city": "Chicago",
+						"use": "home",
+						"line": [
+							"123 main street"
+						],
+						"postalCode": "60629",
+						"state": "IL"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": [
+					{
+						"given": [
+							"Provider"
+						],
+						"family": "abc"
+					}
+				],
+				"telecom": [
+					{
+						"system": "email",
+						"use": "work",
+						"value": "provider@allsripts.com"
+					}
+				],
+				"id": "988b7757-1cb6-4595-9559-aad1cda46995",
+				"resourceType": "Practitioner"
+			},
+			"fullUrl": "Practitioner/988b7757-1cb6-4595-9559-aad1cda46995"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Practitioner"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.3.3",
+						"value": "3"
+					}
+				],
+				"address": [
+					{
+						"city": "Chicago",
+						"use": "home",
+						"line": [
+							"123 main street"
+						],
+						"postalCode": "60629",
+						"state": "IL"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "work",
+						"value": "+1-(676)857-6769"
+					}
+				],
+				"id": "2cf4871e-f109-48b9-8ca9-d7bbde4297ed",
+				"resourceType": "Practitioner"
+			},
+			"fullUrl": "Practitioner/2cf4871e-f109-48b9-8ca9-d7bbde4297ed"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Practitioner"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.4.6",
+						"value": "99999999214"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": [
+					{
+						"given": [
+							"Henry"
+						],
+						"family": "SevenJrObs"
+					}
+				],
+				"id": "2f74a937-fed9-4c00-b3cb-454bb4f9659c",
+				"resourceType": "Practitioner"
+			},
+			"fullUrl": "Practitioner/2f74a937-fed9-4c00-b3cb-454bb4f9659c"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Practitioner"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+						"value": "2981824"
+					}
+				],
+				"address": [
+					{
+						"country": "US",
+						"city": "Ann Arbor",
+						"line": [
+							"1021 Health Drive"
+						],
+						"postalCode": "99099",
+						"state": "MI"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": [
+					{
+						"given": [
+							"Amanda"
+						],
+						"family": "Assigned"
+					}
+				],
+				"id": "dc69cefa-5d90-4333-8ab5-5c76cc228fb3",
+				"resourceType": "Practitioner"
+			},
+			"fullUrl": "Practitioner/dc69cefa-5d90-4333-8ab5-5c76cc228fb3"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Patient"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+						"value": "160920144139807"
+					}
+				],
+				"extension": [
+					{
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "2.16.840.1.113883.5.1076",
+									"code": "1013",
+									"display": "Christian (non-Catholic, non-specific)"
+								}
+							]
+						},
+						"url": "http://hl7.org/fhir/StructureDefinition/patient-religion"
+					},
+					{
+						"valueAddress": {
+							"country": "US",
+							"city": "Beaverton",
+							"line": [
+								"[4444 Home Street]"
+							],
+							"postalCode": "97867",
+							"state": "OR"
+						},
+						"url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+					},
+					{
+						"extension": [
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2106-3",
+									"display": "White"
+								},
+								"url": "ombCategory"
+							},
+							{
+								"valueString": "White",
+								"url": "text"
+							},
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2106-3",
+									"display": "White"
+								},
+								"url": "detailed"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+					},
+					{
+						"extension": [
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2135-2",
+									"display": "Hispanic or Latino"
+								},
+								"url": "ombCategory"
+							},
+							{
+								"valueString": "Hispanic or Latino",
+								"url": "text"
+							},
+							{
+								"valueCoding": {
+									"system": "2.16.840.1.113883.6.238",
+									"code": "2135-2",
+									"display": "Hispanic or Latino"
+								},
+								"url": "detailed"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+					}
+				],
+				"address": [
+					{
+						"city": "Beaverton",
+						"use": "home",
+						"line": [
+							"1357 Amber Drive"
+						],
+						"postalCode": "97006",
+						"state": "OR"
+					}
+				],
+				"gender": "female",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": [
+					{
+						"given": [
+							"Myra"
+						],
+						"use": "usual",
+						"family": "Jones"
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "mobile",
+						"value": "+1(565)867-5309"
+					}
+				],
+				"id": "f97dc4b4-e6fb-44ca-84da-ab2cfdd90736",
+				"communication": [
+					{
+						"language": {
+							"coding": [
+								{
+									"system": "urn:ietf:bcp:47",
+									"code": "en"
+								}
+							]
+						},
+						"preferred": true
+					}
+				],
+				"birthDate": "1947-05-01",
+				"maritalStatus": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.5.2",
+							"code": "M",
+							"display": "Married"
+						}
+					],
+					"text": "Married"
+				},
+				"resourceType": "Patient"
+			},
+			"fullUrl": "Patient/f97dc4b4-e6fb-44ca-84da-ab2cfdd90736"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Organization"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+						"value": "3"
+					}
+				],
+				"address": [
+					{
+						"city": "Chicago",
+						"use": "home",
+						"line": [
+							"123 main street"
+						],
+						"postalCode": "60629",
+						"state": "IL"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"name": "Primary Care's Partners Test",
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "work",
+						"value": "+1-(676)857-6769"
+					}
+				],
+				"id": "ea79b714-8db5-4e52-b871-6ff2924e88a2",
+				"resourceType": "Organization"
+			},
+			"fullUrl": "Organization/ea79b714-8db5-4e52-b871-6ff2924e88a2"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545069300001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545069300001"
+					}
+				],
+				"note": [
+					{
+						"text": "Pneumonia"
+					}
+				],
+				"recorder": {
+					"display": "Practitioner/2.16.840.1.113883.4.6::99999999"
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "233604007",
+							"display": "Pneumonia"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.103",
+							"code": "486"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "J18.9"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+							"code": "87580"
+						}
+					],
+					"text": "Pneumonia"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"recordedDate": "2010-08-15",
+				"id": "9f50bed7-9791-44fd-8133-0576908220ac",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006"
+							}
+						]
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2012-08-06",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/9f50bed7-9791-44fd-8133-0576908220ac"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545077400017"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.1.2.1",
+						"value": "545077400019"
+					}
+				],
+				"note": [
+					{
+						"text": "Asthma"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "195967001"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.103",
+							"code": "493.90"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "J45.909"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+							"code": "94262"
+						}
+					],
+					"text": "Asthma"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "3b299b2e-c27a-49b1-9dfb-f5629291bbac",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006"
+							}
+						]
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2010-08-15",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/3b299b2e-c27a-49b1-9dfb-f5629291bbac"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.99930.3.4.1.3",
+						"value": "44"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "56018004",
+							"display": "wheezing"
+						}
+					],
+					"text": "wheezing"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "cea05075-bb25-409b-8c4a-33c366a87338",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006",
+								"display": "Problem"
+							},
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.1",
+								"code": "75326-9",
+								"display": "Problem"
+							}
+						],
+						"text": "Problem"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2012-08-15",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/cea05075-bb25-409b-8c4a-33c366a87338"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.4.111.0.4.1.2.1",
+						"value": "10241108"
+					}
+				],
+				"recorder": {
+					"display": "Practitioner/2.16.840.1.113883.4.6::66666"
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "363746003",
+							"display": "Acute pharyngitis"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.103",
+							"code": "462",
+							"display": "Acute pharyngitis"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "J02.9",
+							"display": "Acute pharyngitis"
+						}
+					],
+					"text": "Acute pharyngitis"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"abatementDateTime": "2014-04-05T23:59:59-05:00",
+				"recordedDate": "2014-04-07",
+				"id": "22ccb962-bd00-41f8-8397-4fe0b35cf12e",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006",
+								"display": "Problem"
+							},
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.1",
+								"code": "75326-9",
+								"display": "Problem"
+							}
+						],
+						"text": "Problem"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2014-04-02",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/22ccb962-bd00-41f8-8397-4fe0b35cf12e"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.2.840.114350.1.13.6289.1.7.2.768076",
+						"value": "68993"
+					},
+					{
+						"system": "093A5380-00CE-11E6-B4C5-0050568B000B",
+						"value": "1.1"
+					}
+				],
+				"note": [
+					{
+						"text": "problem                            "
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "445281000124101",
+							"display": "Nutrition impaired due to limited access to healthful foods (finding)"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "Z59.48",
+							"display": "Other specified lack of adequate food"
+						}
+					],
+					"text": "Nutrition impaired due to limited access to healthful foods (finding)"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "746b5921-83d1-4847-b7a3-6e865226fbdd",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006",
+								"display": "Problem"
+							},
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.1",
+								"code": "75326-9",
+								"display": "Problem"
+							}
+						],
+						"text": "Problem"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2010-09-09",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/746b5921-83d1-4847-b7a3-6e865226fbdd"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "31f50d78-9870-11ee-b9d1-0242ac120002"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "414916001",
+							"display": "Obesity"
+						}
+					],
+					"text": "Obesity"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "c7956382-e247-4fa5-8cb0-c4ffd4144ab3",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "55607006",
+								"display": "Problem"
+							},
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.1",
+								"code": "75326-9",
+								"display": "Problem"
+							}
+						],
+						"text": "Problem"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						],
+						"text": "Problem List Item"
+					}
+				],
+				"onsetDateTime": "2003",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/c7956382-e247-4fa5-8cb0-c4ffd4144ab3"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "AllergyIntolerance"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
+						"value": "545077400001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.10.2",
+						"value": "545077400003"
+					}
+				],
+				"recorder": {
+					"display": "Practitioner/2.16.840.1.113883.4.6::99999999"
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1191"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "293586001"
+						}
+					]
+				},
+				"reaction": [
+					{
+						"severity": "severe",
+						"note": [
+							{
+								"text": "Hives"
+							}
+						],
+						"manifestation": [
+							{
+								"coding": [
+									{
+										"system": "urn:oid:2.16.840.1.113883.6.96",
+										"code": "247472004",
+										"display": "Wheal"
+									}
+								],
+								"text": "Wheal"
+							}
+						],
+						"id": "urn:ietf:rfc:3986::d89ce431-e0f1-4f8d-a81f-489b6ed91f09",
+						"onset": "2008-05-01"
+					}
+				],
+				"recordedDate": "2014-01-04",
+				"criticality": "CRITH",
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					],
+					"text": "Active"
+				},
+				"type": "intolerance",
+				"onsetDateTime": "2008-05-01",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "545077400001",
+				"category": [
+					"medication"
+				],
+				"resourceType": "AllergyIntolerance"
+			},
+			"fullUrl": "AllergyIntolerance/545077400001"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "AllergyIntolerance"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "55ac1612-2d3f-4084-b687-0997446cabad"
+					}
+				],
+				"recorder": {
+					"display": "Practitioner/2.16.840.1.113883.4.6::99999999"
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "762952008",
+							"display": "Peanut"
+						}
+					],
+					"text": "Peanut"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"recordedDate": "2014-01-04",
+				"id": "55ac1612-2d3f-4084-b687-0997446cabad",
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					],
+					"text": "Active"
+				},
+				"type": "allergy",
+				"category": [
+					"food"
+				],
+				"onsetDateTime": "2006",
+				"resourceType": "AllergyIntolerance"
+			},
+			"fullUrl": "AllergyIntolerance/55ac1612-2d3f-4084-b687-0997446cabad"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "AllergyIntolerance"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "55ac1612-2d3f-4084-b687-0997446cabad"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "762952008",
+							"display": "Peanut"
+						}
+					],
+					"text": "Peanut"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "55ac1612-2d3f-4084-b687-0997446cabad",
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					],
+					"text": "Active"
+				},
+				"type": "allergy",
+				"category": [
+					"food"
+				],
+				"onsetDateTime": "2003",
+				"resourceType": "AllergyIntolerance"
+			},
+			"fullUrl": "AllergyIntolerance/55ac1612-2d3f-4084-b687-0997446cabad"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationAdministration"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+					}
+				],
+				"dosage": {
+					"dose": {
+						"value": 1
+					},
+					"route": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+								"code": "C38288",
+								"display": "Oral Route of Administration"
+							}
+						],
+						"text": "Oral Route of Administration"
+					},
+					"method": {
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+								"code": "C48501",
+								"display": "Inhalation dosing unit"
+							}
+						],
+						"text": "Inhalation dosing unit"
+					},
+					"rateQuantity": {
+						"unit": "mL/h",
+						"value": 200
+					}
+				},
+				"performer": [
+					{
+						"actor": {
+							"display": "Practitioner/2.16.840.1.113883.4.6::2222222222"
+						}
+					}
+				],
+				"effectivePeriod": {
+					"start": "2012-08-06"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "cdbd33f0-6cde-11db-9fe1-0800200c9a66",
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "56018004",
+								"display": "wheezing"
+							}
+						],
+						"text": "wheezing"
+					}
+				],
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"resourceType": "MedicationAdministration",
+				"status": "in-progress"
+			},
+			"fullUrl": "MedicationAdministration/cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationAdministration"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "6c844c75-aa34-411c-b7bd-5e4a9f206e29",
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "363406005",
+								"display": "Malignant neoplasm of colon"
+							}
+						],
+						"text": "Malignant neoplasm of colon"
+					}
+				],
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1657066",
+							"display": "4 ML bevacizumab 25 MG/ML Injection"
+						}
+					],
+					"text": "4 ML bevacizumab 25 MG/ML Injection"
+				},
+				"resourceType": "MedicationAdministration",
+				"status": "in-progress"
+			},
+			"fullUrl": "MedicationAdministration/6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+						"value": "545069400001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+						"value": "545069400003"
+					}
+				],
+				"recorder": {
+					"display": "Practitioner/2.16.840.1.113883.4.6::99999999"
+				},
+				"bodySite": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "416550000",
+								"display": "Chest and/or abdomen structure"
+							}
+						],
+						"text": "Chest and/or abdomen structure"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "416940007",
+							"display": "H/O chest x-ray"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.103",
+							"code": "V15.89"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.90",
+							"code": "Z92.89"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+							"code": "2782946"
+						}
+					],
+					"text": "H/O chest x-ray"
+				},
+				"performer": [
+					{
+						"actor": {
+							"display": "Practitioner/2.16.840.1.113883.19.5.9999.456::2981824"
+						}
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "cd40167e-7cbc-4337-8543-ab462be5a4c0",
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "56018004",
+								"display": "Wheezing"
+							}
+						],
+						"text": "Wheezing"
+					}
+				],
+				"performedDateTime": "2012-08-16",
+				"resourceType": "Procedure",
+				"status": "completed"
+			},
+			"fullUrl": "Procedure/cd40167e-7cbc-4337-8543-ab462be5a4c0"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "d5b614bd-01ce-410d-8726-e1fd01dcc72a"
+					}
+				],
+				"bodySite": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "71854001",
+								"display": "Colon structure"
+							}
+						],
+						"text": "Colon structure"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "73761001",
+							"display": "Colonoscopy"
+						}
+					],
+					"text": "Colonoscopy"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "adc2d97c-a9dd-4014-bb24-1ec894f8e0d3",
+				"performedDateTime": "2003-05-12",
+				"resourceType": "Procedure",
+				"status": "completed"
+			},
+			"fullUrl": "Procedure/adc2d97c-a9dd-4014-bb24-1ec894f8e0d3"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+						"value": "545069400001"
+					},
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+						"value": "545069400003"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "252195001",
+							"display": "Exercise stress test"
+						}
+					],
+					"text": "Exercise stress test"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "1abd3d1e-36eb-47ce-8ffe-f0f8aa8bbb42",
+				"performedDateTime": "2012-08-06",
+				"resourceType": "Procedure",
+				"status": "completed"
+			},
+			"fullUrl": "Procedure/1abd3d1e-36eb-47ce-8ffe-f0f8aa8bbb42"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Procedure"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "64af26d5-88ef-4169-ba16-c6ef16a1824f"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "385767005",
+							"display": "Meals on wheels provision education"
+						}
+					],
+					"text": "Meals on wheels provision education"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "b977fb9c-6e55-44a7-8b71-95b5d18787c2",
+				"performedPeriod": {
+					"start": "2010-09-09",
+					"end": "2010-12-31"
+				},
+				"resourceType": "Procedure",
+				"status": "completed"
+			},
+			"fullUrl": "Procedure/b977fb9c-6e55-44a7-8b71-95b5d18787c2"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Immunization"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+					}
+				],
+				"note": [
+					{
+						"text": "Influenza Virus Vaccine 1 8\/15\/2010 Completed"
+					}
+				],
+				"performer": [
+					{
+						"actor": {
+							"display": "Practitioner/2.16.840.1.113883.19.5.9999.456::2981824"
+						},
+						"function": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+									"code": "AP",
+									"display": "Administering Provider"
+								}
+							],
+							"text": "Administering Provider"
+						}
+					}
+				],
+				"reaction": [
+					{
+						"date": "2008-05-01"
+					}
+				],
+				"doseQuantity": {
+					"unit": "ug",
+					"value": 60
+				},
+				"lotNumber": "1",
+				"recorded": "2010-08-15",
+				"manufacturer": {
+					"display": "Health LS - Immuno Inc."
+				},
+				"site": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "700022004",
+							"display": "Muscle and/or tendon structure of upper limb"
+						}
+					],
+					"text": "Muscle and/or tendon structure of upper limb"
+				},
+				"route": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+							"code": "C28161",
+							"display": "Intramuscular Route of Administration"
+						}
+					],
+					"text": "Intramuscular Route of Administration"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"protocolApplied": [
+					{
+						"doseNumberPositiveInt": 1
+					}
+				],
+				"occurrenceDateTime": "2010-08-15",
+				"id": "2b622767-4560-46ba-a1ac-58092fcdcdda",
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.96",
+								"code": "195967001",
+								"display": "asthma"
+							}
+						],
+						"text": "asthma"
+					}
+				],
+				"vaccineCode": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.12.292",
+							"code": "88",
+							"display": "Influenza virus vaccine"
+						},
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.69",
+							"code": "49281-0422-50",
+							"display": "Influenza vaccine"
+						}
+					],
+					"text": "Influenza virus vaccine"
+				},
+				"resourceType": "Immunization",
+				"status": "completed"
+			},
+			"fullUrl": "Immunization/2b622767-4560-46ba-a1ac-58092fcdcdda"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Immunization"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+					}
+				],
+				"note": [
+					{
+						"text": "Influenza Virus Vaccine 1 11\/15\/2015 Noo given (patient objection)"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"occurrenceDateTime": "2015-11-15",
+				"id": "4875ee7d-5a75-4d56-8179-c4c9c6b4dc46",
+				"lotNumber": "2",
+				"vaccineCode": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.12.292",
+							"code": "43",
+							"display": "hepatitis B vaccine, adult dosage"
+						}
+					],
+					"text": "hepatitis B vaccine, adult dosage"
+				},
+				"resourceType": "Immunization",
+				"status": "completed"
+			},
+			"fullUrl": "Immunization/4875ee7d-5a75-4d56-8179-c4c9c6b4dc46"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			},
+			"resource": {
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "449868002",
+							"display": "Current every day smoker"
+						}
+					],
+					"text": "Current every day smoker"
+				},
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.19",
+						"value": "123456789"
+					}
+				],
+				"note": [
+					{
+						"text": "Status: Current every day smoker Detail: Moderate smoker (10-19 cigs\/day) Started: 1992 Stopped: Recorded June 6, 2014 10:32am"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "72166-2",
+							"display": "Tobacco smoking status NHIS"
+						}
+					],
+					"text": "Tobacco smoking status NHIS"
+				},
+				"effectiveDateTime": "2014-06-06T10:32:00-05:00",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "68921156-7bde-4ab9-8989-833f59820b3a",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "social-history",
+								"display": "Social History"
+							}
+						],
+						"text": "Social History"
+					}
+				],
+				"resourceType": "Observation",
+				"status": "final"
+			},
+			"fullUrl": "Observation/68921156-7bde-4ab9-8989-833f59820b3a"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "DiagnosticReport"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+						"value": "1"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "24357-6"
+						}
+					],
+					"text": "Urinanalysis macro (dipstick) panel"
+				},
+				"effectivePeriod": {
+					"start": "2015-06-22",
+					"end": "2015-06-22"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "b2431754-7612-4371-9f73-b2b5509ee573",
+				"resourceType": "DiagnosticReport",
+				"status": "final"
+			},
+			"fullUrl": "DiagnosticReport/b2431754-7612-4371-9f73-b2b5509ee573"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:2.16.840.1.113883.3.42.126.100001.19",
+						"value": "216881330410151584"
+					}
+				],
+				"note": [
+					{
+						"text": "80 \/min"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "8867-4",
+							"display": "HEART RATE"
+						}
+					],
+					"text": "HEART RATE"
+				},
+				"effectiveDateTime": "2014-06-06T10:32:00-05:00",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "09a421e6-3d54-43e4-bf0e-10ea908cf272",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"resourceType": "Observation",
+				"status": "final",
+				"valueQuantity": {
+					"unit": "/min",
+					"value": 80
+				}
+			},
+			"fullUrl": "Observation/09a421e6-3d54-43e4-bf0e-10ea908cf272"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Encounter"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "2a620155-9d11-439e-92b3-5d9815ff4de8"
+					}
+				],
+				"period": {
+					"start": "2012-08-15T10:00:00-08:00"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"serviceProvider": {
+					"display": "Organization/1.3.6.1.4.1.22812.3.2009316.3::3"
+				},
+				"id": "a0e0e9b2-83cf-43ff-9350-494c80950eeb",
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.6.12",
+								"code": "99213",
+								"display": "Office/outpatient established low mdm 20-29 min"
+							}
+						],
+						"text": "Office/outpatient established low mdm 20-29 min"
+					}
+				],
+				"class": {
+					"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+					"code": "IMP",
+					"display": "inpatient encounter"
+				},
+				"participant": [
+					{
+						"type": [
+							{
+								"coding": [
+									{
+										"system": "urn:oid:2.16.840.1.113883.6.101",
+										"code": "207R00000X",
+										"display": "Internal Medicine"
+									}
+								],
+								"text": "Internal Medicine"
+							},
+							{
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationTypehttp://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+										"code": "PPR",
+										"display": "primary performer"
+									}
+								],
+								"text": "primary performer"
+							}
+						]
+					}
+				],
+				"resourceType": "Encounter",
+				"status": "unknown"
+			},
+			"fullUrl": "Encounter/a0e0e9b2-83cf-43ff-9350-494c80950eeb"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "RelatedPerson"
+			},
+			"resource": {
+				"address": [
+					{
+						"city": "Beaverton",
+						"use": "home",
+						"line": [
+							"123 main street"
+						],
+						"postalCode": "97867",
+						"state": "OR"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"patient": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"name": [
+					{
+						"given": [
+							"Boris",
+							"Bo"
+						],
+						"family": "Betterhalf"
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"use": "mobile",
+						"value": "+1(555)555-2008"
+					}
+				],
+				"id": "00c4ddf7-aaf5-46f4-b763-7e833688bbcd",
+				"relationship": [
+					{
+						"coding": [
+							{
+								"system": "urn:oid:2.16.840.1.113883.5.111",
+								"code": "POWATT",
+								"display": "Power of Attorney"
+							}
+						],
+						"text": "Power of Attorney"
+					},
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v2-0063",
+								"code": "GRD",
+								"display": "Guardian"
+							}
+						],
+						"text": "Guardian"
+					}
+				],
+				"resourceType": "RelatedPerson"
+			},
+			"fullUrl": "RelatedPerson/00c4ddf7-aaf5-46f4-b763-7e833688bbcd"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationDispense"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.2.3.4.56789.1",
+						"value": "cb734647-fc99-424c-a864-7e3cda82e704"
+					}
+				],
+				"quantity": {
+					"value": 3
+				},
+				"whenPrepared": "2012-08-06T16:03:00",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"whenHandedOver": "2012-08-06T16:03:00",
+				"id": "cb734647-fc99-424c-a864-7e3cda82e704",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"resourceType": "MedicationDispense",
+				"status": "unknown"
+			},
+			"fullUrl": "MedicationDispense/cb734647-fc99-424c-a864-7e3cda82e704"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Medication"
+			},
+			"resource": {
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "46508c6d-4600-4b06-8b14-79fb8d2ef4de",
+				"resourceType": "Medication"
+			},
+			"fullUrl": "Medication/46508c6d-4600-4b06-8b14-79fb8d2ef4de"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationRequest"
+			},
+			"resource": {
+				"extension": [
+					{
+						"valueCoding": {
+							"code": "completed"
+						},
+						"url": "http://ldcs.healthconcourse/com/fhir/StructureDefinition/medReqStatus#MedicationRequest"
+					}
+				],
+				"authoredOn": "2012-08-01",
+				"dispenseRequest": {
+					"quantity": {
+						"value": 3
+					},
+					"numberOfRepeatsAllowed": 2
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "aba2fc75-1a43-435f-8309-d24e4be5f1cd",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"intent": "filler-order",
+				"resourceType": "MedicationRequest",
+				"status": "unknown"
+			},
+			"fullUrl": "MedicationRequest/aba2fc75-1a43-435f-8309-d24e4be5f1cd"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Medication"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "2a620155-9d11-439e-92b3-5d9815ff4ee8"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "2a620155-9d11-439e-92b3-5d9815ff4ee8",
+				"resourceType": "Medication"
+			},
+			"fullUrl": "Medication/2a620155-9d11-439e-92b3-5d9815ff4ee8"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Observation"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.3.6.1.4.1.22812.20.1.1.4.5",
+						"value": "13"
+					}
+				],
+				"note": [
+					{
+						"text": "Specific gravity of Urine by Test strip 1.015 Range: 1.005 - 1.030"
+					}
+				],
+				"referenceRange": [
+					{
+						"high": {
+							"value": 1.03
+						},
+						"low": {
+							"value": 1.005
+						},
+						"text": "1.005 - 1.030"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.1",
+							"code": "5811-5",
+							"display": "Specific gravity of Urine by Test strip"
+						}
+					],
+					"text": "Specific gravity of Urine by Test strip"
+				},
+				"effectiveDateTime": "2014-06-06T10:32:00-05:00",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "43f85f4f-d512-4970-b4e6-1c64d2d88e41",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory",
+								"display": "Laboratory"
+							}
+						],
+						"text": "Laboratory"
+					}
+				],
+				"resourceType": "Observation",
+				"status": "final",
+				"valueQuantity": {
+					"value": 1.015
+				}
+			},
+			"fullUrl": "Observation/43f85f4f-d512-4970-b4e6-1c64d2d88e41"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "db734647-fc99-424c-a864-7e3cda82e704"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.96",
+							"code": "64109004",
+							"display": "Costal Chondritis"
+						}
+					],
+					"text": "Costal Chondritis"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"subject": {
+					"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+				},
+				"id": "61163751-1f9c-49f5-a75c-3d08aba2fb35",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "encounter-diagnosis",
+								"display": "Encounter Diagnosis"
+							}
+						],
+						"text": "Encounter Diagnosis"
+					}
+				],
+				"onsetDateTime": "2012-08-15",
+				"resourceType": "Condition"
+			},
+			"fullUrl": "Condition/61163751-1f9c-49f5-a75c-3d08aba2fb35"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationDispense"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:oid:1.2.3.4.56789.1",
+						"value": "cb734647-fc99-424c-a864-7e3cda82e704"
+					}
+				],
+				"partOf": [
+					{
+						"display": "Procedure/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400001"
+					},
+					{
+						"display": "Procedure/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400003"
+					},
+					{
+						"display": "Procedure/urn:ietf:rfc:3986::d5b614bd-01ce-410d-8726-e1fd01dcc72a"
+					},
+					{
+						"display": "Procedure/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400001"
+					},
+					{
+						"display": "Procedure/1.3.6.1.4.1.22812.3.2009316.3.4.7::545069400003"
+					},
+					{
+						"display": "Procedure/urn:ietf:rfc:3986::64af26d5-88ef-4169-ba16-c6ef16a1824f"
+					}
+				],
+				"quantity": {
+					"value": 1
+				},
+				"whenPrepared": "2012-08-06T16:03:00",
+				"receiver": [
+					{
+						"display": "Patient/1.3.6.1.4.1.22812.3.2009316.3::160920144139807"
+					}
+				],
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"context": {
+					"display": "Encounter/urn:ietf:rfc:3986::2a620155-9d11-439e-92b3-5d9815ff4de8"
+				},
+				"whenHandedOver": "2012-08-06T16:03:00",
+				"id": "cb734647-fc99-424c-a864-7e3cda82e704",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"resourceType": "MedicationDispense",
+				"status": "unknown"
+			},
+			"fullUrl": "MedicationDispense/cb734647-fc99-424c-a864-7e3cda82e704"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationRequest"
+			},
+			"resource": {
+				"authoredOn": "2012-08-01",
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "aba2fc75-1a43-435f-8309-d24e4be5f1cd",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.113883.6.88",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					],
+					"text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+				},
+				"intent": "filler-order",
+				"resourceType": "MedicationRequest",
+				"status": "unknown"
+			},
+			"fullUrl": "MedicationRequest/aba2fc75-1a43-435f-8309-d24e4be5f1cd"
+		},
+		{
+			"request": {
+				"method": "POST",
+				"url": "MedicationAdministration"
+			},
+			"resource": {
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+					}
+				],
+				"medicationReference": {
+					"display": "Medication/urn:ietf:rfc:3986::2a620155-9d11-439e-92b3-5d9815ff4ee8"
+				},
+				"meta": {
+					"tag": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "SUBSETTED",
+							"display": "Resource encoded in summary mode"
+						}
+					]
+				},
+				"id": "6c844c75-aa34-411c-b7bd-5e4a9f206e29",
+				"resourceType": "MedicationAdministration"
+			},
+			"fullUrl": "MedicationAdministration/6c844c75-aa34-411c-b7bd-5e4a9f206e29"
+		}
+	],
+	"meta": {
+		"tag": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+				"code": "SUBSETTED",
+				"display": "Resource encoded in summary mode"
+			}
+		]
+	},
+	"type": "transaction",
+	"resourceType": "Bundle",
+	"timestamp": "transaction"
+}

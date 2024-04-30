@@ -1,0 +1,93 @@
+{
+  "fullUrl": "http://fhir:3447/4_0_0/Procedure/6581e92f2d59f729e6c0f920",
+  "resource": {
+    "resourceType": "Procedure",
+    "id": "6581e92f2d59f729e6c0f920",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+      ]
+    },
+    "language": "en-US",
+    "identifier": [
+      {
+        "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3.4.7",
+        "value": "545069400001"
+      }
+    ],
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "416940007",
+          "display": "Past history of procedure"
+        },
+        {
+          "system": "http://hl7.org/fhir/sid/icd-9-cm",
+          "code": "V15.89"
+        },
+        {
+          "system": "http://hl7.org/fhir/sid/icd-10-cm",
+          "code": "Z9289",
+          "display": "Personal history of other medical treatment"
+        },
+        {
+          "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+          "code": "2782946"
+        }
+      ],
+      "text": "H/O chest x-ray"
+    },
+    "subject": {
+      "reference": "Patient/6581e92eb6ff5dadc088eae5",
+      "display": "Myra Jones"
+    },
+    "encounter": {
+      "reference": "Encounter/6581e92f2d59f710c5c0f900",
+      "display": "Office/outpatient established low mdm 20-29 min"
+    },
+    "performedDateTime": "2012-08-16T16:00:00.000Z",
+    "recorder": {
+      "reference": "Practitioner/6581e92f49c197f20157929e",
+      "identifier": {
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "99999999"
+      },
+      "display": "Henry SevenObs"
+    },
+    "performer": [
+      {
+        "actor": {
+          "reference": "Practitioner/6581e92f49c1976af15792a7",
+          "identifier": {
+            "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+            "value": "2981824"
+          },
+          "display": "Amanda Assigned"
+        }
+      },
+      {
+        "actor": {
+          "reference": "Practitioner/6581e92f49c1974e2e579294",
+          "identifier": {
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1234123400"
+          },
+          "display": "Provider abc"
+        }
+      }
+    ],
+    "bodySite": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "416550000",
+            "display": "Chest and/or abdomen structure"
+          }
+        ]
+      }
+    ]
+  }
+}

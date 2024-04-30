@@ -1,0 +1,175 @@
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Patient/d1e4c091e9e9d73b1106b0fecd557540"
+      },
+      "resource": {
+        "address": [
+          {
+            "city": "Beaverton",
+            "line": [
+              "1357 Amber Drive"
+            ],
+            "postalCode": "97006",
+            "state": "OR",
+            "use": "home"
+          }
+        ],
+        "birthDate": "1947-05-01",
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "code": "en"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "contact": [
+          {
+            "address": {
+              "city": "Beaverton",
+              "line": [
+                "123 main street"
+              ],
+              "postalCode": "97867",
+              "state": "OR",
+              "use": "home"
+            },
+            "name": {
+              "family": "Betterhalf",
+              "given": [
+                "Boris"
+              ],
+              "use": "usual"
+            },
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "code": "POWATT",
+                    "display": "Power of Attorney",
+                    "system": "urn:oid:2.16.840.1.113883.5.111"
+                  }
+                ]
+              }
+            ],
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+1(555)555-2008"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2106-3",
+                  "display": "White",
+                  "system": "urn:oid:2.16.840.1.113883.6.238"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+          },
+          {
+            "extension": [
+              {
+                "url": "ombCategory",
+                "valueCoding": {
+                  "code": "2135-2",
+                  "display": "Hispanic or Latino",
+                  "system": "urn:oid:2.16.840.1.113883.6.238"
+                }
+              }
+            ],
+            "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-religion",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1013",
+                  "display": "Christian (non-Catholic, non-specific)",
+                  "system": "urn:oid:2.16.840.1.113883.5.1076"
+                }
+              ]
+            }
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress": {
+              "city": "Beaverton",
+              "country": "US",
+              "line": [
+                "4444 Home Street"
+              ],
+              "postalCode": "97867",
+              "state": "OR"
+            }
+          }
+        ],
+        "gender": "female",
+        "id": "d1e4c091e9e9d73b1106b0fecd557540",
+        "identifier": [
+          {
+            "system": "urn:oid:1.3.6.1.4.1.22812.3.2009316.3",
+            "value": "160920144139807"
+          },
+          {
+            "system": "urn:oid:google/reconciliation-stable-id",
+            "value": "ffffffff-9e5d-1176-ffff-ffffb3b88942"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/ffffffff-aaca-f867-0000-0000070c5774"
+        },
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "M",
+              "display": "Married",
+              "system": "urn:oid:2.16.840.1.113883.5.2"
+            }
+          ]
+        },
+        "meta": {
+          "extension": [
+            {
+              "url": "urn:oid:google/reconciliation-timestamp",
+              "valueInstant": "2016-10-03T18:27:10.000+00:00"
+            }
+          ],
+          "tag": [
+            {
+              "code": "/",
+              "system": "urn:oid:data-type/data-source"
+            }
+          ]
+        },
+        "name": [
+          {
+            "family": "Jones",
+            "given": [
+              "Myra"
+            ],
+            "use": "usual"
+          }
+        ],
+        "resourceType": "Patient",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+1(565)867-5309"
+          }
+        ]
+      }
+    }

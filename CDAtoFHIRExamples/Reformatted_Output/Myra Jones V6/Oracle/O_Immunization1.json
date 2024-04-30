@@ -1,0 +1,137 @@
+{
+  "resource": {
+    "resourceType": "Immunization",
+    "id": "f1c2f35f-597c-4c2d-be9e-c43771eb93a3",
+    "meta": {
+      "extension": [
+        {
+          "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/transmitting-organization",
+          "valueUri": "urn:oid:2.16.840.1.113883"
+        }
+      ],
+      "security": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+          "code": "N"
+        }
+      ],
+      "tag": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.3.13.10.1.1",
+          "code": "FHIRr4-CR"
+        }
+      ]
+    },
+    "contained": [
+      {
+        "resourceType": "Organization",
+        "id": "1",
+        "name": "Health LS - Immuno Inc."
+      },
+      {
+        "resourceType": "Practitioner",
+        "id": "2",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.19.5.9999.456",
+            "value": "2981824"
+          }
+        ],
+        "name": [
+          {
+            "family": "Assigned",
+            "given": [
+              "Amanda"
+            ]
+          }
+        ]
+      }
+    ],
+    "identifier": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+      },
+      {
+        "system": "urn:oid:2.16.840.1.113883.3.13.10.2.2",
+        "value": "f1c2f35f-597c-4c2d-be9e-c43771eb93a3"
+      }
+    ],
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "88",
+          "display": "Influenza virus vaccine"
+        },
+        {
+          "system": "http://hl7.org/fhir/sid/ndc",
+          "code": "49281-0422-50",
+          "display": "Influenza vaccine"
+        }
+      ],
+      "text": "Influenza Virus Vaccine"
+    },
+    "patient": {
+      "reference": "Patient/18025725"
+    },
+    "encounter": {
+      "reference": "Encounter/adf2de75-5fa6-48a4-a782-48a67baadc60"
+    },
+    "occurrenceDateTime": "2010-08-15",
+    "recorded": "2010-08-15",
+    "manufacturer": {
+      "reference": "#1"
+    },
+    "lotNumber": "1",
+    "site": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "700022004",
+          "display": "Muscle and/or tendon structure of upper limb"
+        }
+      ],
+      "text": "Muscle and/or tendon structure of upper limb"
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "urn:oid:2.16.840.1.113883.3.26.1.1",
+          "code": "C28161",
+          "display": "Intramuscular Route of Administration"
+        }
+      ],
+      "text": "Intramuscular Route of Administration"
+    },
+    "doseQuantity": {
+      "value": 60,
+      "unit": "ug"
+    },
+    "performer": [
+      {
+        "actor": {
+          "reference": "#2"
+        }
+      }
+    ],
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "404684003",
+            "display": "Clinical finding"
+          }
+        ],
+        "text": "Clinical finding"
+      }
+    ],
+    "protocolApplied": [
+      {
+        "doseNumberString": "1"
+      }
+    ]
+  }
+}

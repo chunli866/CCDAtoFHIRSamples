@@ -1,0 +1,121 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "MedicationRequest/4bc9e07c0d4e8ecda129a12c3049fc0b"
+  },
+  "resource": {
+    "resourceType": "MedicationRequest",
+    "id": "4bc9e07c0d4e8ecda129a12c3049fc0b",
+    "meta": {
+      "extension": [
+        {
+          "url": "urn:oid:google/reconciliation-timestamp",
+          "valueInstant": "2016-10-03T18:27:10.000+00:00"
+        }
+      ],
+      "tag": [
+        {
+          "code": "/",
+          "system": "urn:oid:data-type/data-source"
+        }
+      ]
+    },
+    "identifier": [
+      {
+        "system": "urn:oid:google/reconciliation-stable-id",
+        "value": "ffffffff-f515-3f8c-ffff-ffffb17cc5b4"
+      }
+    ],
+    "status": "active",
+    "intent": "order",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "code": "1190220",
+          "display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray",
+          "system": "urn:oid:2.16.840.1.113883.6.88"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+    },
+    "authoredOn": "2013-09-11T23:03:00+00:00",
+    "requester": {
+      "reference": "PractitionerRole/00000000-5908-9911-0000-00004f1bcf38"
+    },
+    "performer": {
+      "reference": "PractitionerRole/00000000-7520-2c04-ffff-ffffa3d58df2"
+    },
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "code": "56018004",
+            "display": "wheezing",
+            "system": "urn:oid:2.16.840.1.113883.6.96"
+          }
+        ]
+      }
+    ],
+    "reasonReference": [
+      {
+        "reference": "Condition/ffffffff-a50a-9a08-0000-000031c48152"
+      }
+    ],
+    "dosageInstruction": [
+      {
+        "additionalInstruction": [
+          {
+            "coding": [
+              {
+                "code": "422037009",
+                "display": "Provider medication administration instructions",
+                "system": "urn:oid:2.16.840.1.113883.6.96"
+              }
+            ]
+          }
+        ],
+        "doseAndRate": [
+          {
+            "doseQuantity": {
+              "value": 1
+            }
+          }
+        ],
+        "maxDosePerPeriod": {
+          "denominator": {
+            "unit": "{day}",
+            "value": 1
+          },
+          "numerator": {
+            "unit": "{spray}",
+            "value": 6
+          }
+        },
+        "patientInstruction": "#MedicationSig_PRN_222222",
+        "route": {
+          "coding": [
+            {
+              "code": "C38288",
+              "display": "Oral Route of Administration",
+              "system": "urn:oid:2.16.840.1.113883.3.26.1.1"
+            }
+          ]
+        },
+        "timing": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2012-08-06T00:00:00+00:00"
+            }
+          }
+        }
+      }
+    ],
+    "dispenseRequest": {
+      "quantity": {
+        "value": 3
+      }
+    }
+  }
+}

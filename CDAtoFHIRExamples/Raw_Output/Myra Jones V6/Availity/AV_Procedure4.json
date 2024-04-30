@@ -1,0 +1,61 @@
+		{
+			"fullUrl": "http://fhir:3447/4_0_0/Procedure/6581e92f2d59f7f60ec0f924",
+			"resource": {
+				"resourceType": "Procedure",
+				"id": "6581e92f2d59f7f60ec0f924",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure"
+					]
+				},
+				"language": "en-US",
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "urn:uuid:64af26d5-88ef-4169-ba16-c6ef16a1824f"
+					}
+				],
+				"status": "completed",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "385767005",
+							"display": "Meals on wheels provision education"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/6581e92eb6ff5dadc088eae5",
+					"display": "Myra Jones"
+				},
+				"encounter": {
+					"reference": "Encounter/6581e92f2d59f710c5c0f900",
+					"display": "Office/outpatient established low mdm 20-29 min"
+				},
+				"performedPeriod": {
+					"start": "2010-09-09T16:00:00.000Z",
+					"end": "2010-12-31T17:00:00.000Z"
+				},
+				"recorder": {
+					"reference": "Practitioner/6581e92f49c1974e2e579294",
+					"identifier": {
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "1234123400"
+					},
+					"display": "Provider abc"
+				},
+				"performer": [
+					{
+						"actor": {
+							"reference": "Practitioner/6581e92f49c1974e2e579294",
+							"identifier": {
+								"system": "http://hl7.org/fhir/sid/us-npi",
+								"value": "1234123400"
+							},
+							"display": "Provider abc"
+						}
+					}
+				]
+			}
+		}

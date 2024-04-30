@@ -1,0 +1,70 @@
+		{
+			"fullUrl": "http://fhir:3447/4_0_0/MedicationRequest/6581e92f2d59f77bfac0f90a",
+			"resource": {
+				"resourceType": "MedicationRequest",
+				"id": "6581e92f2d59f77bfac0f90a",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+					]
+				},
+				"language": "en-US",
+				"extension": [
+					{
+						"url": "https://diameterhealth.com/indication",
+						"valueBase64Binary": "eyJ0eXBlIjoiY29kZSIsImNvZGUiOiI1NjAxODAwNCIsImNvZGVTeXN0ZW0iOiIyLjE2Ljg0MC4xLjExMzg4My42Ljk2IiwiY29kZVN5c3RlbU5hbWUiOm51bGwsImRpc3BsYXlOYW1lIjoid2hlZXppbmciLCJvcmlnaW5hbFRleHQiOm51bGwsInF1YWxpZmllciI6W10sInJlZmVyZW5jZSI6bnVsbCwidHJhbnNsYXRpb24iOltdLCJ4bWwiOiI8dmFsdWUgeHNpOnR5cGU9XCJDRFwiIGNvZGU9XCI1NjAxODAwNFwiIGNvZGVTeXN0ZW09XCIyLjE2Ljg0MC4xLjExMzg4My42Ljk2XCIgZGlzcGxheU5hbWU9XCJ3aGVlemluZ1wiLz4iLCJ0ZW1wbGF0ZUlkIjoiMi4xNi44NDAuMS4xMTM4ODMuMTAuMjAuMjIuNC4xOSIsImVudHJ5Q29kZSI6eyJ0eXBlIjoiY29kZSIsImNvZGUiOiI0MDQ2ODQwMDMiLCJjb2RlU3lzdGVtIjoiMi4xNi44NDAuMS4xMTM4ODMuNi45NiIsImNvZGVTeXN0ZW1OYW1lIjoiU05PTUVEIENUIiwiZGlzcGxheU5hbWUiOiJDbGluaWNhbCBmaW5kaW5nIiwib3JpZ2luYWxUZXh0IjpudWxsLCJxdWFsaWZpZXIiOltdLCJyZWZlcmVuY2UiOm51bGwsInRyYW5zbGF0aW9uIjpbXSwieG1sIjoiPGNvZGUgY29kZVN5c3RlbT1cIjIuMTYuODQwLjEuMTEzODgzLjYuOTZcIiBjb2RlU3lzdGVtTmFtZT1cIlNOT01FRCBDVFwiIGNvZGU9XCI0MDQ2ODQwMDNcIiBkaXNwbGF5TmFtZT1cIkNsaW5pY2FsIGZpbmRpbmdcIi8+In0sInR5cGVDb2RlIjoiUlNPTiIsIklEcyI6W3sidHlwZSI6InJvb3QiLCJyb290IjoiMS4zLjYuMS40LjEuMjI4MTIuMy45OTkzMC4zLjQuMS4zIiwiZXh0ZW5zaW9uIjoiNDQiLCJudWxsRmxhdm9yIjpudWxsLCJ4bWwiOiI8aWQgZXh0ZW5zaW9uPVwiNDRcIiByb290PVwiMS4zLjYuMS40LjEuMjI4MTIuMy45OTkzMC4zLjQuMS4zXCIvPiIsImFzc2lnbmluZ0F1dGhvcml0eU5hbWUiOm51bGx9XSwiY2xhc3NDb2RlIjoiT0JTIiwibW9vZENvZGUiOiJFVk4iLCJzdGF0dXNDb2RlIjoiY29tcGxldGVkIiwiZWZmZWN0aXZlVGltZSI6eyJ0eXBlIjoidGltZSIsImRhdGVUeXBlIjowLCJvcmlnaW5hbFRleHQiOm51bGwsImxvd09yaWdpbmFsVGV4dCI6Ik5JIiwiaGlnaE9yaWdpbmFsVGV4dCI6bnVsbCwidmFsdWUiOm51bGwsInVuaXQiOm51bGwsImxvdyI6Ik5JIiwiaGlnaCI6bnVsbCwiY29kZSI6bnVsbCwieG1sIjoiPGVmZmVjdGl2ZXRpbWU+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGxvdyBudWxsRmxhdm9yPVwiTklcIi8+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2VmZmVjdGl2ZXRpbWU+In19"
+					}
+				],
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "urn:uuid:cdbd33f0-6cde-11db-9fe1-0800200c9a66"
+					}
+				],
+				"status": "active",
+				"intent": "instance-order",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+							"code": "1190220",
+							"display": "120 ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/6581e92eb6ff5dadc088eae5",
+					"display": "Myra Jones"
+				},
+				"encounter": {
+					"reference": "Encounter/6581e92f2d59f710c5c0f900",
+					"display": "Office/outpatient established low mdm 20-29 min"
+				},
+				"authoredOn": "2013-09-11T07:03:00-04:00",
+				"requester": {
+					"reference": "Practitioner/6581e92f49c19735665792a5",
+					"identifier": {
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "66666"
+					},
+					"display": "Heartly Sixer MD"
+				},
+				"dosageInstruction": [
+					{
+						"text": "Do not overtake",
+						"asNeededCodeableConcept": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "56018004",
+									"display": "Wheezing"
+								}
+							]
+						}
+					}
+				],
+				"dispenseRequest": {
+					"numberOfRepeatsAllowed": 2
+				}
+			}
+		}

@@ -1,0 +1,66 @@
+        {
+            "fullUrl": "http://localhost:8000/Condition/2815",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "2815",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-02-16T17:22:01.842+00:00",
+                    "source": "#GqINef9uN1SPEjfS"
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "urn:oid:1.2.840.114350.1.13.6289.1.7.2.768076",
+                        "value": "68993"
+                    },
+                    {
+                        "use": "official",
+                        "system": "093A5380-00CE-11E6-B4C5-0050568B000B",
+                        "value": "1.1"
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "completed"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                                "code": "problem-list-item",
+                                "display": "Problem List Item"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "LA28397-0",
+                            "display": "Often true"
+                        },
+                        {
+                            "system": "http://loinc.org",
+                            "code": "1"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2805"
+                },
+                "encounter": {
+                    "reference": "Encounter/2808"
+                },
+                "onsetDateTime": "2010-09-09"
+            },
+            "search": {
+                "mode": "match"
+            }
+        }

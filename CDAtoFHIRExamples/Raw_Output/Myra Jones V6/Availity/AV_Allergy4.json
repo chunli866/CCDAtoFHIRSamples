@@ -1,0 +1,51 @@
+		{
+			"fullUrl": "http://fhir:3447/4_0_0/AllergyIntolerance/6581e92f2d59f7efdac0f8f8",
+			"resource": {
+				"resourceType": "AllergyIntolerance",
+				"id": "6581e92f2d59f7efdac0f8f8",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance"
+					]
+				},
+				"language": "en-US",
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/extension-data-absent-reason",
+									"valueCode": "unknown"
+								}
+							]
+						}
+					]
+				},
+				"patient": {
+					"reference": "Patient/6581e92eb6ff5dadc088eae5",
+					"display": "Myra Jones"
+				},
+				"encounter": {
+					"reference": "Encounter/6581e92f2d59f710c5c0f900",
+					"display": "Office/outpatient established low mdm 20-29 min"
+				},
+				"recordedDate": "2014-01-04T17:00:00.000Z",
+				"recorder": {
+					"reference": "Practitioner/6581e92f49c197f20157929e",
+					"identifier": {
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "99999999"
+					},
+					"display": "Henry SevenObs"
+				}
+			}
+		}
