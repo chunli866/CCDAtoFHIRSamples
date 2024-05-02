@@ -1008,7 +1008,7 @@
                                 <high nullFlavor="UNK"/>
                             </effectiveTime>
                             <effectiveTime xsi:type="PIVL_TS" operator="A">
-                                <period>
+                                <period xsi:type="IVL_PQ">
                                     <low value="4" unit="h"/>
                                     <high value="6" unit="h"/>
                                 </period>
@@ -1537,7 +1537,7 @@
                             <entryRelationship typeCode="RSON">
                                 <act classCode="ACT" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.122" />
-                                    <id root="3700b3b0-fbed-11e2-b778-0800200c9a66" />
+                                    <id root="f4dce790-8328-11db-9fe1-0800200c9a44" />
                                     <!-- The code is nulled to "NP" Not Present" -->
                                     <code nullFlavor="NP" />
                                     <statusCode code="completed" />
@@ -1936,9 +1936,6 @@
                     <!-- Human-readable: not updated                     -->
                     <text>
                         <table>
-								col 1: Result Organizer detail, containing the ordered test, date/time
-								col 2: the name and result of the items that are resulted
-								col 3: additional result details, such as ranges, interpretations, comments
                             <colgroup>
                                 <col width="20%"/>
                                 <col width="40%"/>
