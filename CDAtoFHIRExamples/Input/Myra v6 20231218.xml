@@ -41,7 +41,7 @@
                 <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" displayName="Hispanic or Latino" />
                 <sdtc:ethnicGroupCode code="20146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
                 <guardian>
-                    <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
+                    <code code="SELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
                     <addr use="H">
                         <streetAddressLine>123 main street</streetAddressLine>
                         <city>Beaverton</city>
