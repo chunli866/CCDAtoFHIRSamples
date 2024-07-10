@@ -41,6 +41,8 @@
                 <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" displayName="Hispanic or Latino" />
                 <sdtc:ethnicGroupCode code="20146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
                 <guardian>
+                    <!--  original version for the vendors:                   <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />-->
+                    <!-- This was updated to the following "SELF" code as the "POWATT" was deemed more appropriate as participant, per feedback during vendors' mapping alignment meeting on 7/9/2024-->
                     <code code="SELF" displayName="self" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
                     <addr use="H">
                         <streetAddressLine>123 main street</streetAddressLine>
