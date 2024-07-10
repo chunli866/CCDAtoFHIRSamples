@@ -1,0 +1,2213 @@
+{
+	"resourceType": "Bundle",
+	"id": "eICR-FHIR-002_R2_1",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-document-bundle"
+		]
+	},
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:2be4b4e4-6df1-4cb2-a947-c70fa0eda54c"
+	},
+	"type": "document",
+	"timestamp": "2021-08-02T22:13:23Z",
+	"entry": [
+		{
+			"fullUrl": "http://example.org/fhir/Composition/composition-eicr-zika",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "composition-eicr-zika",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-composition"
+					]
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+						"valueString": "1"
+					}
+				],
+				"identifier": {
+					"system": "urn:ietf:rfc:3986",
+					"value": "urn:uuid:c03eab8c-11e8-4d0c-ad2a-b385395e27db"
+				},
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "55751-2",
+							"display": "Public Health Case Report"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"encounter": {
+					"reference": "Encounter/encounter-eicr-eve-everywoman-outpatient",
+					"display": "Ambulatory Office Visit"
+				},
+				"date": "2018-01-02T22:13:23Z",
+				"author": [
+					{
+						"reference": "PractitionerRole/practitionerrole-henry-seven",
+						"display": "Henry Seven, MD"
+					}
+				],
+				"title": "Initial Public Health Case Report - Zika Example",
+				"custodian": {
+					"reference": "Organization/organization-ecr-salem-medical-center",
+					"display": "Salem Medical Center"
+				},
+				"section": [
+					{
+						"title": "Reason for Visit Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "29299-5",
+									"display": "Reason for visit Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Reason for Visit Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Reason for visit Narrative</div> ( <div title=\"code\">29299-5</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Reason for Visit: Bad cough</p></td></tr></table></div>"
+						}
+					},
+					{
+						"title": "Chief Complaint",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "10154-3",
+									"display": "Chief complaint Narrative - Reported"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Chief complaint Narrative - Reported</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Chief complaint Narrative - Reported</div> ( <div title=\"code\">10154-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Chief Complaint: Bad cough</p></td></tr></table></div>"
+						}
+					},
+					{
+						"title": "History of Present Illness Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "10164-2",
+									"display": "History of Present illness Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">History of Present Illness Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Present illness Narrative</div> ( <div title=\"code\">10164-2</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"> Persistent Cough REPORTED starting on 2018/03/05 <br/> Whooping Respiration not reported <br/> Paroxysms Of Coughing REPORTED starting on 2018/03/06 <br/> Post-tussive vomiting not reported </td></tr></table></div>"
+						}
+					},
+					{
+						"title": "Problems Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "11450-4",
+									"display": "Problem list - Reported"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Problems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem list - Reported</div> ( <div title=\"code\">11450-4</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Condition-condition-eicr-eve-everywoman-common-cold.html\">Common cold (disorder)</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">condition-eicr-eve-everywoman-common-cold</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">15</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-10T21:21:49.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Problem List Item</div> ( <div title=\"code\">problem-list-item</div> ) </li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/condition-category\">http://terminology.hl7.org/CodeSystem/condition-category</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Common cold (disorder)</div> ( <div title=\"code\">82272006</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">onsetDateTime</td><td><div title=\"onsetDateTime\">2017-09-23</div></td></tr><tr><td style=\"font-weight: bold\">asserter</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Practitioner-practitioner-us-core-henry-seven.html\">Henry Seven, MD</a></li></ul></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Condition/condition-eicr-eve-everywoman-common-cold",
+								"display": "Common cold (disorder)"
+							}
+						]
+					},
+					{
+						"title": "Medications Administered Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "29549-3",
+									"display": "Medication administered Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Administered Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medication administered Narrative</div> ( <div title=\"code\">29549-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-eve-everywoman-azithromycin.html\">Azithromycin 500 MG Oral Tablet</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">medicationadministration-eve-everywoman-azithromycin</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">10</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:11:22.000-04:00</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">completed</div></td></tr><tr><td style=\"font-weight: bold\">medicationCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Azithromycin 500 MG Oral Tablet</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Azithromycin 500 MG Oral Tablet</div> ( <div title=\"code\">248656</div> ) </li><li><div title=\"system\"><a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\">http://www.nlm.nih.gov/research/umls/rxnorm</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2018-03-07</div></td></tr><tr><td style=\"font-weight: bold\">end</td><td><div title=\"end\">2018-03-07</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">dosage</td><td><table><tr><td style=\"font-weight: bold\">route</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Oral Route</div> ( <div title=\"code\">26643006</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">method</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Swallow - dosing instruction imperative (qualifier value)</div> ( <div title=\"code\">421521009</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">dose</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">2</div></td></tr><tr><td style=\"font-weight: bold\">unit</td><td><div title=\"unit\">TAB</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm\">http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">TAB</div></td></tr></table></td></tr></table></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "MedicationAdministration/medicationadministration-eve-everywoman-azithromycin",
+								"display": "Azithromycin 500 MG Oral Tablet"
+							}
+						]
+					},
+					{
+						"title": "Admission Medications Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "42346-7",
+									"display": "Medications on admission (narrative)"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Admission Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Medications on admission (narrative)</div> ( <div title=\"code\">42346-7</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-eve-everywoman-naloxone-response.html\">naloxone HCl 0.4 MG in 1 ML Injection</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "MedicationAdministration/medicationadministration-eve-everywoman-naloxone-response",
+								"display": "naloxone HCl 0.4 MG in 1 ML Injection"
+							}
+						]
+					},
+					{
+						"title": "Medications Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "10160-0",
+									"display": "History of Medication use Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Medications Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Medication use Narrative</div> ( <div title=\"code\">10160-0</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"MedicationAdministration-medicationadministration-eve-everywoman-azithromycin.html\">Azithromycin 500 MG Oral Tablet</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "MedicationAdministration/medicationadministration-eve-everywoman-azithromycin",
+								"display": "Azithromycin 500 MG Oral Tablet"
+							}
+						]
+					},
+					{
+						"title": "Results Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "30954-2",
+									"display": "Relevant diagnostic tests/laboratory data Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Results Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Relevant Dx tests/lab data</div> ( <div title=\"code\">30954-2</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-us-ph-lab-result-eve-everywoman-lymphocytes.html\">Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-us-ph-lab-result-eve-everywoman-lymphocytes</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">10</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T02:50:13.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-lab-result-observation</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Laboratory</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Laboratory</div> ( <div title=\"code\">laboratory</div> ) </li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/observation-category\">http://terminology.hl7.org/CodeSystem/observation-category</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Lymphocytes [#/volume] in Blood by Automated count</div> ( <div title=\"code\">731-0</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectiveDateTime</td><td><div title=\"effectiveDateTime\">2018-03-07</div></td></tr><tr><td style=\"font-weight: bold\">valueQuantity</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"value\">5.2</div></li><li><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></li><li><div title=\"code\">10*3/uL</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">interpretation</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">High</div> ( <div title=\"code\">H</div> ) </li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation\">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">referenceRange</td><td><table><tr><td style=\"font-weight: bold\">low</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">1</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">10*3/uL</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">high</td><td><table><tr><td style=\"font-weight: bold\">value</td><td><div title=\"value\">4.8</div></td></tr><tr><td style=\"font-weight: bold\">system</td><td><div title=\"system\"><a href=\"http://unitsofmeasure.org\">http://unitsofmeasure.org</a></div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><div title=\"code\">10*3/uL</div></td></tr></table></td></tr></table></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes",
+								"display": "Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High"
+							}
+						]
+					},
+					{
+						"title": "Plan of Treatment Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "18776-5",
+									"display": "Plan of care note"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Plan of Treatment Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Plan of care note</div> ( <div title=\"code\">18776-5</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><b>Trigger code</b></li><li>Trigger Code: </li><li>Trigger Code Display: </li><li>Trigger Code System: </li><li>Trigger Code Value Set: urn:oid:2.16.840.1.114222.4.11.7508</li><li>Trigger Code Value Set Version: 19/05/2018</li></ul><a href=\"ServiceRequest-servicerequest-eicr-zika.html\">Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">servicerequest-eicr-zika</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">9</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-23T13:56:36.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">completed</div></td></tr><tr><td style=\"font-weight: bold\">intent</td><td><div title=\"intent\">order</div></td></tr><tr><td style=\"font-weight: bold\">category</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Diagnostics Procedure</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Diagnostic procedure (procedure)</div> ( <div title=\"code\">103693007</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Zika RT-PCR</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Zika virus envelope E gene [Presence] in Serum by NAA with probe detection</div> ( <div title=\"code\">80825-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">performer</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Organization-organization-ecr-acme-laboratory.html\">Acme Labs</a></li></ul></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"extension": [
+											{
+												"url": "triggerCodeValueSet",
+												"valueOid": "urn:oid:2.16.840.1.114222.4.11.7508"
+											},
+											{
+												"url": "triggerCodeValueSetVersion",
+												"valueString": "19/05/2018"
+											},
+											{
+												"url": "triggerCode",
+												"valueCoding": {
+													"system": "http://loinc.org",
+													"code": "80825-3",
+													"display": "Zika virus envelope E gene [Presence] in Serum by NAA with probe detection"
+												}
+											}
+										],
+										"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension"
+									}
+								],
+								"reference": "ServiceRequest/servicerequest-eicr-zika",
+								"display": "Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method"
+							}
+						]
+					},
+					{
+						"title": "Immunizations Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "11369-6",
+									"display": "History of Immunization Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Immunizations Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Immunization Narrative</div> ( <div title=\"code\">11369-6</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Immunization-immunization-ecr-pneumo.html\">pneumococcal polysaccharide vaccine</a></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-vaccine-credential-assertion-eve-everywoman.html\">Vaccine Credential Patient Assertion Observation Example</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Immunization/immunization-ecr-pneumo",
+								"display": "pneumococcal polysaccharide vaccine"
+							},
+							{
+								"reference": "Observation/observation-vaccine-credential-assertion-eve-everywoman",
+								"display": "Vaccine Credential Patient Assertion Observation Example"
+							}
+						]
+					},
+					{
+						"title": "Procedures Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "47519-4",
+									"display": "History of Procedures Document"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Procedures Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">History of Procedures Document</div> ( <div title=\"code\">47519-4</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Procedure-us-ph-procedure-ecmo.html\">Extracorporeal membrane oxygenation (procedure)</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Procedure/us-ph-procedure-ecmo",
+								"display": "Extracorporeal membrane oxygenation (procedure)"
+							}
+						]
+					},
+					{
+						"title": "Vital Signs Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "8716-3",
+									"display": "Vital signs"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Vital Signs Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Vital signs</div> ( <div title=\"code\">8716-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-blood-pressure-eve-everywoman.html\">Blood pressure systolic and diastolic</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/observation-blood-pressure-eve-everywoman",
+								"display": "Blood pressure systolic and diastolic"
+							}
+						]
+					},
+					{
+						"title": "Social History Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "29762-2",
+									"display": "Social history Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Social History Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Social history Narrative</div> ( <div title=\"code\">29762-2</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-travel-history-eve-everywoman-201801.html\">eICR Travel History: Eve Everywoman 2018-01</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-travel-history-eve-everywoman-201801</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">11</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:15:42.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"text\">Travel History</div></li><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Travel</div> ( <div title=\"code\">420008001</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2018-01-15</div></td></tr><tr><td style=\"font-weight: bold\">end</td><td><div title=\"end\">2018-01-30</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Location</div> ( <div title=\"code\">LOC</div> ) </li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ParticipationType\">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Fiji</div> ( <div title=\"code\">FJI</div> ) </li><li><div title=\"system\">urn:iso:std:iso:3166</div></li></ul></li></ul></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Location</div> ( <div title=\"code\">LOC</div> ) </li><li><div title=\"system\"><a href=\"http://terminology.hl7.org/CodeSystem/v3-ParticipationType\">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Vanuatu</div> ( <div title=\"code\">VUT</div> ) </li><li><div title=\"system\"><a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1\">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1</a></div></li></ul></li></ul></td></tr></table></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/observation-travel-history-eve-everywoman-201801",
+								"display": "eICR Travel History: Eve Everywoman 2018-01"
+							},
+							{
+								"reference": "Observation/observation-disability-status-eve-everywoman",
+								"display": "US Public Health Disability Status Example"
+							},
+							{
+								"reference": "Observation/observation-us-ph-exposure-contact-info-football-game",
+								"display": "US Public Health Exposure Contact Information Example"
+							},
+							{
+								"reference": "Observation/observation-country-of-nationality-eve-everywoman",
+								"display": "Country of Nationality Observation Example"
+							},
+							{
+								"reference": "Observation/observation-country-of-residence-eve-everywoman",
+								"display": "Country of Residence Observation Example"
+							},
+							{
+								"reference": "Observation/observation-odh-employment-status-ecr-eve-everywoman",
+								"display": "ODH Employment Status Example"
+							},
+							{
+								"reference": "Observation/observation-characteristics-of-home-environment-eve-everywoman",
+								"display": "US Public Health Characteristics of Home Environment Example: Eve Everywoman"
+							},
+							{
+								"reference": "Observation/observation-odh-past-or-present-job-eve-everywoman",
+								"display": "ODH Past or Present Job Example: Eve Everywoman"
+							},
+							{
+								"reference": "Observation/observation-odh-usual-work-eve-everywoman",
+								"display": "ODH Usual Work Example: Eve Everywoman"
+							}
+						]
+					},
+					{
+						"title": "Pregnancy Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "90767-5",
+									"display": "Pregnancy summary Document"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Pregnancy Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy summary Document</div> ( <div title=\"code\">90767-5</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-pregnancy-status-eve-everywoman.html\">eICR Pregnancy Status Example</a><table><tr><td style=\"font-weight: bold\">id</td><td><div title=\"id\">observation-pregnancy-status-eve-everywoman</div></td></tr><tr><td style=\"font-weight: bold\">meta</td><td><table><tr><td style=\"font-weight: bold\">versionId</td><td><div title=\"versionId\">13</div></td></tr><tr><td style=\"font-weight: bold\">lastUpdated</td><td><div title=\"lastUpdated\">2019-10-05T03:15:42.000-04:00</div></td></tr><tr><td style=\"font-weight: bold\">profile</td><td><div title=\"profile\">http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">us-ph-date-recorded-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">status</td><td><div title=\"status\">final</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy Status</div> ( <div title=\"code\">82810-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">subject</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li/><li><a href=\"Patient-patient-ecr-eve-everywoman.html\">Eve Everywoman</a></li></ul></td></tr><tr><td style=\"font-weight: bold\">effectivePeriod</td><td><table><tr><td style=\"font-weight: bold\">start</td><td><div title=\"start\">2017-08-26</div></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">valueCodeableConcept</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Pregnancy (finding)</div> ( <div title=\"code\">77386006</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">method</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Diagnostic ultrasonography (procedure)</div> ( <div title=\"code\">16310003</div> ) </li><li><div title=\"system\"><a href=\"http://snomed.info/sct\">http://snomed.info/sct</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Gestational age Estimated from patient reported estimated date of conception</div> ( <div title=\"code\">53691-2</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueQuantity</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"value\">143</div></li><li><div title=\"unit\">d</div></li></ul></td></tr></table></td></tr><tr><td style=\"font-weight: bold\">component</td><td><table><tr><td style=\"font-weight: bold\">date-determined-extension</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"valueDateTime\">2017-10-01</div></li></ul></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Delivery date Estimated from date fundal height reaches umb</div> ( <div title=\"code\">57064-8</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">valueDateTime</td><td><div title=\"valueDateTime\">2018-05-01</div></td></tr></table></td></tr></table></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/observation-pregnancy-status-eve-everywoman",
+								"display": "eICR Pregnancy Status Example"
+							}
+						]
+					},
+					{
+						"title": "Emergency Outbreak Information Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "83910-0",
+									"display": "Public health Note"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Emergency Outbreak Information Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Public health Note</div> ( <div title=\"code\">83910-0</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td style=\"font-weight: bold\">entry</td><td><a href=\"Observation-observation-us-ph-emergency-outbreak-info-eve-everywoman.html\">US Public Health Emergency Outbreak Information Example</a></td></tr></table></div>"
+						},
+						"entry": [
+							{
+								"reference": "Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman",
+								"display": "US Public Health Emergency Outbreak Information Example"
+							}
+						]
+					},
+					{
+						"title": "Past Medical History Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "11348-0",
+									"display": "History of Past illness Narrative"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Past Medical History Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Past Medical History Narrative</div> ( <div title=\"code\">11348-0</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Past medical history</p></td></tr></table></div>"
+						}
+					},
+					{
+						"title": "Review of Systems Section",
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "10187-3",
+									"display": "Review of systems Narrative - Reported"
+								}
+							]
+						},
+						"text": {
+							"status": "generated",
+							"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td style=\"font-weight: bold\">title</td><td><div title=\"title\">Review of Systems Section</div></td></tr><tr><td style=\"font-weight: bold\">code</td><td><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><ul style=\"list-style:none; padding-left:0; margin:0 0;\"><li><div title=\"display\">Review of Systems Section Narrative</div> ( <div title=\"code\">10187-3</div> ) </li><li><div title=\"system\"><a href=\"http://loinc.org\">http://loinc.org</a></div></li></ul></li></ul></td></tr><tr><td colspan=\"2\" lang=\"en-US\" class=\"text-no-entries\"><p>Review of systems</p></td></tr></table></div>"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/MedicationAdministration/medicationadministration-eve-everywoman-azithromycin",
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"id": "medicationadministration-eve-everywoman-azithromycin",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-medicationadministration"
+					]
+				},
+				"status": "completed",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+							"code": "248656",
+							"display": "Azithromycin 500 MG Oral Tablet"
+						}
+					],
+					"text": "Azithromycin 500 MG Oral Tablet"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2018-03-07",
+					"end": "2018-03-07"
+				},
+				"dosage": {
+					"text": "Two tablets at once",
+					"route": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "26643006",
+								"display": "Oral route"
+							}
+						]
+					},
+					"method": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "421521009",
+								"display": "Swallow - dosing instruction imperative (qualifier value)"
+							}
+						]
+					},
+					"dose": {
+						"value": 2,
+						"unit": "TAB",
+						"system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+						"code": "TAB"
+					}
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Procedure/us-ph-procedure-ecmo",
+			"resource": {
+				"resourceType": "Procedure",
+				"id": "us-ph-procedure-ecmo",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-procedure"
+					]
+				},
+				"identifier": [
+					{
+						"system": "urn:ietf:rfc:3986",
+						"value": "urn:uuid:b2a737f2-2fdb-49c1-b097-dac173d07afd"
+					}
+				],
+				"status": "completed",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "233573008",
+							"display": "Extracorporeal membrane oxygenation (procedure)"
+						}
+					],
+					"text": "Extracorporeal membrane oxygenation (procedure)"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman"
+				},
+				"performedPeriod": {
+					"start": "2020-11-01T12:55:26-07:00",
+					"end": "2020-11-01T13:25:26-07:00"
+				},
+				"focalDevice": [
+					{
+						"manipulated": {
+							"reference": "Device/device-ecmo"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/MedicationAdministration/medicationadministration-eve-everywoman-naloxone-response",
+			"resource": {
+				"resourceType": "MedicationAdministration",
+				"id": "medicationadministration-eve-everywoman-naloxone-response",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-medicationadministration"
+					]
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-therapeutic-medication-response-extension",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "268910001",
+									"display": "Patient's condition improved (finding)"
+								}
+							]
+						}
+					}
+				],
+				"status": "completed",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+							"code": "1659929",
+							"display": "naloxone HCl 0.4 MG in 1 ML Injection"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2018-03-07",
+					"end": "2018-03-07"
+				},
+				"dosage": {
+					"route": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "206007",
+								"display": "Gluteus maximus muscle"
+							}
+						]
+					},
+					"method": {
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "422145002",
+								"display": "Inject - dosing instruction imperative (qualifier value)"
+							}
+						]
+					},
+					"dose": {
+						"value": 1,
+						"unit": "mL",
+						"system": "http://unitsofmeasure.org",
+						"code": "mL"
+					}
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/ServiceRequest/servicerequest-eicr-zika",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "servicerequest-eicr-zika",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://lab.smarthealthit.org",
+						"value": "061ef612-344f-4e7b-81a8-1059ae7bbe19"
+					}
+				],
+				"status": "completed",
+				"intent": "order",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "103693007",
+								"display": "Diagnostic procedure (procedure)"
+							}
+						],
+						"text": "Diagnostics Procedure"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "80825-3",
+							"display": "Zika virus envelope E gene [Presence] in Serum by NAA with probe detection"
+						}
+					],
+					"text": "Zika RT-PCR"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"performer": [
+					{
+						"reference": "Organization/organization-ecr-acme-laboratory",
+						"display": "Acme Labs"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Condition/condition-eicr-eve-everywoman-common-cold",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "condition-eicr-eve-everywoman-common-cold",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition"
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "problem-list-item",
+								"display": "Problem List Item"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "82272006",
+							"display": "Common cold (disorder)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"onsetDateTime": "2017-09-23",
+				"asserter": {
+					"reference": "Practitioner/practitioner-us-core-henry-seven",
+					"display": "Henry Seven, MD"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Encounter/encounter-eicr-eve-everywoman-outpatient",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "encounter-eicr-eve-everywoman-outpatient",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-encounter"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hospital.smarthealthit.org",
+						"value": "9937012"
+					}
+				],
+				"status": "finished",
+				"class": {
+					"system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+					"code": "AMB",
+					"display": "ambulatory"
+				},
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://www.ama-assn.org/go/cpt",
+								"code": "99201"
+							}
+						],
+						"text": "Office Visit"
+					}
+				],
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"participant": [
+					{
+						"type": [
+							{
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+										"code": "ATND",
+										"display": "attender"
+									}
+								]
+							}
+						],
+						"individual": {
+							"reference": "PractitionerRole/practitionerrole-henry-seven",
+							"display": "Henry Seven, MD"
+						}
+					}
+				],
+				"period": {
+					"start": "2018-04-01T10:00:00-05:00",
+					"end": "2018-04-02T10:15:00-05:00"
+				},
+				"diagnosis": [
+					{
+						"extension": [
+							{
+								"extension": [
+									{
+										"url": "triggerCodeValueSet",
+										"valueOid": "urn:oid:2.16.840.1.114222.4.11.7508"
+									},
+									{
+										"url": "triggerCodeValueSetVersion",
+										"valueString": "12/12/2018"
+									},
+									{
+										"url": "triggerCode",
+										"valueCoding": {
+											"system": "http://snomed.info/sct",
+											"code": "3928002",
+											"display": "Zika virus disease (disorder)"
+										}
+									}
+								],
+								"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-trigger-code-flag-extension"
+							}
+						],
+						"condition": {
+							"reference": "Condition/condition-eicr-eve-everywoman-zika"
+						}
+					},
+					{
+						"condition": {
+							"reference": "Condition/condition-eicr-eve-everywoman-common-cold"
+						}
+					}
+				],
+				"location": [
+					{
+						"location": {
+							"reference": "Location/location-ecr-salem-medical-center",
+							"display": "Clinic Bldg A, Salem Medical Center, 4646 Brown Rd, Salem, MA 02368"
+						}
+					}
+				],
+				"serviceProvider": {
+					"reference": "Organization/organization-ecr-salem-medical-center",
+					"display": "Salem Medical Center, 22222 Health Authority Drive, Ann Arbor MI, 99999"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-pregnancy-status-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-pregnancy-status-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation"
+					]
+				},
+				"extension": [
+					{
+						"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-recorded-extension",
+						"valueDateTime": "2017-10-01"
+					},
+					{
+						"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension",
+						"valueDateTime": "2017-10-01"
+					}
+				],
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "82810-3",
+							"display": "Pregnancy status"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2017-08-26"
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "77386006",
+							"display": "Pregnancy (finding)"
+						}
+					]
+				},
+				"method": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "16310003",
+							"display": "Diagnostic ultrasonography (procedure)"
+						}
+					]
+				},
+				"component": [
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension",
+								"valueDateTime": "2017-10-01"
+							}
+						],
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "53691-2",
+									"display": "Gestational age Estimated from patient reported estimated date of conception"
+								}
+							]
+						},
+						"valueQuantity": {
+							"value": 143,
+							"unit": "d"
+						}
+					},
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-date-determined-extension",
+								"valueDateTime": "2017-10-01"
+							}
+						],
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "57064-8",
+									"display": "Delivery date Estimated from date fundal height reaches umb"
+								}
+							]
+						},
+						"valueDateTime": "2018-05-01"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-vaccine-credential-assertion-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-vaccine-credential-assertion-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-vaccine-credential-patient-assertion"
+					]
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "11370-4",
+							"display": "Immunization status - Reported"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2020-11-10T22:33:22Z",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+							"code": "Y",
+							"display": "Yes"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-us-ph-emergency-outbreak-info-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-emergency-outbreak-information"
+					]
+				},
+				"status": "final",
+				"code": {
+					"text": "Employee desk distance from mail sorter"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2020-11-18T22:33:22Z",
+				"valueQuantity": {
+					"value": 2,
+					"unit": "m"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-country-of-nationality-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-country-of-nationality-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-country-of-nationality"
+					]
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "186034007",
+							"display": "Ethnicity / related nationality data (observable entity)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2020-11-10T22:33:22Z",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:iso:std:iso:3166",
+							"code": "AU",
+							"display": "Australia"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Patient/patient-ecr-eve-everywoman",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "patient-ecr-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-patient"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Eve L <b>EVERYWOMAN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>1032702</td></tr><tr><td>Address</td><td><span>5101 Peachtree St NE </span><br/><span>Atlanta </span><span>GA </span><span>US </span></td></tr><tr><td>Date of birth</td><td><span>24 November 1974</span></td></tr></tbody></table></div>"
+				},
+				"extension": [
+					{
+						"extension": [
+							{
+								"url": "ombCategory",
+								"valueCoding": {
+									"system": "urn:oid:2.16.840.1.113883.6.238",
+									"code": "2106-3",
+									"display": "White"
+								}
+							},
+							{
+								"url": "text",
+								"valueString": "White"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+					},
+					{
+						"extension": [
+							{
+								"url": "ombCategory",
+								"valueCoding": {
+									"system": "urn:oid:2.16.840.1.113883.6.238",
+									"code": "2186-5",
+									"display": "Not Hispanic or Latino"
+								}
+							},
+							{
+								"url": "text",
+								"valueString": "Not Hispanic or Latino"
+							}
+						],
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+					},
+					{
+						"url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+						"valueCode": "F"
+					},
+					{
+						"url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+						"fhir_comments": [
+							"Birthplace"
+						]
+					},
+					{
+						"extension": [
+							{
+								"url": "value",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+											"code": "ASKU",
+											"display": "asked but unknown"
+										}
+									],
+									"text": "asked but unknown"
+								}
+							},
+							{
+								"url": "period",
+								"valuePeriod": {
+									"start": "2018-01-02",
+									"end": "2018-01-02"
+								}
+							}
+						],
+						"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-genderidentity-extension"
+					},
+					{
+						"extension": [
+							{
+								"url": "TribeName",
+								"valueCoding": {
+									"system": "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+									"code": "91",
+									"display": "Fort Mojave Indian Tribe of Arizona, California"
+								}
+							},
+							{
+								"url": "EnrolledTribeMember",
+								"valueBoolean": true
+							}
+						],
+						"url": "http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-tribal-affiliation-extension"
+					}
+				],
+				"identifier": [
+					{
+						"use": "usual",
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR",
+									"display": "Medical Record Number"
+								}
+							]
+						},
+						"system": "http://hospital.smarthealthit.org",
+						"value": "1032702"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"family": "Everywoman",
+						"given": [
+							"Eve",
+							"L"
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "1-(404)555-1212",
+						"use": "home"
+					},
+					{
+						"system": "email",
+						"value": "eve.everywoman@example.com"
+					}
+				],
+				"gender": "female",
+				"birthDate": "1974-11-24",
+				"deceasedBoolean": false,
+				"address": [
+					{
+						"line": [
+							"5101 Peachtree St NE"
+						],
+						"city": "Atlanta",
+						"state": "GA",
+						"postalCode": "30302",
+						"country": "US"
+					}
+				],
+				"contact": [
+					{
+						"relationship": [
+							{
+								"coding": [
+									{
+										"system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+										"code": "C",
+										"display": "Emergency Contact"
+									}
+								]
+							}
+						],
+						"name": {
+							"use": "usual",
+							"family": "Everywoman",
+							"given": [
+								"Evecontact"
+							]
+						},
+						"telecom": [
+							{
+								"system": "phone",
+								"value": "0690383372",
+								"use": "mobile"
+							}
+						],
+						"address": {
+							"line": [
+								"Contact Fake Street Line"
+							],
+							"city": "Atlanta",
+							"state": "GA",
+							"postalCode": "30302",
+							"country": "US"
+						}
+					}
+				],
+				"communication": [
+					{
+						"language": {
+							"coding": [
+								{
+									"system": "urn:ietf:bcp:47",
+									"code": "eng"
+								}
+							]
+						},
+						"preferred": true
+					},
+					{
+						"language": {
+							"coding": [
+								{
+									"system": "urn:ietf:bcp:47",
+									"code": "en",
+									"display": "English"
+								}
+							]
+						},
+						"preferred": false
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Immunization/immunization-ecr-pneumo",
+			"resource": {
+				"resourceType": "Immunization",
+				"id": "immunization-ecr-pneumo",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization"
+					]
+				},
+				"status": "completed",
+				"vaccineCode": {
+					"coding": [
+						{
+							"system": "http://hl7.org/fhir/sid/cvx",
+							"code": "33",
+							"display": "pneumococcal polysaccharide PPV23"
+						}
+					]
+				},
+				"patient": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"occurrenceDateTime": "2018-09-01",
+				"primarySource": true
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-odh-employment-status-ecr-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-odh-employment-status-ecr-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/odh/StructureDefinition/odh-EmploymentStatus"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-odh-employment-status-ecr-eve-everywoman\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"observation-odh-employment-status-ecr-eve-everywoman\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/odh/STU1.1/StructureDefinition-odh-EmploymentStatus.html\">Employment Status</a></p></div><p><b>status</b>: final</p><p><b>code</b>: History of employment status NIOSH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#74165-2)</span></p><p><b>subject</b>: <a href=\"Patient-patient-ecr-eve-everywoman.html\">Patient/patient-ecr-eve-everywoman: Eve Everywoman</a> \"\"</p><p><b>effective</b>: 2015-04-24 --&gt; (ongoing)</p><p><b>value</b>: Employed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ObservationValue.html\">ObservationValue</a>#Employed)</span></p></div>"
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "74165-2",
+							"display": "History of employment status NIOSH"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2015-04-24"
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+							"code": "Employed",
+							"display": "Employed"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-characteristics-of-home-environment-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-characteristics-of-home-environment-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-characteristics-of-home-environment"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-characteristics-of-home-environment-eve-everywoman\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"observation-characteristics-of-home-environment-eve-everywoman\" Version \"5\" Updated \"2021-06-30 05:17:19+0000\" </p><p style=\"margin-bottom: 0px\">Information Source: #cgLJymHVJKry789c!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-ph-characteristics-of-home-environment.html\">US Public Health Characteristics of Home Environment</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Characteristics of residence <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#75274-1)</span></p><p><b>subject</b>: <a href=\"Patient-patient-ecr-eve-everywoman.html\">Patient/patient-ecr-eve-everywoman: Eve Everywoman</a> \"\"</p><p><b>effective</b>: 2016-05-18 22:33:22+0000</p><p><b>value</b>: Homeless <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#32911000)</span></p></div>"
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "75274-1",
+							"display": "Characteristics of residence"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2016-05-18T22:33:22Z",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "32911000",
+							"display": "Homeless"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-odh-past-or-present-job-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-odh-past-or-present-job-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/odh/StructureDefinition/odh-PastOrPresentJob"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-odh-past-or-present-job-eve-everywoman\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"observation-odh-past-or-present-job-eve-everywoman\" Version \"4\" Updated \"2021-08-13 04:03:24+0000\" </p><p style=\"margin-bottom: 0px\">Information Source: #ftYoCauxSeEFK718!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/odh/STU1.1/StructureDefinition-odh-PastOrPresentJob.html\">Past Or Present Job</a></p></div><p><b>status</b>: final</p><p><b>code</b>: History of Occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#11341-5)</span></p><p><b>subject</b>: <a href=\"Patient-patient-ecr-eve-everywoman.html\">Patient/patient-ecr-eve-everywoman: Eve Everywoman</a> \"\"</p><p><b>effective</b>: 2015-04-24 --&gt; (ongoing)</p><p><b>value</b>: Nursing, psychiatric, and home health aides <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-PHOccupationCDCCensus2010.html\">Occupation CDC Census 2010</a>#3600; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-PHOccupationalDataForHealthODH.html\">Occupational Data for Health (ODH)</a>#31-1014.00.007136 \"Certified Nursing Assistant (CNA) [Nursing Assistants]\")</span></p><blockquote><p><b>component</b></p><p><b>code</b>: History of Occupation industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#86188-0)</span></p><p><b>value</b>: Nursing care facilities <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-PHIndustryCDCCensus2010.html\">Industry CDC Census 2010</a>#8270; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-PHOccupationalDataForHealthODH.html\">Occupational Data for Health (ODH)</a>#621610.008495 \"Home nursing services\")</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: History of Occupational hazard <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#87729-0)</span></p><p><b>value</b>: Asbestos</p></blockquote></div>"
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "11341-5",
+							"display": "History of Occupation"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2015-04-24"
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/PHOccupationCDCCensus2010",
+							"code": "3600",
+							"display": "Nursing, psychiatric, and home health aides"
+						},
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH",
+							"code": "31-1014.00.007136",
+							"display": "Certified Nursing Assistant (CNA) [Nursing Assistants]"
+						}
+					]
+				},
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "86188-0",
+									"display": "History of Occupation industry"
+								}
+							]
+						},
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/PHIndustryCDCCensus2010",
+									"code": "8270",
+									"display": "Nursing care facilities"
+								},
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/PHOccupationalDataForHealthODH",
+									"code": "621610.008495",
+									"display": "Home nursing services"
+								}
+							]
+						}
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "87729-0",
+									"display": "History of Occupational hazard"
+								}
+							]
+						},
+						"valueString": "Asbestos"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-odh-usual-work-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-odh-usual-work-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/odh/StructureDefinition/odh-UsualWork"
+					]
+				},
+				"text": {
+					"status": "generated",
+					"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-odh-usual-work-eve-everywoman\"/></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation \"observation-odh-usual-work-eve-everywoman\" Version \"5\" Updated \"2021-08-17 07:59:00+0000\" </p><p style=\"margin-bottom: 0px\">Information Source: #KYnvOUlssACaPh7w!</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/odh/STU1.1/StructureDefinition-odh-UsualWork.html\">Usual Work</a></p></div><p><b>status</b>: final</p><p><b>code</b>: History of Usual occupation <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21843-8)</span></p><p><b>subject</b>: <a href=\"Patient-patient-ecr-eve-everywoman.html\">Patient/patient-ecr-eve-everywoman: Eve Everywoman</a> \"\"</p><p><b>effective</b>: 2015-01-01 --&gt; 2018-03-07</p><p><b>value</b>: Human Resources Managers <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#0136)</span></p><h3>Components</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>History of Usual industry <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21844-6)</span></td><td>Hospitals <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#8190)</span></td></tr></table></div>"
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "21843-8",
+							"display": "History of Usual occupation"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2015-01-01",
+					"end": "2018-03-07"
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:oid:2.16.840.1.114222.4.5.314",
+							"code": "0136",
+							"display": "Human Resources Managers"
+						}
+					]
+				},
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "21844-6",
+									"display": "History of Usual industry"
+								}
+							]
+						},
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "urn:oid:2.16.840.1.114222.4.5.315",
+									"code": "8190",
+									"display": "Hospitals"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-country-of-residence-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-country-of-residence-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-country-of-residence"
+					]
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "77983-5",
+							"display": "Country of usual residence"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2020-11-10T22:33:22Z",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "urn:iso:std:iso:3166",
+							"code": "GB",
+							"display": "United Kingdom of Great Britain and Northern Ireland"
+						}
+					]
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/PractitionerRole/practitionerrole-henry-seven",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "practitionerrole-henry-seven",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-practitionerrole"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "9941339108"
+					}
+				],
+				"practitioner": {
+					"reference": "Practitioner/practitioner-us-core-henry-seven",
+					"display": "Henry Seven, MD"
+				},
+				"organization": {
+					"reference": "Organization/organization-ecr-salem-medical-center",
+					"display": "Salem Medical Center"
+				},
+				"code": [
+					{
+						"coding": [
+							{
+								"system": "http://nucc.org/provider-taxonomy",
+								"code": "261QP2300X",
+								"display": "Primary Care Clinic/Center"
+							}
+						]
+					}
+				],
+				"specialty": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "419772000",
+								"display": "Family practice"
+							}
+						]
+					}
+				],
+				"location": [
+					{
+						"reference": "Location/location-ecr-salem-medical-center",
+						"display": "Salem Medical Center"
+					}
+				],
+				"telecom": [
+					{
+						"system": "email",
+						"value": "henry.seven@example.com"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-blood-pressure-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-blood-pressure-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure"
+					]
+				},
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs",
+								"display": "Vital Signs"
+							}
+						],
+						"text": "Vital Signs"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "85354-9",
+							"display": "Blood pressure panel with all children optional"
+						}
+					],
+					"text": "Blood pressure systolic and diastolic"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"encounter": {
+					"display": "GP Visit"
+				},
+				"effectiveDateTime": "2020-07-02",
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "8480-6",
+									"display": "Systolic blood pressure"
+								}
+							],
+							"text": "Systolic blood pressure"
+						},
+						"valueQuantity": {
+							"value": 109,
+							"unit": "mmHg",
+							"system": "http://unitsofmeasure.org",
+							"code": "mm[Hg]"
+						}
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://loinc.org",
+									"code": "8462-4",
+									"display": "Diastolic blood pressure"
+								}
+							],
+							"text": "Diastolic blood pressure"
+						},
+						"valueQuantity": {
+							"value": 44,
+							"unit": "mmHg",
+							"system": "http://unitsofmeasure.org",
+							"code": "mm[Hg]"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-us-ph-exposure-contact-info-football-game",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-us-ph-exposure-contact-info-football-game",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-exposure-contact-information"
+					]
+				},
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v3-ActClass",
+								"code": "EXPOS",
+								"display": "exposure"
+							}
+						],
+						"text": "An interaction between entities that provides opportunity for transmission of a physical, chemical, or biological agent from an exposure source entity to an exposure target entity."
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/umls",
+							"code": "C3841750",
+							"display": "Mass gathering"
+						}
+					],
+					"text": "Mass gathering (football game)"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"focus": [
+					{
+						"reference": "Location/location-ecr-city-football-stadium",
+						"display": "City Football Stadium"
+					}
+				],
+				"effectivePeriod": {
+					"start": "2020-01-11T18:00:00Z",
+					"end": "2020-01-11T21:30:00Z"
+				},
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "264379009",
+							"display": "Sports stadium (environment)"
+						}
+					],
+					"text": "City Football Stadium"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-travel-history-eve-everywoman-201801",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-travel-history-eve-everywoman-201801",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history"
+					]
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "420008001",
+							"display": "Travel"
+						}
+					],
+					"text": "Travel History"
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectivePeriod": {
+					"start": "2018-01-15",
+					"end": "2018-01-30"
+				},
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+									"code": "LOC",
+									"display": "Location"
+								}
+							]
+						},
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "urn:iso:std:iso:3166",
+									"code": "FJI",
+									"display": "Fiji"
+								}
+							]
+						}
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+									"code": "LOC",
+									"display": "Location"
+								}
+							]
+						},
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "urn:oid:1.0.3166.1",
+									"code": "VUT",
+									"display": "Vanuatu"
+								}
+							]
+						}
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "280147009",
+									"display": "Type of activity (attribute)"
+								}
+							]
+						},
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "702348006",
+									"display": "Active duty military (occupation)"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-disability-status-eve-everywoman",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-disability-status-eve-everywoman",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-disability-status"
+					]
+				},
+				"status": "final",
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "69856-3",
+							"display": "Are you deaf, or do you have serious difficulty hearing?"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2020-11-10T22:33:22Z",
+				"valueBoolean": true
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "observation-us-ph-lab-result-eve-everywoman-lymphocytes",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-lab-result-observation"
+					]
+				},
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory",
+								"display": "Laboratory"
+							}
+						],
+						"text": "Laboratory"
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "731-0",
+							"display": "Lymphocytes [#/volume] in Blood by Automated count"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"effectiveDateTime": "2018-03-07",
+				"valueQuantity": {
+					"value": 5.2,
+					"system": "http://unitsofmeasure.org",
+					"code": "10*3/uL"
+				},
+				"interpretation": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+								"code": "H",
+								"display": "High"
+							}
+						]
+					}
+				],
+				"referenceRange": [
+					{
+						"low": {
+							"value": 1,
+							"system": "http://unitsofmeasure.org",
+							"code": "10*3/uL"
+						},
+						"high": {
+							"value": 4.8,
+							"system": "http://unitsofmeasure.org",
+							"code": "10*3/uL"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Organization/organization-ecr-acme-laboratory",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "organization-ecr-acme-laboratory",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org.fhir/sid/us-npi",
+						"value": "1144221999"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+								"code": "OUTLAB",
+								"display": "outpatient laboratory"
+							}
+						]
+					}
+				],
+				"name": "Acme_Labs",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "+1-555-555-4444"
+					},
+					{
+						"system": "email",
+						"value": "mail@acme-labs.com"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"7777 Laboratory Drive"
+						],
+						"city": "Ann Arbor",
+						"state": "MI",
+						"postalCode": "99999"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Location/location-ecr-salem-medical-center",
+			"resource": {
+				"resourceType": "Location",
+				"id": "location-ecr-salem-medical-center",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-location"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org.fhir/sid/us-npi",
+						"value": "1144221995"
+					}
+				],
+				"status": "active",
+				"name": "Clinic Bldg A, Salem Medical Center",
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+								"code": "HOSP",
+								"display": "Hospital"
+							}
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "(+1) (555)555-3001"
+					},
+					{
+						"system": "fax",
+						"value": "(+1) (555)555-3002"
+					},
+					{
+						"system": "email",
+						"value": "mail@smc.org"
+					}
+				],
+				"address": {
+					"line": [
+						"Clinic Bldg A",
+						"4444 Healthcare Drive"
+					],
+					"city": "Ann Arbor",
+					"state": "MI",
+					"postalCode": "99999"
+				},
+				"managingOrganization": {
+					"reference": "Organization/organization-ecr-salem-medical-center"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Location/location-ecr-city-football-stadium",
+			"resource": {
+				"resourceType": "Location",
+				"id": "location-ecr-city-football-stadium",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-location"
+					]
+				},
+				"status": "active",
+				"name": "City Football Stadium",
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "264379009",
+								"display": "Sports stadium (environment)"
+							}
+						],
+						"text": "City Football Stadium"
+					}
+				],
+				"address": {
+					"line": [
+						"99 Football Stadium Road"
+					],
+					"city": "My City",
+					"state": "AZ",
+					"postalCode": "8562"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Organization/organization-ecr-salem-medical-center",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "organization-ecr-salem-medical-center",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-organization"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org.fhir/sid/us-npi",
+						"value": "55555555"
+					}
+				],
+				"active": true,
+				"name": "Salem Medical Center",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "+1-555-555-1111"
+					},
+					{
+						"system": "email",
+						"value": "mail@salemmedicalcenter.com"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"22222 Health Authority Drive"
+						],
+						"city": "Ann Arbor",
+						"state": "MI",
+						"postalCode": "99999"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Condition/condition-eicr-eve-everywoman-zika",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "condition-eicr-eve-everywoman-zika",
+				"meta": {},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/condition-category",
+								"code": "encounter-diagnosis",
+								"display": "Encounter Diagnosis"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "3928002",
+							"display": "Zika virus disease (disorder)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/patient-ecr-eve-everywoman",
+					"display": "Eve Everywoman"
+				},
+				"onsetDateTime": "2017-08-23",
+				"asserter": {
+					"reference": "Practitioner/practitioner-us-core-henry-seven",
+					"display": "Henry Seven, MD"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://example.org/fhir/Practitioner/practitioner-us-core-henry-seven",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "practitioner-us-core-henry-seven",
+				"meta": {
+					"profile": [
+						"http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.org/fhir/sid/us-npi",
+						"value": "9941339108"
+					}
+				],
+				"name": [
+					{
+						"family": "Henry",
+						"given": [
+							"Seven"
+						],
+						"suffix": [
+							"M.D."
+						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "email",
+						"value": "henry.seven@example.com"
+					}
+				],
+				"address": [
+					{
+						"line": [
+							"BMass Doctors",
+							"2100 North Ave"
+						],
+						"city": "Burlington",
+						"state": "MA",
+						"postalCode": "02368",
+						"country": "US"
+					}
+				]
+			}
+		}
+	]
+}
