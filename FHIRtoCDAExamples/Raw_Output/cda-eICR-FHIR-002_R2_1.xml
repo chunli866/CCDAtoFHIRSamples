@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:sdtc="urn:hl7-org:sdtc"
+                  xmlns:uuid="http://www.uuid.org"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="urn:hl7-org:v3">
+   <realmCode code="US"/>
+   <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+   <!-- [C-CDA R1.1] US Realm Header -->
+   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+   <!-- [C-CDA R2.1] US Realm Header (V3) -->
+   <templateId root="2.16.840.1.113883.10.20.22.1.1" extension="2015-08-01"/>
+   <!-- [eICR R2 STU3] Initial Public Health Case Report Document (eICR) (V5) -->
+   <templateId root="2.16.840.1.113883.10.20.15.2" extension="2022-05-01"/>
+   <!--Converting identifier urn:ietf:rfc:3986-->
+   <id root="2be4b4e4-6df1-4cb2-a947-c70fa0eda54c"/>
+   <code code="55751-2"
+         codeSystem="2.16.840.1.113883.6.1"
+         displayName="Public Health Case Report"/>
+   <title>Initial Public Health Case Report</title>
+   <effectiveTime value="20180102221323+0000"/>
+   <confidentialityCode nullFlavor="NI"/>
+   <languageCode code="en-US"/>
+   <!--Converting identifier urn:ietf:rfc:3986-->
+   <setId root="c03eab8c-11e8-4d0c-ad2a-b385395e27db"/>
+   <versionNumber value="1"/>
+   <recordTarget>
+      <patientRole>
+         <id root="2.16.840.1.113883.4.873"
+             extension="http://hospital.smarthealthit.org/1032702"/>
+         <addr>
+            <streetAddressLine>5101 Peachtree St NE</streetAddressLine>
+            <city>Atlanta</city>
+            <state>GA</state>
+            <postalCode>30302</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="tel:1-(404)555-1212" use="HP"/>
+         <telecom value="mailto:eve.everywoman@example.com" use="WP"/>
+         <patient>
+            <name>
+               <given>Eve</given>
+               <given>L</given>
+               <family>Everywoman</family>
+            </name>
+            <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1"
+                                      codeSystemName="AdministrativeGender"
+                                      code="F"
+                                      displayName="Female"/>
+            <birthTime value="19741124"/>
+            <sdtc:deceasedInd value="false"/>
+            <raceCode code="2106-3"
+                      codeSystem="2.16.840.1.113883.6.238"
+                      displayName="White"/>
+            <ethnicGroupCode code="2186-5"
+                             codeSystem="2.16.840.1.113883.6.238"
+                             displayName="Not Hispanic or Latino"/>
+            <languageCommunication>
+               <languageCode code="eng"/>
+               <preferenceInd value="true"/>
+            </languageCommunication>
+            <languageCommunication>
+               <languageCode code="en"/>
+               <preferenceInd value="false"/>
+            </languageCommunication>
+         </patient>
+      </patientRole>
+   </recordTarget>
+   <!--Author http://example.org/fhir/PractitionerRole/practitionerrole-henry-seven-->
+   <author>
+      <time value="20180102221323+0000"/>
+      <assignedAuthor>
+         <id root="2.16.840.1.113883.4.6" extension="9941339108"/>
+         <code code="261QP2300X"
+               codeSystem="2.16.840.1.113883.6.101"
+               displayName="Primary Care Clinic/Center"/>
+         <addr>
+            <streetAddressLine>BMass Doctors</streetAddressLine>
+            <streetAddressLine>2100 North Ave</streetAddressLine>
+            <city>Burlington</city>
+            <state>MA</state>
+            <postalCode>02368</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="mailto:henry.seven@example.com" use="WP"/>
+         <assignedPerson>
+            <name>
+               <given>Seven</given>
+               <family>Henry</family>
+               <suffix>M.D.</suffix>
+            </name>
+         </assignedPerson>
+         <representedOrganization>
+            <id root="2.16.840.1.113883.4.6" extension="55555555"/>
+            <name>Salem Medical Center</name>
+            <addr>
+               <streetAddressLine>22222 Health Authority Drive</streetAddressLine>
+               <city>Ann Arbor</city>
+               <state>MI</state>
+               <postalCode>99999</postalCode>
+            </addr>
+         </representedOrganization>
+      </assignedAuthor>
+   </author>
+   <custodian>
+      <assignedCustodian>
+         <representedCustodianOrganization><!--Converting identifier http://hl7.org.fhir/sid/us-npi-->
+            <id root="2.16.840.1.113883.4.6" extension="55555555"/>
+            <name>Salem Medical Center</name>
+            <telecom value="tel:+1-555-555-1111" use="WP"/>
+            <addr>
+               <streetAddressLine>22222 Health Authority Drive</streetAddressLine>
+               <city>Ann Arbor</city>
+               <state>MI</state>
+               <postalCode>99999</postalCode>
+            </addr>
+         </representedCustodianOrganization>
+      </assignedCustodian>
+   </custodian>
+   <participant typeCode="IND">
+      <associatedEntity classCode="ECON">
+         <addr>
+            <streetAddressLine>Contact Fake Street Line</streetAddressLine>
+            <city>Atlanta</city>
+            <county/>
+            <state>GA</state>
+            <postalCode>30302</postalCode>
+            <country>US</country>
+         </addr>
+         <telecom value="tel:0690383372" use="MC"/>
+         <associatedPerson>
+            <name use="L">
+               <given>Evecontact</given>
+               <family>Everywoman</family>
+            </name>
+         </associatedPerson>
+      </associatedEntity>
+   </participant>
+   <componentOf>
+      <encompassingEncounter>
+         <id root="2.16.840.1.113883.4.873"
+             extension="http://hospital.smarthealthit.org/9937012"/>
+         <code code="AMB"
+               codeSystem="2.16.840.1.113883.5.4"
+               displayName="ambulatory">
+            <translation code="99201" codeSystem="2.16.840.1.113883.6.12">
+               <originalText>Office Visit</originalText>
+            </translation>
+         </code>
+         <effectiveTime>
+            <low value="20180401100000-0500"/>
+            <high value="20180402101500-0500"/>
+         </effectiveTime>
+         <responsibleParty>
+            <assignedEntity>
+               <id root="2.16.840.1.113883.4.6" extension="9941339108"/>
+               <addr>
+                  <streetAddressLine>BMass Doctors</streetAddressLine>
+                  <streetAddressLine>2100 North Ave</streetAddressLine>
+                  <city>Burlington</city>
+                  <state>MA</state>
+                  <postalCode>02368</postalCode>
+                  <country>US</country>
+               </addr>
+               <telecom value="mailto:henry.seven@example.com" use="WP"/>
+               <assignedPerson>
+                  <name>
+                     <given>Seven</given>
+                     <family>Henry</family>
+                     <suffix>M.D.</suffix>
+                  </name>
+               </assignedPerson>
+               <representedOrganization><!--Converting identifier http://hl7.org.fhir/sid/us-npi-->
+                  <id root="2.16.840.1.113883.4.6" extension="55555555"/>
+                  <name>Salem Medical Center</name>
+                  <telecom value="tel:+1-555-555-1111" use="WP"/>
+                  <telecom value="mailto:mail@salemmedicalcenter.com" use="WP"/>
+                  <addr>
+                     <streetAddressLine>22222 Health Authority Drive</streetAddressLine>
+                     <city>Ann Arbor</city>
+                     <state>MI</state>
+                     <postalCode>99999</postalCode>
+                  </addr>
+               </representedOrganization>
+            </assignedEntity>
+         </responsibleParty>
+         <location>
+            <healthCareFacility>
+               <id root="2.16.840.1.113883.4.6" extension="55555555"/>
+               <code code="HOSP"
+                     codeSystem="2.16.840.1.113883.5.111"
+                     displayName="Hospital"/>
+               <location>
+                  <name>Clinic Bldg A, Salem Medical Center</name>
+                  <addr>
+                     <streetAddressLine>Clinic Bldg A</streetAddressLine>
+                     <streetAddressLine>4444 Healthcare Drive</streetAddressLine>
+                     <city>Ann Arbor</city>
+                     <state>MI</state>
+                     <postalCode>99999</postalCode>
+                  </addr>
+               </location>
+               <serviceProviderOrganization>
+                  <name>Salem Medical Center</name>
+                  <telecom value="tel:+1-555-555-1111" use="WP"/>
+                  <telecom value="mailto:mail@salemmedicalcenter.com" use="WP"/>
+                  <addr>
+                     <streetAddressLine>22222 Health Authority Drive</streetAddressLine>
+                     <city>Ann Arbor</city>
+                     <state>MI</state>
+                     <postalCode>99999</postalCode>
+                  </addr>
+               </serviceProviderOrganization>
+            </healthCareFacility>
+         </location>
+      </encompassingEncounter>
+   </componentOf>
+   <component>
+      <structuredBody>
+         <component>
+            <section><!-- [C-CDA R1.1] Encounters Section (entries optional) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+               <!-- [C-CDA R2.1] Encounters Section (entries optional) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.22" extension="2015-08-01"/>
+               <!-- [C-CDA R1.1] Encounters Section (entries required) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+               <!-- [C-CDA R2.1] Encounters Section (entries required) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.22.1" extension="2015-08-01"/>
+               <code code="46240-8"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     codeSystemName="LOINC"
+                     displayName="History of encounters"/>
+               <title>Encounters</title>
+               <text/>
+               <entry typeCode="DRIV">
+                  <encounter classCode="ENC" moodCode="EVN"><!-- [C-CDA R1.1] Encounter Activities -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+                     <!-- [C-CDA R2.1] Encounter Activities (V3) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.49" extension="2015-08-01"/>
+                     <id root="7b857e80-3e91-11ef-1827-09173f13e4c5"/>
+                     <code code="99201" codeSystem="2.16.840.1.113883.6.12">
+                        <originalText>Office Visit</originalText>
+                     </code>
+                     <effectiveTime>
+                        <low value="20180401100000-0500"/>
+                        <high value="20180402101500-0500"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="COMP">
+                        <act classCode="ACT" moodCode="EVN"><!-- [C-CDA R1.1] Encounter Diagnosis -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.80"/>
+                           <!-- [C-CDA R2.1] Encounter Diagnosis (V3) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.80" extension="2015-08-01"/>
+                           <code code="29308-4"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 codeSystemName="LOINC"
+                                 displayName="Diagnosis"/>
+                           <entryRelationship typeCode="SUBJ">
+                              <observation classCode="OBS" moodCode="EVN" negationInd="false"><!-- [C-CDA R1.1] Problem Observation -->
+                                 <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                 <!-- [C-CDA R2.1] Problem Observation (V3) -->
+                                 <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                 <!-- [eICR R2 STU2] Initial Case Report Trigger Code Problem Observation (V3) -->
+                                 <templateId root="2.16.840.1.113883.10.20.15.2.3.3" extension="2021-01-01"/>
+                                 <id nullFlavor="NI"/>
+                                 <code code="282291009"
+                                       codeSystem="2.16.840.1.113883.6.96"
+                                       codeSystemName="SNOMED CT"
+                                       displayName="Diagnosis interpretation">
+                                    <translation code="29308-4"
+                                                 codeSystem="2.16.840.1.113883.6.1"
+                                                 codeSystemName="LOINC"
+                                                 displayName="Diagnosis"/>
+                                 </code>
+                                 <statusCode code="completed"/>
+                                 <effectiveTime>
+                                    <low value="20170823"/>
+                                 </effectiveTime>
+                                 <value xsi:type="CD"
+                                        code="3928002"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        displayName="Zika virus disease (disorder)"
+                                        sdtc:valueSet="2.16.840.1.114222.4.11.7508"
+                                        sdtc:valueSetVersion="12/12/2018"/>
+                              </observation>
+                           </entryRelationship>
+                        </act>
+                     </entryRelationship>
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R1.1] Problem Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                           <!-- [C-CDA R2.1] Problem Observation (V3) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                           <id nullFlavor="NI"/>
+                           <code code="75326-9"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 codeSystemName="LOINC"
+                                 displayName="Problem HL7.CCDAR2">
+                              <translation code="55607006"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           codeSystemName="SNOMED CT"
+                                           displayName="Problem"/>
+                           </code>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20170923"/>
+                           </effectiveTime>
+                           <value xsi:type="CD"
+                                  code="82272006"
+                                  codeSystem="2.16.840.1.113883.6.96"
+                                  displayName="Common cold (disorder)"/>
+                        </observation>
+                     </entryRelationship>
+                  </encounter>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Reason for Visit Section -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
+               <code code="29299-5"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Reason for visit Narrative"/>
+               <title>Reason for Visit Section</title>
+               <text>
+                  <paragraph>Reason for Visit: Bad cough</paragraph>
+               </text>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Chief Complaint Section -->
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+               <code code="10154-3"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Chief complaint Narrative - Reported"/>
+               <title>Chief Complaint</title>
+               <text>
+                  <paragraph>Chief Complaint: Bad cough</paragraph>
+               </text>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1 History of Present Illness Section -->
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
+               <code code="10164-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="History of Present illness Narrative"/>
+               <title>History of Present Illness Section</title>
+               <text>
+                  <paragraph> Persistent Cough REPORTED starting on 2018/03/05  Whooping Respiration not reported  Paroxysms Of Coughing REPORTED starting on 2018/03/06  Post-tussive vomiting not reported </paragraph>
+               </text>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Problem Section (entries optional) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+               <!-- [C-CDA R2.1] Problem Section (entries optional) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.5" extension="2015-08-01"/>
+               <!-- [C-CDA R1.1] Problem Section (entries required) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+               <!-- [C-CDA R2.1] Problem Section (entries required) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.5.1" extension="2015-08-01"/>
+               <code code="11450-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Problem list - Reported"/>
+               <title>Problems Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Problems Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Problem list - Reported ( 11450-4 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Condition-condition-eicr-eve-everywoman-common-cold.html">Common cold (disorder)</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>condition-eicr-eve-everywoman-common-cold</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>15</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-10T21:21:49.000-04:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>profile</td>
+                                                               <td>http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-condition</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>category</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Problem List Item ( problem-list-item ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://terminology.hl7.org/CodeSystem/condition-category">http://terminology.hl7.org/CodeSystem/condition-category</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>code</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Common cold (disorder) ( 82272006 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>onsetDateTime</td>
+                                             <td>2017-09-23</td>
+                                          </tr>
+                                          <tr>
+                                             <td>asserter</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Practitioner-practitioner-us-core-henry-seven.html">Henry Seven, MD</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Condition/condition-eicr-eve-everywoman-common-cold-->
+               <entry>
+                  <act classCode="ACT" moodCode="EVN"><!-- [C-CDA 1.1] Problem Concern Act -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+                     <!-- [C-CDA 2.1] Problem Concern Act (V3) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="CONC"
+                           codeSystem="2.16.840.1.113883.5.6"
+                           displayName="Concern"/>
+                     <statusCode code="active"/>
+                     <effectiveTime>
+                        <low value="20170923"/>
+                     </effectiveTime>
+                     <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R1.1] Problem Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                           <!-- [C-CDA R2.1] Problem Observation (V3) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                           <id nullFlavor="NI"/>
+                           <code code="75326-9"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 codeSystemName="LOINC"
+                                 displayName="Problem HL7.CCDAR2">
+                              <translation code="55607006"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           codeSystemName="SNOMED CT"
+                                           displayName="Problem"/>
+                           </code>
+                           <statusCode code="completed"/>
+                           <effectiveTime>
+                              <low value="20170923"/>
+                           </effectiveTime>
+                           <value xsi:type="CD"
+                                  code="82272006"
+                                  codeSystem="2.16.840.1.113883.6.96"
+                                  displayName="Common cold (disorder)"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Medications Administered Section -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.38"/>
+               <!-- [C-CDA R2.0] Medications Administered Section (V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.38" extension="2014-06-09"/>
+               <code code="29549-3"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Medication administered Narrative"/>
+               <title>Medications Administered Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Medications Administered Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Medication administered Narrative ( 29549-3 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="MedicationAdministration-medicationadministration-eve-everywoman-azithromycin.html">Azithromycin 500 MG Oral Tablet</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>medicationadministration-eve-everywoman-azithromycin</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>10</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-05T03:11:22.000-04:00</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>status</td>
+                                             <td>completed</td>
+                                          </tr>
+                                          <tr>
+                                             <td>medicationCodeableConcept</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>Azithromycin 500 MG Oral Tablet</item>
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Azithromycin 500 MG Oral Tablet ( 248656 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://www.nlm.nih.gov/research/umls/rxnorm">http://www.nlm.nih.gov/research/umls/rxnorm</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>effectivePeriod</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>start</td>
+                                                               <td>2018-03-07</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>end</td>
+                                                               <td>2018-03-07</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>dosage</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>route</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Oral Route ( 26643006 ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>method</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Swallow - dosing instruction imperative (qualifier value) ( 421521009 ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>dose</td>
+                                                               <td>
+                                                                  <list>
+                                                                     <item>
+                                                                        <table>
+                                                                           <tbody>
+                                                                              <tr>
+                                                                                 <td>value</td>
+                                                                                 <td>2</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>unit</td>
+                                                                                 <td>TAB</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>system</td>
+                                                                                 <td>
+                                                                                    <linkHtml href="http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm">http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm</linkHtml>
+                                                                                 </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>code</td>
+                                                                                 <td>TAB</td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/MedicationAdministration/medicationadministration-eve-everywoman-azithromycin-->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN"><!-- [C-CDA R1.1] Medication Activity -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                     <!-- [C-CDA R2.0] Medication Activity (V2)  -->
+                     <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.16"/>
+                     <id nullFlavor="NI"/>
+                     <text>Two tablets at once</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20180307"/>
+                        <high value="20180307"/>
+                     </effectiveTime>
+                     <routeCode nullFlavor="OTH">
+                        <translation code="26643006"
+                                     codeSystem="2.16.840.1.113883.6.96"
+                                     displayName="Oral route"/>
+                     </routeCode>
+                     <approachSiteCode code="421521009"
+                                       codeSystem="2.16.840.1.113883.6.96"
+                                       displayName="Swallow - dosing instruction imperative (qualifier value)"/>
+                     <doseQuantity value="2" unit="TAB"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU"><!-- [C-CDA R2.0] Medication Information (V2) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                           <manufacturedMaterial>
+                              <code code="248656"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    displayName="Azithromycin 500 MG Oral Tablet">
+                                 <originalText>Azithromycin 500 MG Oral Tablet</originalText>
+                              </code>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2.1] Admission Medications Section (entries optional)(V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.44" extension="2015-08-01"/>
+               <code code="42346-7"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Medications on admission (narrative)"/>
+               <title>Admission Medications Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Admission Medications Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Medications on admission (narrative) ( 42346-7 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="MedicationAdministration-medicationadministration-eve-everywoman-naloxone-response.html">naloxone HCl 0.4 MG in 1 ML Injection</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/MedicationAdministration/medicationadministration-eve-everywoman-naloxone-response-->
+               <entry>
+                  <act classCode="ACT" moodCode="EVN"><!-- Admission Medication (V2) -->
+                     <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.36"/>
+                     <code code="42346-7"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Medications on admission (narrative)"/>
+                     <entryRelationship typeCode="SUBJ">
+                        <substanceAdministration classCode="SBADM" moodCode="EVN"><!-- MEDICATION ACTIVITY V2  -->
+                           <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.16"/>
+                           <id nullFlavor="NI"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime xsi:type="IVL_TS">
+                              <low value="20180307"/>
+                              <high value="20180307"/>
+                           </effectiveTime>
+                           <routeCode nullFlavor="OTH">
+                              <translation code="206007"
+                                           codeSystem="2.16.840.1.113883.6.96"
+                                           displayName="Gluteus maximus muscle"/>
+                           </routeCode>
+                           <approachSiteCode code="422145002"
+                                             codeSystem="2.16.840.1.113883.6.96"
+                                             displayName="Inject - dosing instruction imperative (qualifier value)"/>
+                           <doseQuantity value="1" unit="mL"/>
+                           <consumable>
+                              <manufacturedProduct classCode="MANU"><!-- [C-CDA R2.0] Medication Information (V2) -->
+                                 <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                                 <manufacturedMaterial>
+                                    <code code="1659929"
+                                          codeSystem="2.16.840.1.113883.6.88"
+                                          displayName="naloxone HCl 0.4 MG in 1 ML Injection"/>
+                                 </manufacturedMaterial>
+                              </manufacturedProduct>
+                           </consumable>
+                           <entryRelationship typeCode="CAUS">
+                              <observation classCode="OBS" moodCode="EVN"><!-- [eICR R2] Therapeutic Medication Response Observation -->
+                                 <templateId extension="2019-04-01" root="2.16.840.1.113883.10.20.15.2.3.37"/>
+                                 <id nullFlavor="NI"/>
+                                 <code code="67540-5"
+                                       codeSystem="2.16.840.1.113883.6.1"
+                                       codeSystemName="LOINC"
+                                       displayName="Response to medication"/>
+                                 <statusCode code="completed"/>
+                                 <effectiveTime>
+                                    <low value="20180307"/>
+                                    <high value="20180307"/>
+                                 </effectiveTime>
+                                 <value xsi:type="CD"
+                                        code="268910001"
+                                        codeSystem="2.16.840.1.113883.6.96"
+                                        displayName="Patient's condition improved (finding)"/>
+                              </observation>
+                           </entryRelationship>
+                        </substanceAdministration>
+                     </entryRelationship>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2] Medications Section (entries required)(V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.1.1" extension="2014-06-09"/>
+               <code code="10160-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="History of Medication use Narrative"/>
+               <title>Medications Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Medications Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>History of Medication use Narrative ( 10160-0 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="MedicationAdministration-medicationadministration-eve-everywoman-azithromycin.html">Azithromycin 500 MG Oral Tablet</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/MedicationAdministration/medicationadministration-eve-everywoman-azithromycin-->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN"><!-- [C-CDA R1.1] Medication Activity -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                     <!-- [C-CDA R2.0] Medication Activity (V2)  -->
+                     <templateId extension="2014-06-09" root="2.16.840.1.113883.10.20.22.4.16"/>
+                     <id nullFlavor="NI"/>
+                     <text>Two tablets at once</text>
+                     <statusCode code="completed"/>
+                     <effectiveTime xsi:type="IVL_TS">
+                        <low value="20180307"/>
+                        <high value="20180307"/>
+                     </effectiveTime>
+                     <routeCode nullFlavor="OTH">
+                        <translation code="26643006"
+                                     codeSystem="2.16.840.1.113883.6.96"
+                                     displayName="Oral route"/>
+                     </routeCode>
+                     <approachSiteCode code="421521009"
+                                       codeSystem="2.16.840.1.113883.6.96"
+                                       displayName="Swallow - dosing instruction imperative (qualifier value)"/>
+                     <doseQuantity value="2" unit="TAB"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU"><!-- [C-CDA R2.0] Medication Information (V2) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.23" extension="2014-06-09"/>
+                           <manufacturedMaterial>
+                              <code code="248656"
+                                    codeSystem="2.16.840.1.113883.6.88"
+                                    displayName="Azithromycin 500 MG Oral Tablet">
+                                 <originalText>Azithromycin 500 MG Oral Tablet</originalText>
+                              </code>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Results Section (entries optional) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
+               <!-- [C-CDA R2.1] Results Section (entries optional) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.3" extension="2015-08-01"/>
+               <!-- [C-CDA R1.1] Results Section (entries required) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+               <!-- [C-CDA R2.1] Results Section (entries required) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.3.1" extension="2015-08-01"/>
+               <code code="30954-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Relevant diagnostic tests/laboratory data Narrative"/>
+               <title>Results Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Results Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Relevant Dx tests/lab data ( 30954-2 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-us-ph-lab-result-eve-everywoman-lymphocytes.html">Lymphocytes [#/​volume] in Blood by Automated count - Interpretation: High</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>observation-us-ph-lab-result-eve-everywoman-lymphocytes</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>10</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-05T02:50:13.000-04:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>profile</td>
+                                                               <td>http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-lab-result-observation</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>status</td>
+                                             <td>final</td>
+                                          </tr>
+                                          <tr>
+                                             <td>category</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>Laboratory</item>
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Laboratory ( laboratory ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://terminology.hl7.org/CodeSystem/observation-category">http://terminology.hl7.org/CodeSystem/observation-category</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>code</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Lymphocytes [#/volume] in Blood by Automated count ( 731-0 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>effectiveDateTime</td>
+                                             <td>2018-03-07</td>
+                                          </tr>
+                                          <tr>
+                                             <td>valueQuantity</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>5.2</item>
+                                                   <item>
+                                                      <linkHtml href="http://unitsofmeasure.org">http://unitsofmeasure.org</linkHtml>
+                                                   </item>
+                                                   <item>10*3/uL</item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>interpretation</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>High ( H ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation">http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>referenceRange</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>low</td>
+                                                               <td>
+                                                                  <list>
+                                                                     <item>
+                                                                        <table>
+                                                                           <tbody>
+                                                                              <tr>
+                                                                                 <td>value</td>
+                                                                                 <td>1</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>system</td>
+                                                                                 <td>
+                                                                                    <linkHtml href="http://unitsofmeasure.org">http://unitsofmeasure.org</linkHtml>
+                                                                                 </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>code</td>
+                                                                                 <td>10*3/uL</td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>high</td>
+                                                               <td>
+                                                                  <list>
+                                                                     <item>
+                                                                        <table>
+                                                                           <tbody>
+                                                                              <tr>
+                                                                                 <td>value</td>
+                                                                                 <td>4.8</td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>system</td>
+                                                                                 <td>
+                                                                                    <linkHtml href="http://unitsofmeasure.org">http://unitsofmeasure.org</linkHtml>
+                                                                                 </td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                 <td>code</td>
+                                                                                 <td>10*3/uL</td>
+                                                                              </tr>
+                                                                           </tbody>
+                                                                        </table>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Observation/observation-us-ph-lab-result-eve-everywoman-lymphocytes-->
+               <entry>
+                  <organizer classCode="BATTERY" moodCode="EVN"><!-- [C-CDA R1.1] Result Organizer -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+                     <!-- [C-CDA R2.1] Result Organizer (V3) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.1" extension="2015-08-01"/>
+                     <id root="7b857f89-3e91-11ef-1827-09173f13e4c5"/>
+                     <code code="731-0"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Lymphocytes [#/volume] in Blood by Automated count"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20180307"/>
+                        <high value="20180307"/>
+                     </effectiveTime>
+                     <component>
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R1.1] Result Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+                           <!-- [C-CDA R2.1] Result Observation (V3) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.2" extension="2015-08-01"/>
+                           <id nullFlavor="NI"/>
+                           <code code="731-0"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="Lymphocytes [#/volume] in Blood by Automated count"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20180307"/>
+                           <value xsi:type="PQ" value="5.2" unit="10*3/uL"/>
+                           <interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83" displayName="High"/>
+                           <referenceRange>
+                              <observationRange>
+                                 <value xsi:type="IVL_PQ">
+                                    <low value="1" unit="10*3/uL"/>
+                                    <high value="4.8" unit="10*3/uL"/>
+                                 </value>
+                              </observationRange>
+                           </referenceRange>
+                        </observation>
+                     </component>
+                  </organizer>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Plan of Care Section -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+               <!-- [C-CDA R2.0] Plan of Treatment Section (V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.10" extension="2014-06-09"/>
+               <code code="18776-5"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Plan of care note"/>
+               <title>Plan of Treatment Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Plan of Treatment Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Plan of care note ( 18776-5 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <content styleCode="Bold">Trigger code</content>
+                                 </item>
+                                 <item>Trigger Code: </item>
+                                 <item>Trigger Code Display: </item>
+                                 <item>Trigger Code System: </item>
+                                 <item>Trigger Code Value Set: urn:oid:2.16.840.1.114222.4.11.7508</item>
+                                 <item>Trigger Code Value Set Version: 19/05/2018</item>
+                              </list>
+                              <linkHtml href="ServiceRequest-servicerequest-eicr-zika.html">Request for Zika virus envelope (E) gene [Presence] in Serum by Probe and target amplification method</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>servicerequest-eicr-zika</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>9</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-23T13:56:36.000-04:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>profile</td>
+                                                               <td>http://hl7.org/fhir/us/ecr/StructureDefinition/eicr-servicerequest</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>status</td>
+                                             <td>completed</td>
+                                          </tr>
+                                          <tr>
+                                             <td>intent</td>
+                                             <td>order</td>
+                                          </tr>
+                                          <tr>
+                                             <td>category</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>Diagnostics Procedure</item>
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Diagnostic procedure (procedure) ( 103693007 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>code</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>Zika RT-PCR</item>
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Zika virus envelope E gene [Presence] in Serum by NAA with probe detection ( 80825-3 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>performer</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Organization-organization-ecr-acme-laboratory.html">Acme Labs</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/ServiceRequest/servicerequest-eicr-zika-->
+               <entry typeCode="DRIV">
+                  <observation classCode="OBS" moodCode="RQO"><!-- [C-CDA R1.1] Plan of Care Activity Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
+                     <!-- [C-CDA R2.0] Planned Observation (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.44" extension="2014-06-09"/>
+                     <!-- [eICR R2 STU2] Initial Case Report Trigger Code Lab Test Order (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.4" extension="2019-04-01"/>
+                     <id root="2.16.840.1.113883.4.873"
+                         extension="http://lab.smarthealthit.org/061ef612-344f-4e7b-81a8-1059ae7bbe19"/>
+                     <code code="80825-3"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Zika virus envelope E gene [Presence] in Serum by NAA with probe detection"
+                           sdtc:valueSet="2.16.840.1.114222.4.11.7508"
+                           sdtc:valueSetVersion="19/05/2018">
+                        <originalText>Zika RT-PCR</originalText>
+                     </code>
+                     <statusCode code="active"/>
+                     <effectiveTime nullFlavor="NI"/>
+                     <!--Performer http://example.org/fhir/Organization/organization-ecr-acme-laboratory-->
+                     <performer typeCode="PRF">
+                        <assignedEntity><!--Converting identifier http://hl7.org.fhir/sid/us-npi-->
+                           <id root="2.16.840.1.113883.4.6" extension="1144221999"/>
+                           <addr>
+                              <streetAddressLine>7777 Laboratory Drive</streetAddressLine>
+                              <city>Ann Arbor</city>
+                              <state>MI</state>
+                              <postalCode>99999</postalCode>
+                           </addr>
+                           <telecom value="tel:+1-555-555-4444" use="WP"/>
+                           <telecom value="mailto:mail@acme-labs.com" use="WP"/>
+                           <representedOrganization>
+                              <id root="2.16.840.1.113883.4.6" extension="1144221999"/>
+                              <name>Acme_Labs</name>
+                           </representedOrganization>
+                        </assignedEntity>
+                     </performer>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2.1] Immunizations Section (entries required)(V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.2.1" extension="2015-08-01"/>
+               <code code="11369-6"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="History of Immunization Narrative"/>
+               <title>Immunizations Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Immunizations Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>History of Immunization Narrative ( 11369-6 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Immunization-immunization-ecr-pneumo.html">pneumococcal polysaccharide vaccine</linkHtml>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-vaccine-credential-assertion-eve-everywoman.html">Vaccine Credential Patient Assertion Observation Example</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Immunization/immunization-ecr-pneumo-->
+               <entry>
+                  <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false"><!-- [C-CDA 2.1] Immunization Activity (V3) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+                     <id nullFlavor="NI"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20180901"/>
+                     <doseQuantity nullFlavor="NI"/>
+                     <consumable>
+                        <manufacturedProduct classCode="MANU"><!-- [C-CDA R2.1] Immunization Medication Information (V3) -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                           <manufacturedMaterial>
+                              <code code="33"
+                                    codeSystem="2.16.840.1.113883.3.13"
+                                    displayName="pneumococcal polysaccharide PPV23"/>
+                           </manufacturedMaterial>
+                        </manufacturedProduct>
+                     </consumable>
+                  </substanceAdministration>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-vaccine-credential-assertion-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R2 STU3] Vaccine Credential Patient Assertion -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.55" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="11370-4"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Immunization status - Reported"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20201110223322+0000"/>
+                     <value xsi:type="CD"
+                            code="Y"
+                            codeSystem="2.16.840.1.113883.12.136"
+                            displayName="Yes"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2.1] Procedures Section (entries optional)(V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.7.1" extension="2014-06-09"/>
+               <!-- [C-CDA R2.1] Procedures Section (entries required)(V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.7" extension="2014-06-09"/>
+               <code code="47519-4"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="History of Procedures Document"/>
+               <title>Procedures Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Procedures Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>History of Procedures Document ( 47519-4 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Procedure-us-ph-procedure-ecmo.html">Extracorporeal membrane oxygenation (procedure)</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Procedure/us-ph-procedure-ecmo-->
+               <entry>
+                  <procedure classCode="PROC" moodCode="EVN"><!-- [C-CDA R2.0] Procedure Activity Procedure (V2) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+                     <id root="b2a737f2-2fdb-49c1-b097-dac173d07afd"/>
+                     <code code="233573008"
+                           codeSystem="2.16.840.1.113883.6.96"
+                           displayName="Extracorporeal membrane oxygenation (procedure)">
+                        <originalText>Extracorporeal membrane oxygenation (procedure)</originalText>
+                     </code>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20201101125526-0700"/>
+                        <high value="20201101132526-0700"/>
+                     </effectiveTime>
+                  </procedure>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2.1] Vital Signs Section (entries required) (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.4.1" extension="2015-08-01"/>
+               <code code="8716-3"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Vital signs"/>
+               <title>Vital Signs Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Vital Signs Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Vital signs ( 8716-3 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-blood-pressure-eve-everywoman.html">Blood pressure systolic and diastolic</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Observation/observation-blood-pressure-eve-everywoman-->
+               <entry>
+                  <organizer classCode="CLUSTER" moodCode="EVN"><!-- [C-CDA R2.0] Vital sign organizer -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+                     <!-- [C-CDA R2.0] Vital sign organizer -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.26" extension="2015-08-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="46680005"
+                           codeSystem="2.16.840.1.113883.6.96"
+                           codeSystemName="SNOMED CT"
+                           displayName="Vital Signs">
+                        <translation code="74728-7"
+                                     codeSystem="2.16.840.1.113883.6.1"
+                                     codeSystemName="LOINC"
+                                     displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel "/>
+                     </code>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20200702"/>
+                     <component>
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R2.0] Vital sign observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                           <!-- [C-CDA R2.0] Vital sign observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                           <id nullFlavor="NI"/>
+                           <code code="8480-6"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="Systolic blood pressure">
+                              <originalText>Systolic blood pressure</originalText>
+                           </code>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20200702"/>
+                           <value unit="mmHg" value="109" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                     <component>
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R2.0] Vital sign observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+                           <!-- [C-CDA R2.0] Vital sign observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.27" extension="2014-06-09"/>
+                           <id nullFlavor="NI"/>
+                           <code code="8462-4"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="Diastolic blood pressure">
+                              <originalText>Diastolic blood pressure</originalText>
+                           </code>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20200702"/>
+                           <value unit="mmHg" value="44" xsi:type="PQ"/>
+                        </observation>
+                     </component>
+                  </organizer>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA 1.1] Social History Section -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+               <!-- [C-CDA 2.1] Social History Section (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2015-08-01"/>
+               <!-- [ODH R2] Occupational Data for Health Templates Requirements Section (V2) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.17" extension="2020-09-01"/>
+               <code code="29762-2"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Social history Narrative"/>
+               <title>Social History Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Social History Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Social history Narrative ( 29762-2 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-travel-history-eve-everywoman-201801.html">eICR Travel History: Eve Everywoman 2018-01</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>observation-travel-history-eve-everywoman-201801</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>11</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-05T03:15:42.000-04:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>profile</td>
+                                                               <td>http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-travel-history</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>status</td>
+                                             <td>final</td>
+                                          </tr>
+                                          <tr>
+                                             <td>code</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>Travel History</item>
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Travel ( 420008001 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>effectivePeriod</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>start</td>
+                                                               <td>2018-01-15</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>end</td>
+                                                               <td>2018-01-30</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>component</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>code</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Location ( LOC ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://terminology.hl7.org/CodeSystem/v3-ParticipationType">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>valueCodeableConcept</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Fiji ( FJI ) </item>
+                                                                           <item>urn:iso:std:iso:3166</item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>component</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>code</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Location ( LOC ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://terminology.hl7.org/CodeSystem/v3-ParticipationType">http://terminology.hl7.org/CodeSystem/v3-ParticipationType</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>valueCodeableConcept</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Vanuatu ( VUT ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1">https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=1.0.3166.1</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Observation/observation-travel-history-eve-everywoman-201801-->
+               <entry>
+                  <act classCode="ACT" moodCode="EVN"><!-- [eICR R2 STU3.1] Travel History (V3) -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.1" extension="2022-05-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="420008001"
+                           codeSystem="2.16.840.1.113883.6.96"
+                           displayName="Travel">
+                        <originalText>Travel History</originalText>
+                     </code>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20180115"/>
+                        <high value="20180130"/>
+                     </effectiveTime>
+                     <participant typeCode="LOC">
+                        <participantRole classCode="TERR">
+                           <code code="FJI" codeSystem="1.0.3166.1" displayName="Fiji"/>
+                        </participantRole>
+                     </participant>
+                     <participant typeCode="LOC">
+                        <participantRole classCode="TERR">
+                           <code code="VUT" codeSystem="1.0.3166.1" displayName="Vanuatu"/>
+                        </participantRole>
+                     </participant>
+                     <entryRelationship typeCode="COMP">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [eICR R2 STU3.1] Purpose of Travel Observation (V2) -->
+                           <templateId root="2.16.840.1.113883.10.20.15.2.3.51" extension="2022-05-01"/>
+                           <id nullFlavor="NI"/>
+                           <code code="280147009"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Type of activity (attribute)"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime nullFlavor="NI"/>
+                           <value xsi:type="CD"
+                                  code="702348006"
+                                  codeSystem="2.16.840.1.113883.6.96"
+                                  displayName="Active duty military (occupation)"/>
+                        </observation>
+                     </entryRelationship>
+                  </act>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-disability-status-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R3] Disability Status Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.47" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="69856-3"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Are you deaf, or do you have serious difficulty hearing?"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20201110223322+0000"/>
+                     <value xsi:type="BL" value="true"/>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-us-ph-exposure-contact-info-football-game-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R3] Exposure/Contact Information Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.52" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="C3841750"
+                           codeSystem="2.16.840.1.113883.6.86"
+                           displayName="Mass gathering">
+                        <originalText>Mass gathering (football game)</originalText>
+                     </code>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20200111180000+0000"/>
+                        <high value="20200111213000+0000"/>
+                     </effectiveTime>
+                     <value xsi:type="CD"
+                            code="264379009"
+                            codeSystem="2.16.840.1.113883.6.96"
+                            displayName="Sports stadium (environment)">
+                        <originalText>City Football Stadium</originalText>
+                     </value>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-country-of-nationality-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R3] Country of Nationality Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.54" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="186034007"
+                           codeSystem="2.16.840.1.113883.6.96"
+                           displayName="Ethnicity / related nationality data (observable entity)"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20201110223322+0000"/>
+                     <value xsi:type="CD"
+                            code="AU"
+                            codeSystem="1.0.3166.1"
+                            displayName="Australia"/>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-country-of-residence-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R3] Country of Residence Observation  -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.53" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="77983-5"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Country of usual residence"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20201110223322+0000"/>
+                     <value xsi:type="CD"
+                            code="GB"
+                            codeSystem="1.0.3166.1"
+                            displayName="United Kingdom of Great Britain and Northern Ireland"/>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-odh-employment-status-ecr-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1D1] History of Employment Status Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.212" extension="2017-11-30"/>
+                     <id nullFlavor="NI"/>
+                     <code code="74165-2"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="History of employment status NIOSH"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20150424"/>
+                     </effectiveTime>
+                     <value xsi:type="CD"
+                            code="Employed"
+                            codeSystem="2.16.840.1.113883.5.1063"
+                            displayName="Employed"/>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-characteristics-of-home-environment-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R2] Characteristics of Home Environment -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.109"/>
+                     <id nullFlavor="NI"/>
+                     <code code="75274-1"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Characteristics of residence"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20160518223322+0000"/>
+                     <value xsi:type="CD"
+                            code="32911000"
+                            codeSystem="2.16.840.1.113883.6.96"
+                            displayName="Homeless"/>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-odh-past-or-present-job-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1] Past or Present Occupation Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.217" extension="2017-11-30"/>
+                     <id nullFlavor="NI"/>
+                     <code code="11341-5"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="History of Occupation"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20150424"/>
+                     </effectiveTime>
+                     <value xsi:type="CD"
+                            code="3600"
+                            codeSystem="2.16.840.1.114222.4.5.314"
+                            displayName="Nursing, psychiatric, and home health aides">
+                        <translation code="31-1014.00.007136"
+                                     codeSystem="2.16.840.1.114222.4.5.327"
+                                     displayName="Certified Nursing Assistant (CNA) [Nursing Assistants]"/>
+                     </value>
+                     <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1] Past or Present Industry Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.216" extension="2017-11-30"/>
+                           <id nullFlavor="NI"/>
+                           <code code="86188-0"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="History of Occupation industry"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime nullFlavor="NI"/>
+                           <value xsi:type="CD"
+                                  code="8270"
+                                  codeSystem="2.16.840.1.114222.4.5.315"
+                                  displayName="Nursing care facilities">
+                              <translation code="621610.008495"
+                                           codeSystem="2.16.840.1.114222.4.5.327"
+                                           displayName="Home nursing services"/>
+                           </value>
+                        </observation>
+                     </entryRelationship>
+                     <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1] Occupational Hazard Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.215" extension="2017-11-30"/>
+                           <id nullFlavor="NI"/>
+                           <code code="87729-0"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="History of Occupational hazard"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime nullFlavor="NI"/>
+                           <value xsi:type="ST">Asbestos</value>
+                        </observation>
+                     </entryRelationship>
+                  </observation>
+               </entry>
+               <!--Processing entry http://example.org/fhir/Observation/observation-odh-usual-work-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1] Usual Occupation Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.221" extension="2017-11-30"/>
+                     <id nullFlavor="NI"/>
+                     <code code="21843-8"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="History of Usual occupation"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20150101"/>
+                        <high value="20180307"/>
+                     </effectiveTime>
+                     <value xsi:type="CD"
+                            code="0136"
+                            codeSystem="2.16.840.1.114222.4.5.314"
+                            displayName="Human Resources Managers"/>
+                     <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [ODH R1] Usual Industry Observation -->
+                           <templateId root="2.16.840.1.113883.10.20.22.4.219" extension="2017-11-30"/>
+                           <id nullFlavor="NI"/>
+                           <code code="21844-6"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="History of Usual industry"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime nullFlavor="NI"/>
+                           <value xsi:type="CD"
+                                  code="8190"
+                                  codeSystem="2.16.840.1.114222.4.5.315"
+                                  displayName="Hospitals"/>
+                        </observation>
+                     </entryRelationship>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R2.1 Companion Guide] Birth Sex Observation -->
+                     <templateId extension="2016-06-01" root="2.16.840.1.113883.10.20.22.4.200"/>
+                     <code code="76689-9"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           displayName="Sex Assigned At Birth"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="19741124"/>
+                     <value code="F"
+                            codeSystem="2.16.840.1.113883.5.1"
+                            codeSystemName="AdministrativeGender"
+                            displayName="Female"
+                            xsi:type="CD"/>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN">
+                     <templateId extension="2015-08-01" root="2.16.840.1.113883.10.20.22.4.38"/>
+                     <!-- [C-CDA R2.1 Companion Guide] Gender Identity Observation (V3) -->
+                     <templateId extension="2022-06-01" root="2.16.840.1.113883.10.20.34.3.45"/>
+                     <id nullFlavor="NI"/>
+                     <code code="76691-5"
+                           codeSystem="2.16.840.1.113883.6.1"
+                           codeSystemName="LOINC"
+                           displayName="Gender identity"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20180102"/>
+                        <high value="20180102"/>
+                     </effectiveTime>
+                     <value xsi:type="CD" nullFlavor="ASKU">
+                        <originalText>asked but unknown</originalText>
+                     </value>
+                  </observation>
+               </entry>
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R2 STU3] Tribal Affiliation Observation  -->
+                     <templateId extension="2021-01-01" root="2.16.840.1.113883.10.20.15.2.3.48"/>
+                     <id nullFlavor="NI"/>
+                     <code code="91"
+                           codeSystem="2.16.840.1.113883.5.140"
+                           displayName="Fort Mojave Indian Tribe of Arizona, California"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime nullFlavor="NI"/>
+                     <value xsi:type="BL" value="true"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA PREG] Pregnancy Section -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.80" extension="2020-04-01"/>
+               <templateId root="2.16.840.1.113883.10.20.22.2.80" extension="2018-04-01"/>
+               <code code="90767-5"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Pregnancy summary Document"/>
+               <title>Pregnancy Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Pregnancy Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Pregnancy summary Document ( 90767-5 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-pregnancy-status-eve-everywoman.html">eICR Pregnancy Status Example</linkHtml>
+                              <list>
+                                 <item>
+                                    <table>
+                                       <tbody>
+                                          <tr>
+                                             <td>id</td>
+                                             <td>observation-pregnancy-status-eve-everywoman</td>
+                                          </tr>
+                                          <tr>
+                                             <td>meta</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>versionId</td>
+                                                               <td>13</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>lastUpdated</td>
+                                                               <td>2019-10-05T03:15:42.000-04:00</td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>profile</td>
+                                                               <td>http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-pregnancy-status-observation</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>us-ph-date-recorded-extension</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>2017-10-01</item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>date-determined-extension</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>2017-10-01</item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>status</td>
+                                             <td>final</td>
+                                          </tr>
+                                          <tr>
+                                             <td>code</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Pregnancy Status ( 82810-3 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>subject</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item/>
+                                                   <item>
+                                                      <linkHtml href="Patient-patient-ecr-eve-everywoman.html">Eve Everywoman</linkHtml>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>effectivePeriod</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>start</td>
+                                                               <td>2017-08-26</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>valueCodeableConcept</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Pregnancy (finding) ( 77386006 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>method</td>
+                                             <td>
+                                                <list listType="unordered">
+                                                   <item>
+                                                      <list listType="unordered">
+                                                         <item>Diagnostic ultrasonography (procedure) ( 16310003 ) </item>
+                                                         <item>
+                                                            <linkHtml href="http://snomed.info/sct">http://snomed.info/sct</linkHtml>
+                                                         </item>
+                                                      </list>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>component</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>date-determined-extension</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>2017-10-01</item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>code</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Gestational age Estimated from patient reported estimated date of conception ( 53691-2 ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>valueQuantity</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>143</item>
+                                                                     <item>d</item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td>component</td>
+                                             <td>
+                                                <list>
+                                                   <item>
+                                                      <table>
+                                                         <tbody>
+                                                            <tr>
+                                                               <td>date-determined-extension</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>2017-10-01</item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>code</td>
+                                                               <td>
+                                                                  <list listType="unordered">
+                                                                     <item>
+                                                                        <list listType="unordered">
+                                                                           <item>Delivery date Estimated from date fundal height reaches umb ( 57064-8 ) </item>
+                                                                           <item>
+                                                                              <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                                                           </item>
+                                                                        </list>
+                                                                     </item>
+                                                                  </list>
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>valueDateTime</td>
+                                                               <td>2018-05-01</td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                   </item>
+                                                </list>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Observation/observation-pregnancy-status-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA R1] Pregnancy Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
+                     <!-- [C-CDA PREG] Pregnancy Observation (SUPPLEMENTAL PREGNANCY) -->
+                     <templateId root="2.16.840.1.113883.10.20.22.4.293" extension="2020-04-01"/>
+                     <templateId root="2.16.840.1.113883.10.20.22.4.293" extension="2018-04-01"/>
+                     <id nullFlavor="NI"/>
+                     <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                     <statusCode code="completed"/>
+                     <effectiveTime>
+                        <low value="20170826"/>
+                     </effectiveTime>
+                     <value xsi:type="CD"
+                            code="77386006"
+                            codeSystem="2.16.840.1.113883.6.96"
+                            displayName="Pregnancy (finding)"/>
+                     <methodCode code="16310003"
+                                 codeSystem="2.16.840.1.113883.6.96"
+                                 displayName="Diagnostic ultrasonography (procedure)"/>
+                     <performer><!-- Pregnancy Status Determination Date -->
+                        <time value="20171001"/>
+                        <assignedEntity>
+                           <id nullFlavor="NA"/>
+                        </assignedEntity>
+                     </performer>
+                     <author><!-- Pregnancy Status Recorded Date -->
+                        <time value="20171001"/>
+                        <assignedAuthor>
+                           <id nullFlavor="NA"/>
+                        </assignedAuthor>
+                     </author>
+                     <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA PREG] Estimated Gestational Age of Pregnancy -->
+                           <templateId extension="2020-04-01" root="2.16.840.1.113883.10.20.22.4.280"/>
+                           <id root="7b8581a3-3e91-11ef-1827-09173f13e4c5"/>
+                           <code code="53691-2"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="Gestational age Estimated from patient reported estimated date of conception"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20171001"/>
+                           <value xsi:type="PQ" value="143" unit="d"/>
+                        </observation>
+                     </entryRelationship>
+                     <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN"><!-- [C-CDA EDD] Delivery date Estimated from date fundal height reaches umb -->
+                           <templateId extension="2020-04-01" root="2.16.840.1.113883.10.20.22.4.297"/>
+                           <id nullFlavor="NI"/>
+                           <code code="57064-8"
+                                 codeSystem="2.16.840.1.113883.6.1"
+                                 displayName="Delivery date Estimated from date fundal height reaches umb"/>
+                           <statusCode code="completed"/>
+                           <effectiveTime value="20180501"/>
+                        </observation>
+                     </entryRelationship>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [eICR R2 STU3] Emergency Outbreak Information Section -->
+               <templateId root="2.16.840.1.113883.10.20.15.2.2.4" extension="2021-01-01"/>
+               <code code="83910-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Public health Note"/>
+               <title>Emergency Outbreak Information Section</title>
+               <text>
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td>title</td>
+                           <td>Emergency Outbreak Information Section</td>
+                        </tr>
+                        <tr>
+                           <td>code</td>
+                           <td>
+                              <list listType="unordered">
+                                 <item>
+                                    <list listType="unordered">
+                                       <item>Public health Note ( 83910-0 ) </item>
+                                       <item>
+                                          <linkHtml href="http://loinc.org">http://loinc.org</linkHtml>
+                                       </item>
+                                    </list>
+                                 </item>
+                              </list>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>entry</td>
+                           <td>
+                              <linkHtml href="Observation-observation-us-ph-emergency-outbreak-info-eve-everywoman.html">US Public Health Emergency Outbreak Information Example</linkHtml>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </text>
+               <!--Processing entry http://example.org/fhir/Observation/observation-us-ph-emergency-outbreak-info-eve-everywoman-->
+               <entry>
+                  <observation classCode="OBS" moodCode="EVN"><!-- [eICR R3] Emergency Outbreak Information Observation -->
+                     <templateId root="2.16.840.1.113883.10.20.15.2.3.40" extension="2021-01-01"/>
+                     <id nullFlavor="NI"/>
+                     <code nullFlavor="OTH">
+                        <originalText>Employee desk distance from mail sorter</originalText>
+                     </code>
+                     <statusCode code="completed"/>
+                     <effectiveTime value="20201118223322+0000"/>
+                     <value xsi:type="PQ" value="2" unit="m"/>
+                  </observation>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R2.1] Past Medical History (V3) -->
+               <templateId root="2.16.840.1.113883.10.20.22.2.20" extension="2015-08-01"/>
+               <code code="11348-0"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="History of Past illness Narrative"/>
+               <title>Past Medical History Section</title>
+               <text>
+                  <paragraph>Past medical history</paragraph>
+               </text>
+            </section>
+         </component>
+         <component>
+            <section><!-- [C-CDA R1.1] Review of Systems Section -->
+               <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
+               <code code="10187-3"
+                     codeSystem="2.16.840.1.113883.6.1"
+                     displayName="Review of systems Narrative - Reported"/>
+               <title>Review of Systems Section</title>
+               <text>
+                  <paragraph>Review of systems</paragraph>
+               </text>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>
