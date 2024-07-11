@@ -172,8 +172,8 @@
                                 "coding": [
                                     {
                                         "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-                                        "code": "SELF",
-                                        "display": "self"
+                                        "code": "FTH",
+                                        "display": "father"
                                     }
                                 ]
                             },
