@@ -2,12 +2,12 @@
   "fullUrl" : "Immunization/6f87c29f-20f5-4f4f-8d5a-ea570805cf5e",
   "resource": {
     "id": "f122ceadccaa4a9accdc117634a89dda",
-    "identifier": [
-      {
-        "system": "urn:oid:google/reconciliation-stable-id",
-        "value": "ffffffff-f900-3abf-ffff-ffff99ddd0be"
-      }
-    ],
+		"identifier" : [
+			{
+				"system" : "urn:ietf:rfc:3986",
+				"value" : "8d5942f9-5413-4486-af89-dcc5603dbec7"
+			}
+		],
     "meta": {
       "tag": [
         {
