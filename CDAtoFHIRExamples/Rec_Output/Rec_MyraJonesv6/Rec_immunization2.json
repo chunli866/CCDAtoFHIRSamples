@@ -21,7 +21,12 @@
     "patient": {
       "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
     },
-    "primarySource": true,
+		"_primarySource" : {
+			"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}]
+		},
     "resourceType": "Immunization",
     "status": "not-done",
     "statusReason": {

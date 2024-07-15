@@ -47,6 +47,12 @@
 		},
 		"lotNumber" : "1",
 		"recorded" : "2010-08-15",
+		"_primarySource" : {
+			"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}]
+		},
 		"manufacturer" : {
 			"display" : "Health LS - Immuno Inc."
 		},
