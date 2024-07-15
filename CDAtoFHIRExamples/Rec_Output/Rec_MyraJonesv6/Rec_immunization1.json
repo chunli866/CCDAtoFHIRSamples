@@ -1,10 +1,10 @@
-﻿{
+{
 	"fullUrl" : "Immunization/2b622767-4560-46ba-a1ac-58092fcdcdda",
 	"resource" : {
 		"identifier" : [
 			{
 				"system" : "urn:ietf:rfc:3986",
-				"value" : "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
+				"value" : "urn:uuid:e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
 			}
 		],
 		"meta" : {
@@ -47,6 +47,12 @@
 		},
 		"lotNumber" : "1",
 		"recorded" : "2010-08-15",
+		"_primarySource" : {
+			"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}]
+		},
 		"manufacturer" : {
 			"display" : "Health LS - Immuno Inc."
 		},

@@ -5,7 +5,7 @@
 		"identifier" : [
 			{
 				"system" : "urn:ietf:rfc:3986",
-				"value" : "8d5942f9-5413-4486-af89-dcc5603dbec7"
+				"value" : "urn:uuid:8d5942f9-5413-4486-af89-dcc5603dbec7"
 			}
 		],
     "meta": {
@@ -21,7 +21,12 @@
     "patient": {
       "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
     },
-    "primarySource": true,
+		"_primarySource" : {
+			"extension": [{
+				"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+				"valueCode": "unknown"
+			}]
+		},
     "resourceType": "Immunization",
     "status": "not-done",
     "statusReason": {
@@ -29,7 +34,7 @@
         {
           "code": "PATOBJ",
           "display": "patient objection",
-          "system": "urn:oid:2.16.840.1.113883.5.8"
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason"
         }
       ]
     },
