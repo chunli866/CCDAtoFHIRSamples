@@ -115,6 +115,7 @@
 		"name": [
 			{
 				"text": "Myra Jones",
+				"use": "usual",
 				"family": "Jones",
 				"given": [
 					"Myra"
