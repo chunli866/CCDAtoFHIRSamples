@@ -31,6 +31,7 @@
 		"category": [
 			"medication"
 		],
+		"criticality": "high",
 		"code": {
 			"coding": [
 				{
