@@ -1,8 +1,5 @@
 ﻿{
-	"request" : {
-		"method" : "POST",
-		"url" : "Immunization"
-	},
+	"fullUrl" : "Immunization/2b622767-4560-46ba-a1ac-58092fcdcdda",
 	"resource" : {
 		"identifier" : [
 			{
@@ -10,6 +7,15 @@
 				"value" : "e6f1ba43-c0ed-4b9b-9f12-f435d8ad8f92"
 			}
 		],
+		"meta" : {
+			"tag" : [
+				{
+					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+					"code" : "SUBSETTED",
+					"display" : "Resource encoded in summary mode"
+				}
+			]
+		},
 		"performer" : [
 			{
 				"actor" : {
@@ -56,18 +62,9 @@
 		"route" : {
 			"coding" : [
 				{
-					"system" : "urn:oid:2.16.840.1.113883.3.26.1.1",
+					"system" : "http://ncithesaurus-stage.nci.nih.gov",
 					"code" : "C28161",
 					"display" : "Intramuscular Route of Administration"
-				}
-			]
-		},
-		"meta" : {
-			"tag" : [
-				{
-					"system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-					"code" : "SUBSETTED",
-					"display" : "Resource encoded in summary mode"
 				}
 			]
 		},
@@ -95,12 +92,12 @@
 		"vaccineCode" : {
 			"coding" : [
 				{
-					"system" : "urn:oid:2.16.840.1.113883.12.292",
+					"system" : "http://hl7.org/fhir/sid/cvx",
 					"code" : "88",
 					"display" : "Influenza virus vaccine"
 				},
 				{
-					"system" : "urn:oid:2.16.840.1.113883.6.69",
+					"system" : "http://hl7.org/fhir/sid/ndc",
 					"code" : "49281-0422-50",
 					"display" : "Influenza vaccine"
 				}
@@ -109,6 +106,5 @@
 		},
 		"resourceType" : "Immunization",
 		"status" : "completed"
-	},
-	"fullUrl" : "Immunization/2b622767-4560-46ba-a1ac-58092fcdcdda"
+	}
 }

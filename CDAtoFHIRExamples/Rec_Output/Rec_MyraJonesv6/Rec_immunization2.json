@@ -1,49 +1,46 @@
-    {
-      "request": {
-        "method": "PUT",
-        "url": "Immunization/f122ceadccaa4a9accdc117634a89dda"
-      },
-      "resource": {
-        "id": "f122ceadccaa4a9accdc117634a89dda",
-        "identifier": [
-          {
-            "system": "urn:oid:google/reconciliation-stable-id",
-            "value": "ffffffff-f900-3abf-ffff-ffff99ddd0be"
-          }
-        ],
-        "lotNumber": "2",
-        "meta": {
-          "tag": [
-            {
-              "code": "/",
-              "system": "urn:oid:data-type/data-source"
-            }
-          ]
-        },
-        "occurrenceDateTime": "2015-11-15",
-        "patient": {
-          "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
-        },
-        "primarySource": true,
-        "resourceType": "Immunization",
-        "status": "not-done",
-        "statusReason": {
-          "coding": [
-            {
-              "code": "PATOBJ",
-              "display": "patient objection",
-              "system": "urn:oid:2.16.840.1.113883.5.8"
-            }
-          ]
-        },
-        "vaccineCode": {
-          "coding": [
-            {
-              "code": "43",
-              "display": "hepatitis B vaccine, adult dosage",
-              "system": "urn:oid:2.16.840.1.113883.12.292"
-            }
-          ]
-        }
+{
+  "fullUrl" : "Immunization/6f87c29f-20f5-4f4f-8d5a-ea570805cf5e",
+  "resource": {
+    "id": "f122ceadccaa4a9accdc117634a89dda",
+    "identifier": [
+      {
+        "system": "urn:oid:google/reconciliation-stable-id",
+        "value": "ffffffff-f900-3abf-ffff-ffff99ddd0be"
       }
+    ],
+    "meta": {
+      "tag": [
+        {
+          "code": "/",
+          "system": "urn:oid:data-type/data-source"
+        }
+      ]
+    },
+    "lotNumber": "2",
+    "occurrenceDateTime": "2015-11-15",
+    "patient": {
+      "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+    },
+    "primarySource": true,
+    "resourceType": "Immunization",
+    "status": "not-done",
+    "statusReason": {
+      "coding": [
+        {
+          "code": "PATOBJ",
+          "display": "patient objection",
+          "system": "urn:oid:2.16.840.1.113883.5.8"
+        }
+      ]
+    },
+    "vaccineCode": {
+      "coding": [
+        {
+          "code": "43",
+          "display": "hepatitis B vaccine, adult dosage",
+          "system": "http://hl7.org/fhir/sid/cvx"
+        }
+      ]
     }
+  }
+}
