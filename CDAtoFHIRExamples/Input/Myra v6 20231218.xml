@@ -655,7 +655,7 @@
                                         <low value="2003"/>
                                     </effectiveTime>
                                     <value xsi:type="CD" code="414916001" displayName="Obesity" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-                                    <entryRelationship typeCode="REFR">
+                                    <entryRelationship typeCode="SPRT">
                                         <act classCode="ACT" moodCode="EVN">
                                             <templateId root="2.16.840.1.113883.10.20.22.4.122" />
                                             <!-- This ID equals the ID of the observatino for the scale assessment -->
