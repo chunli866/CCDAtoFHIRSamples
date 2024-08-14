@@ -74,7 +74,7 @@
               "period":4,
               "periodMax":6,
               "periodUnit": "h"
-            }
+            },
             "asNeededCodeableConcept": {
               "coding": [
                 {
