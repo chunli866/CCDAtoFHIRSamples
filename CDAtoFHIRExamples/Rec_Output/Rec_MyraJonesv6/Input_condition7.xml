@@ -1,0 +1,82 @@
+                    <entry >
+                        <act classCode="ACT" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" extension="2015-08-01" />
+                            <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+                            <id root="b46f0fc0-986f-11ee-b9d1-0242ac120002"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                            <text>Concern</text>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20130101"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <!-- SDOH Problem -->
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2022-06-01"/>
+                                    <id extension="68993" root="1.2.840.114350.1.13.6289.1.7.2.768076"/>
+                                    <id root="093A5380-00CE-11E6-B4C5-0050568B000B" extension="1.1"/>
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem">
+                                        <originalText>Problem                                </originalText>
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+                                    </code>
+                                    <text>problem                            </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20100909"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="445281000124101" displayName="Nutrition impaired due to limited access to healthful foods (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                                        <translation code="Z59.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD-10-CM" displayName="Other specified lack of adequate food"/>
+                                    </value>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="f4dce790-8328-11db-9fe1-0800200c9a44"/>
+                                            <code code="88122-7" displayName="(I/We) worried whether (my/our) food would run out before (I/we) got money to buy more" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
+                                                <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            </value>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="1798df5c-9def-11ee-8c90-0242ac120002"/>
+                                            <code code="88123-5" displayName="Within the past 12Mo the food we bought just didn't last and we didn't have money to get more" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
+                                                <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            </value>
+                                        </observation>
+                                    </entryRelationship>
+                                    <entryRelationship typeCode="SPRT">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2022-06-01"/>
+                                            <id root="0e9c5b7c-9def-11ee-8c90-0242ac120002"/>
+                                            <code code="88124-3" displayName="Food insecurity risk [HVS]" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                                            <statusCode code="completed"/>
+                                            <effectiveTime value="20100909"/>
+                                            <value xsi:type="CD" code="LA19952-3" displayName="At risk" codeSystem="2.16.840.1.113883.6.1"/>
+                                        </observation>
+                                    </entryRelationship>
+                                    <!-- INSIDE PROBLEM OBSERVATION -->
+                                    <entryRelationship typeCode="COMP">
+                                        <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.502" extension="2022-06-01"/>
+                                            <code code="77975-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Earliest date of diagnosis"/>
+                                            <statusCode code="completed"/>
+                                            <!-- SHALL to the year (MAY be more specific) -->
+                                            <effectiveTime value="20100101"/>
+                                        </act>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
