@@ -1411,7 +1411,6 @@
                                     <templateId root="2.16.840.1.113883.10.20.22.4.19" extension="2014-06-09"/>
                                     <id extension="86579" root="1.2.840.114350.1.13.861.1.7.2.696871"/>
                                     <code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Problem"/>
-                                    <text>Wheezing</text>
                                     <statusCode code="completed"/>
                                     <value code="56018004" displayName="Wheezing" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" xsi:type="CD"
                                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
