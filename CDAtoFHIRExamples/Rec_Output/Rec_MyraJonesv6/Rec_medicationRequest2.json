@@ -35,8 +35,13 @@
         "status": "active",
         "intent": "order",
         "medicationCodeableConcept": {
-          "text": "4 ML bevacizumab 25 MG/ML Injection"
-        },
+					"coding": [
+						{
+							"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+							"code": "1657066",
+							"display": "4 ML bevacizumab 25 MG/ML Injection"
+						}
+					]        },
         "subject": {
           "reference": "Patient/18025725"
         },

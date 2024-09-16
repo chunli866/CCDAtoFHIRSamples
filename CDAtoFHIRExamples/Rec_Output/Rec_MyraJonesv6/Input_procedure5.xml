@@ -1,0 +1,24 @@
+<entry typeCode="DRIV">
+    <!-- Procedures should be used for care that directly changes the patient's physical state.-->
+    <procedure moodCode="EVN" classCode="PROC">
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+        <id root="3ff46d8e-b8e2-482c-be7c-6755fe92530b"/>
+        <code code="33206" displayName="Insertion of new or replacement of permanent pacemaker with transvenous electrode(s); atrial" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+        </code>
+        <statusCode code="completed"/>
+        <effectiveTime value="20110806"/>
+        <participant typeCode="DEV">
+            <participantRole classCode="MANU">
+                <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                <id root="2.16.840.1.113883.3.3719" extension="(01)00848486001048(11)181015(10)ABC999(21)bi12342222(17)221015" assigningAuthorityName="FDA"/>
+                <playingDevice>
+                    <code code="706004007" codeSystem="2.16.840.1.113883.6.96" displayName="Implantable cardiac pacemaker"/>
+                </playingDevice>
+                <scopingEntity>
+                    <id root="2.16.840.1.113883.3.3719"/>
+                </scopingEntity>
+            </participantRole>
+        </participant>
+    </procedure>
+</entry>

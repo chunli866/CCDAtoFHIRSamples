@@ -1,0 +1,39 @@
+    {
+      "resource": {
+        "code": {
+          "coding": [
+            {
+              "code": "33206",
+              "display": "Insertion of new or replacement of permanent pacemaker with transvenous electrode(s); atrial",
+              "system": "http://www.ama-assn.org/go/cpt"
+            }
+          ]
+        },
+        "id": "479b3da9d8ea5edc7635acb0a07b5804",
+        "identifier": [
+          {
+            "system": "urn:oid:google/reconciliation-stable-id",
+            "value": "3ff46d8e-b8e2-482c-be7c-6755fe92530b"
+          }
+        ],
+        "performedDateTime": "2011-08-06",
+        "resourceType": "Procedure",
+        "status": "completed",
+        "focalDevice": [
+          {
+            "action": {
+                "coding":[
+                    {
+                        "system": "http://snomed.info/sct",
+                        "code": "706004007",
+                        "display": "Implantable cardiac pacemaker"
+                    }
+                ]
+            }
+          }
+        ],
+        "subject": {
+          "reference": "Patient/ffffffff-9e5d-1176-ffff-ffffb3b88942"
+        }
+      }
+    }

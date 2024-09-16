@@ -1,0 +1,25 @@
+<entry typeCode="DRIV">
+    <!-- Procedures should be used for care that directly changes the patient's physical state.-->
+    <procedure moodCode="EVN" classCode="PROC">
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09"/>
+        <id root="64af26d5-88ef-4169-ba16-c6ef16a1824f"/>
+        <code code="385767005" displayName="Meals on wheels provision education" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+        </code>
+        <statusCode code="completed"/>
+        <!-- Effective times can be either a value or interval. For procedures with start and stop times, an interval would be more appropriate -->
+        <effectiveTime>
+            <low value="20100909"/>
+            <high value="20101231"/>
+        </effectiveTime>
+        <entryRelationship typeCode="RSON">
+            <act classCode="ACT" moodCode="EVN">
+                <templateId root="2.16.840.1.113883.10.20.22.4.122" />
+                <id root="f4dce790-8328-11db-9fe1-0800200c9a44" />
+                <!-- The code is nulled to "NP" Not Present" -->
+                <code nullFlavor="NP" />
+                <statusCode code="completed" />
+            </act>
+        </entryRelationship>
+    </procedure>
+</entry>

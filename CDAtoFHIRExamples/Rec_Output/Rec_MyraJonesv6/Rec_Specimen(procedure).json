@@ -1,0 +1,30 @@
+{
+    "resource": {
+        "resourceType": "Specimen",
+        "code": {
+            "coding": [
+                {
+                    "code": "55572008",
+                    "display": "Left colon structure",
+                    "system": "http://snomed.info/sct"
+                }
+            ]
+        },
+        "id": "2c6582efbc15d1c712133a1f49d8cbef",
+        "identifier": [
+            {
+                "system": "urn:ietf:rfc:3986",
+                "value": "a6d7b927-2b70-43c7-bdf3-0e7c4133062c"
+            }
+        ],
+        "extension": [
+            {
+                "collection": {
+                    "procedure": {
+                        "reference": "procedure/f8ee7e84-743c-11ef-b864-0242ac120002"
+                    }
+                }
+            }
+        ]
+    }
+}

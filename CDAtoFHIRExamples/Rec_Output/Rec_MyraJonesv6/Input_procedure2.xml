@@ -1,0 +1,34 @@
+<entry>
+    <procedure classCode="PROC" moodCode="EVN">
+        <!-- Procedure Activity Procedure  -->
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2014-06-09" />
+        <templateId root="2.16.840.1.113883.10.20.22.4.14" extension="2022-06-01" />
+        <id root="d5b614bd-01ce-410d-8726-e1fd01dcc72a" />
+        <code code="73761001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Colonoscopy">
+        </code>
+        <statusCode code="completed" />
+        <effectiveTime value="20030512" />
+        <targetSiteCode code="71854001" displayName="Colon structure" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+        <specimen typeCode="SPC">
+            <specimenRole classCode="SPEC">
+                <id root="a6d7b927-2b70-43c7-bdf3-0e7c4133062c" />
+                <specimenPlayingEntity>
+                    <code code="55572008" codeSystem="2.16.840.1.113883.6.96" displayName="Left colon structure" />
+                </specimenPlayingEntity>
+            </specimenRole>
+        </specimen>
+        <participant typeCode="DEV">
+            <participantRole classCode="MANU">
+                <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+                <id root="2.16.840.1.113883.3.3719" extension="(01)51022222233336(11)141231(17)150707(10)A213B1(21)1234" assigningAuthorityName="FDA"/>
+                <playingDevice>
+                    <code code="90412006" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscope"/>
+                </playingDevice>
+                <scopingEntity>
+                    <id root="2.16.840.1.113883.3.3719"/>
+                </scopingEntity>
+            </participantRole>
+        </participant>
+    </procedure>
+</entry>

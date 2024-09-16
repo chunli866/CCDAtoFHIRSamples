@@ -35,8 +35,13 @@
         "status": "active",
         "intent": "plan",
         "medicationCodeableConcept": {
-          "text": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
-        },
+					"coding": [
+						{
+							"system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+							"code": "1190220",
+							"display": "ACTUAT albuterol 0.1 MG/ACTUAT / ipratropium bromide 0.02 MG/ACTUAT Inhalation Spray"
+						}
+					]        },
         "subject": {
           "reference": "Patient/18025725"
         },
