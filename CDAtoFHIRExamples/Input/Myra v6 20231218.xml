@@ -590,7 +590,6 @@
                                             <statusCode code="completed"/>
                                             <effectiveTime value="20100909"/>
                                             <value xsi:type="CD" code="LA28397-0" displayName="Often true" codeSystem="2.16.840.1.113883.6.1">
-                                                <translation code="1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                                             </value>
                                         </observation>
                                     </entryRelationship>
