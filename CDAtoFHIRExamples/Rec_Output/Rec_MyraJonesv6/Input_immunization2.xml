@@ -1,0 +1,66 @@
+                    <entry typeCode="COMP">
+                        <!-- negationInd=true indicates substance was NOT given at this date-->
+                        <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+                            <!-- ** Immunization activity ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.52" extension="2015-08-01"/>
+                            <id root="8d5942f9-5413-4486-af89-dcc5603dbec7"/>
+                            <text>
+                                <reference value="#immun2"/>
+                            </text>
+                            <!-- Indicates the status of the substanceAdministartion -->
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20151115"/>
+                            <consumable>
+                                <manufacturedProduct classCode="MANU">
+                                    <!-- ** Immunization medication information ** -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.54" extension="2014-06-09"/>
+                                    <manufacturedMaterial>
+                                        <code code="43" codeSystem="2.16.840.1.113883.12.292" displayName="hepatitis B vaccine, adult dosage" codeSystemName="CVX">
+                                            <originalText>
+                                               hepatitis B vaccine
+                                            </originalText>
+                                        </code>
+                                        <!-- DSTU comment relaxing lotNumber requirement -->
+                                        <!-- http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=995 -->
+                                        <lotNumberText>2</lotNumberText>
+                                    </manufacturedMaterial>
+                                    <!-- Optional manufacturerOrganization
+                    				<manufacturerOrganization>
+                     				   <name>Health LS - Immuno Inc.</name>
+                   					 </manufacturerOrganization>-->
+                                </manufacturedProduct>
+                            </consumable>
+                            <entryRelationship typeCode="RSON">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- Immunization Refusal Reason  -->
+                                    <!-- Included the reason since it may be relevant to a future clinician or quality measurement -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
+                                    <id root="c1296315-9a6d-45a2-aac0-ee225d375409"/>
+                                    <code displayName="patient objection" code="PATOBJ" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.5.8"/>
+                                    <statusCode code="completed"/>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP" inversionInd="true">
+                                <!-- This entryRelationship sequenceNumber indicates this is #2 in the series -->
+                                <sequenceNumber value="2" />
+                                <act classCode="ACT" moodCode="EVN">
+                                    <!-- Substance Administered Act Template -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.118" />
+                                    <id root="df8908d0-40f2-11e3-aa6e-0800200c9a66" />
+                                    <code code="416118004" displayName="administration" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" />
+                                    <statusCode code="completed" />
+                                    <effectiveTime value="20151110" />
+                                </act>
+                            </entryRelationship>
+                            <precondition typeCode="PRCN">
+                                <criterion>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.25" extension="2014-06-09" />
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.25" />
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                                    <value xsi:type="CD" code="1002253002" codeSystem="2.16.840.1.113883.6.96" displayName="Immunization series imcomplete" />
+                                </criterion>
+                            </precondition>
+                        </substanceAdministration>
+                    </entry>

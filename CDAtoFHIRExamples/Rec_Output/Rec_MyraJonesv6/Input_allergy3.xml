@@ -1,0 +1,48 @@
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <!-- ** Allergy problem act ** -->
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.30" extension="2015-08-01"/>
+                            <id root="91a4e6a1-e192-438c-a85d-abb210af6d25"/>
+                            <code code="CONC" codeSystem="2.16.840.1.113883.5.6"/>
+                            <text>Concern</text>
+                            <statusCode code="active"/>
+                            <effectiveTime>
+                                <low value="20030101"/>
+                            </effectiveTime>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <!-- allergy observation template -->
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.7" extension="2014-06-09"/>
+                                    <id root="55ac1612-2d3f-4084-b687-0997446cabad"/>
+                                    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+                                    <text>ASSERTION</text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="2003"/>
+                                        <high value="2006"/>
+                                    </effectiveTime>
+                                    <value xsi:type="CD" code="414285001" displayName="Allergy to food" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                    <participant typeCode="CSM">
+                                        <participantRole classCode="MANU">
+                                            <playingEntity classCode="MMAT">
+                                                <code code="762952008" displayName="Peanut" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                            </playingEntity>
+                                        </participantRole>
+                                    </participant>
+                                    <entryRelationship typeCode="SUBJ" inversionInd="true">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
+                                            <templateId root="2.16.840.1.113883.10.20.22.4.28" extension="2019-06-20"/>
+                                            <id root="d3f1845a-9062-11ee-b9d1-0242ac120002"/>
+                                            <code code="33999-4" codeSystem="2.16.840.1.113883.6.1"/>
+                                            <text>STATUS</text>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="CE" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>

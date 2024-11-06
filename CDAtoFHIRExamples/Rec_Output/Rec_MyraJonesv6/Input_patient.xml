@@ -1,0 +1,60 @@
+    <recordTarget>
+        <patientRole>
+            <id extension="160920144139807" root="1.3.6.1.4.1.22812.3.2009316.3" />
+            <addr use="H">
+                <streetAddressLine>1357 Amber Drive</streetAddressLine>
+                <city>Beaverton</city>
+                <state>OR</state>
+                <postalCode>97006</postalCode>
+            </addr>
+            <telecom value="tel:+1(565)867-5309" use="MC"/>
+            <patient>
+                <name use="L">
+                    <given>Myra</given>
+                    <family>Jones</family>
+                </name>
+                <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" />
+                <birthTime value="19470501" />
+                <maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+                <religiousAffiliationCode code="1013" displayName="Christian (non-Catholic, non-specific)" codeSystem="2.16.840.1.113883.5.1076" codeSystemName="HL7 Religious Affiliation"/>
+                <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" displayName="White" />
+                <sdtc:raceCode code="2108-9" displayName="European" codeSystem="2.16.840.1.113883.6.238" />
+                <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" displayName="Hispanic or Latino" />
+                <sdtc:ethnicGroupCode code="20146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
+                <guardian>
+                    <code code="FTH" displayName="father" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />
+                    <addr use="H">
+                        <streetAddressLine>123 main street</streetAddressLine>
+                        <city>Beaverton</city>
+                        <state>OR</state>
+                        <postalCode>97867</postalCode>
+                    </addr>
+                    <telecom value="tel:+1(555)555-2008" use="MC" />
+                    <guardianPerson>
+                        <name>
+                            <given>Boris</given>
+                            <given qualifier="CL">Bo</given>
+                            <family>Betterhalf</family>
+                        </name>
+                    </guardianPerson>
+                </guardian>
+                <birthplace>
+                    <place>
+                        <addr>
+                            <streetAddressLine>4444 Home Street</streetAddressLine>
+                            <city>Beaverton</city>
+                            <state>OR</state>
+                            <postalCode>97867</postalCode>
+                            <country>US</country>
+                        </addr>
+                    </place>
+                </birthplace>
+                <languageCommunication>
+                    <languageCode code="en" />
+                    <modeCode code="ESP" displayName="Expressed spoken" codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+                    <proficiencyLevelCode code="G" displayName="Good" codeSystem="2.16.840.1.113883.5.61" codeSystemName="LanguageAbilityProficiency"/>
+                    <preferenceInd value="true" />
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
