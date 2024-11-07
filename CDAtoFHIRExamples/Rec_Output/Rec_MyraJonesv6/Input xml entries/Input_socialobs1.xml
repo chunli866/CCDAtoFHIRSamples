@@ -1,0 +1,19 @@
+<entry>
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+    <templateId root="2.16.840.1.113883.10.20.22.4.78" 
+	    extension="2014-06-09"/>
+    <id extension="123456789" root="2.16.840.1.113883.19" />
+    <code 
+        code="72166-2" 
+        codeSystem="2.16.840.1.113883.6.1" 
+        displayName="Tobacco smoking status NHIS"/>
+    <statusCode code="completed"/>
+    <effectiveTime value="201406061032-0500"/>
+    <value xsi:type="CD" 
+	    code="449868002"
+	    codeSystem="2.16.840.1.113883.6.96" 
+        codeSystemName="SNOMED CT"  
+        displayName="Current every day smoker"/>
+  </observation>
+</entry>
