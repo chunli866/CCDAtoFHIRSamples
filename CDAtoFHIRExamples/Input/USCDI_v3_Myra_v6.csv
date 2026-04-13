@@ -1,0 +1,97 @@
+USCDI Data Class,USCDI Data Element,Found in File,Line Number,Entry Type,Code/Identifier
+Allergies and Intolerances,Substance (Reactant),Yes,770,participantRole,1191 Aspirin; 762952008 Peanut
+Allergies and Intolerances,Reaction,Yes,790,observation,247472004 Wheal
+Assessment and Plan of Treatment,Assessment and Plan of Treatment,Yes,1876,section,18776-5 Plan of Treatment
+Assessment and Plan of Treatment,SDOH Assessment,Yes,589,observation,88122-7 Food insecurity screening
+Care Team Member(s),Care Team Member Name,,,,
+Care Team Member(s),Care Team Member Identifier,,,,
+Care Team Member(s),Care Team Member Location,,,,
+Care Team Member(s),Care Team Member Telecom,,,,
+Care Team Member(s),Care Team Member Role,,,,
+Clinical Notes,Consultation Note,Yes,2291,act,34109-9 / 11488-4 Consultation note
+Clinical Notes,Discharge Summary Note,,,,
+Clinical Notes,History & Physical,,,,
+Clinical Notes,Imaging Narrative,,,,
+Clinical Notes,Laboratory Report Narrative,,,,
+Clinical Notes,Pathology Report Narrative,,,,
+Clinical Notes,Procedure Note,,,,
+Clinical Notes,Progress Note,,,,
+Encounter Information,Encounter Diagnosis,Yes,2239,observation,64109004 Costal Chondritis
+Encounter Information,Encounter Disposition,,,,
+Encounter Information,Encounter Location,,,,
+Encounter Information,Encounter Time,Yes,2180,effectiveTime,201208151000-0800
+Encounter Information,Encounter Type,Yes,2171,code,99213 Office outpatient visit
+Goals,Patient Goals,Yes,1917,observation,289169006 Weight loss
+Goals,SDOH Goals,,,,
+Health Concerns,Health Concerns,,,,
+Health Concerns,SDOH Problems/Health Concerns,Yes,581,observation,445281000124101 Nutrition impaired due to limited food access
+Health Insurance Information,Coverage Status,,,,
+Health Insurance Information,Coverage Type,,,,
+Health Insurance Information,Group Identifier,,,,
+Health Insurance Information,Member Identifier,,,,
+Health Insurance Information,Payer Identifier,,,,
+Health Insurance Information,Relationship to Subscriber,,,,
+Health Insurance Information,Subscriber Identifier,,,,
+Health Status/Assessments,Disability Status,,,,
+Health Status/Assessments,Functional Status,,,,
+Health Status/Assessments,Mental/Cognitive Status,,,,
+Health Status/Assessments,Pregnancy Status,,,,
+Immunizations,Immunizations,Yes,1633,substanceAdministration,CVX 88 Influenza; CVX 43 Hepatitis B
+Laboratory,Tests,Yes,2006,organizer,24357-6 Urinalysis macro panel
+Laboratory,Values/Results,Yes,2042,observation,5811-5 Specific gravity 1.015
+Laboratory,Result Interpretation,,,,
+Laboratory,Result Reference Range,Yes,2062,referenceRange,1.005-1.030
+Laboratory,Result Status,Yes,2012,statusCode,completed
+Laboratory,Specimen Type,,,,
+Medications,Medications,Yes,1030,substanceAdministration,1190220 Albuterol/ipratropium; 1657066 Bevacizumab
+Medications,Dose,Yes,1018,doseQuantity,value=1; value=5 unit=mg/kg
+Medications,Dose Unit of Measure,Yes,1023,administrationUnitCode,C48501 Inhalation dosing unit
+Medications,Indication,Yes,1104,observation,56018004 Wheezing; 363406005 Malignant neoplasm of colon
+Medications,Fill Status,Yes,1123,supply statusCode,completed
+Patient Demographics/Information,Current Address,Yes,24,addr,"1357 Amber Drive, Beaverton, OR 97006"
+Patient Demographics/Information,Date of Birth,Yes,36,birthTime,19470501
+Patient Demographics/Information,Email Address,,,,
+Patient Demographics/Information,Ethnicity,Yes,41,ethnicGroupCode,2135-2 Hispanic or Latino
+Patient Demographics/Information,First Name,Yes,32,given,Myra
+Patient Demographics/Information,Gender Identity,,,,
+Patient Demographics/Information,Last Name,Yes,33,family,Jones
+Patient Demographics/Information,Phone Number,Yes,29,telecom,tel:+1(565)867-5309
+Patient Demographics/Information,Phone Number Type,Yes,29,telecom use,MC (mobile)
+Patient Demographics/Information,Preferred Language,Yes,74,languageCode,en
+Patient Demographics/Information,Previous Address,,,,
+Patient Demographics/Information,Previous Name,,,,
+Patient Demographics/Information,Race,Yes,39,raceCode,2106-3 White
+Patient Demographics/Information,Related Person's Name,Yes,56,guardianPerson,Boris Betterhalf
+Patient Demographics/Information,Related Person's Relationship,Yes,45,code,FTH father
+Patient Demographics/Information,Sex,Yes,35,administrativeGenderCode,F
+Patient Demographics/Information,Sex Parameter for Clinical Use,,,,
+Patient Demographics/Information,Sexual Orientation,,,,
+Patient Demographics/Information,Suffix,,,,
+Patient Demographics/Information,Tribal Affiliation,,,,
+Problems,Problems,Yes,324,observation,233604007 Pneumonia; 195967001 Asthma; 414916001 Obesity; etc.
+Problems,Date of Diagnosis,Yes,624,act,77975-1 Earliest date of diagnosis
+Problems,Date of Resolution,Yes,515,effectiveTime high,Resolved Acute pharyngitis
+Procedures,Procedures,Yes,1323,procedure,416940007 Chest x-ray; 73761001 Colonoscopy; 33206 Pacemaker; etc.
+Procedures,SDOH Interventions,Yes,1526,procedure,385767005 Meals on wheels provision education
+Procedures,Performance Time,Yes,1332,effectiveTime,Procedure dates
+Procedures,Reason for Referral,,,,
+Provenance,Author,Yes,108,assignedPerson,Provider abc
+Provenance,Author Organization,Yes,82,providerOrganization,Primary Care's Partners Test
+Provenance,Author Role,Yes,98,code,260000000X
+Provenance,Author Time Stamp,Yes,94,time,20161003182710+0000
+Smoking Status,Smoking Status,Yes,1850,observation,449868002 Current every day smoker
+Smoking Status,Substance Use,,,,
+Unique Device Identifier(s),UDI,Yes,1444,participantRole,Colonoscope UDI; Pacemaker UDI
+Vital Signs,BMI,,,,
+Vital Signs,Blood Pressure (Diastolic),,,,
+Vital Signs,Blood Pressure (Systolic),,,,
+Vital Signs,Body Height,,,,
+Vital Signs,Body Temperature,,,,
+Vital Signs,Body Weight,,,,
+Vital Signs,Heart Rate,Yes,2114,observation,8867-4 HEART RATE
+Vital Signs,Inhaled Oxygen Concentration,,,,
+Vital Signs,Pediatric BMI for Age,,,,
+Vital Signs,Pediatric Head Circumference,,,,
+Vital Signs,Pediatric Weight for Height,,,,
+Vital Signs,Pulse Oximetry,,,,
+Vital Signs,Respiratory Rate,,,,
