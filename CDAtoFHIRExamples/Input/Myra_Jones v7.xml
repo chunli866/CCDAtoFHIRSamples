@@ -1993,7 +1993,7 @@
                         <observation classCode="OBS" moodCode="GOL">
                             <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
                             <id root="66576a9e-ed71-415f-a43e-cfe97b2d39cc"/>
-                            <code code="410518001" displayName="Adequate food supply" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+                            <code code="1078229009" displayName="Food security" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
                             <statusCode code="active"/>
                             <effectiveTime value="201208151000-0800"/>
                         </observation>
@@ -2866,7 +2866,7 @@
                             <code code="54522-8" codeSystem="2.16.840.1.113883.6.1" displayName="Functional status"/>
                             <statusCode code="completed"/>
                             <effectiveTime value="20161003"/>
-                            <value xsi:type="CD" code="129033004" codeSystem="2.16.840.1.113883.6.96" displayName="Independent - able"/>
+                            <value xsi:type="CD" code="371153006" codeSystem="2.16.840.1.113883.6.96" displayName="Independent"/>
                         </observation>
                     </entry>
                     <!-- Mental/Cognitive Status -->
@@ -2874,10 +2874,12 @@
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01"/>
                             <id root="4a41c5e5-0e11-4975-bd46-a00dc8529035"/>
-                            <code code="54522-8" codeSystem="2.16.840.1.113883.6.1" displayName="Cognitive function"/>
+                            <code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cognitive function finding">
+                                <translation code="75275-8" codeSystem="2.16.840.1.113883.6.1" displayName="Cognitive function [Interpretation]"/>
+                            </code>
                             <statusCode code="completed"/>
                             <effectiveTime value="20161003"/>
-                            <value xsi:type="CD" code="LA9634-2" codeSystem="2.16.840.1.113883.6.1" displayName="Alert and oriented x3"/>
+                            <value xsi:type="CD" code="66557003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="No impairment"/>
                         </observation>
                     </entry>
                     <!-- Disability Status -->
@@ -2885,10 +2887,10 @@
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.69" extension="2014-06-09"/>
                             <id root="9060ab68-bc40-486f-bf51-1a195850e188"/>
-                            <code code="96867-5" codeSystem="2.16.840.1.113883.6.1" displayName="Disability status"/>
+                            <code code="89571-4" codeSystem="2.16.840.1.113883.6.1" displayName="Disability status"/>
                             <statusCode code="completed"/>
                             <effectiveTime value="20161003"/>
-                            <value xsi:type="CD" code="LA22369-1" codeSystem="2.16.840.1.113883.6.1" displayName="No"/>
+                            <value xsi:type="CD" code="LA29240-1" codeSystem="2.16.840.1.113883.6.1" displayName="No identified disability"/>
                         </observation>
                     </entry>
                     <!-- Pregnancy Status -->
@@ -2916,6 +2918,16 @@
                             <id root="642e051d-80c6-4360-bc7b-72b706816662"/>
                             <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" displayName="Reason for referral"/>
                             <statusCode code="active"/>
+                            <effectiveTime value="20160908"/>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
+
+="active"/>
                             <effectiveTime value="20160908"/>
                         </act>
                     </entry>
