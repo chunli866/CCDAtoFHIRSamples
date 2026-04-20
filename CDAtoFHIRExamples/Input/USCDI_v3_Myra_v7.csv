@@ -32,7 +32,7 @@ Health Insurance Information,Member Identifier,Yes,2791,id extension,1EG4-TE5-MK
 Health Insurance Information,Payer Identifier,Yes,2811,id extension,CMS
 Health Insurance Information,Relationship to Subscriber,Yes,2820,code,SELF
 Health Insurance Information,Subscriber Identifier,Yes,2819,id extension,1EG4-TE5-MK72
-Health Status/Assessments,Disability Status,Yes,2888,observation,96867-5 Disability status - No
+Health Status/Assessments,Disability Status,Yes,2888,observation,89571-4 Disability status (LA29240-1 No identified disability)
 Health Status/Assessments,Functional Status,Yes,2866,observation,54522-8 Functional status - Independent
 Health Status/Assessments,Mental/Cognitive Status,Yes,2866,observation,Cognitive function - Alert and oriented x3
 Health Status/Assessments,Pregnancy Status,Yes,2899,observation,82810-3 Not pregnant
@@ -64,7 +64,7 @@ Patient Demographics/Information,Race,Yes,51,raceCode,2106-3 White
 Patient Demographics/Information,Related Person's Name,Yes,68,guardianPerson,Boris Betterhalf
 Patient Demographics/Information,Related Person's Relationship,Yes,57,code,FTH father
 Patient Demographics/Information,Sex,Yes,47,administrativeGenderCode,F
-Patient Demographics/Information,Sex Parameter for Clinical Use,,,,
+Patient Demographics/Information,Sex Parameter for Clinical Use,Yes,1903,observation,99501-9 Female-typical parameter (LA32969-2)
 Patient Demographics/Information,Sexual Orientation,Yes,1897,observation,20430005 Heterosexual
 Patient Demographics/Information,Suffix,,,,
 Patient Demographics/Information,Tribal Affiliation,,,,

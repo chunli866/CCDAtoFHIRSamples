@@ -26,14 +26,14 @@
                 <state>OR</state>
                 <postalCode>97006</postalCode>
             </addr>
-            <telecom value="tel:+1(565)867-5309" use="MC"/>
-            <telecom value="mailto:myra.jones@email.com" use="H"/>
-            <addr use="OLD">
+            <addr use="BAD">
                 <streetAddressLine>742 Evergreen Terrace</streetAddressLine>
                 <city>Portland</city>
                 <state>OR</state>
                 <postalCode>97201</postalCode>
             </addr>
+            <telecom value="tel:+1(565)867-5309" use="MC"/>
+            <telecom value="mailto:myra.jones@email.com" use="H"/>
             <patient>
                 <name use="L">
                     <given>Myra</given>
@@ -51,7 +51,7 @@
                 <raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" displayName="White" />
                 <sdtc:raceCode code="2108-9" displayName="European" codeSystem="2.16.840.1.113883.6.238" />
                 <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" displayName="Hispanic or Latino" />
-                <sdtc:ethnicGroupCode code="20146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
+                <sdtc:ethnicGroupCode code="2146-9" displayName="Spanish Basque" codeSystem="2.16.840.1.113883.6.238" />
                 <guardian>
                     <!--  original version for the vendors:                   <code code="POWATT" displayName="Power of Attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" />-->
                     <!-- This was updated to the following "FTH" code as the "POWATT" was deemed more appropriate as participant, per feedback during vendors' mapping alignment meeting on 7/9/2024-->
@@ -1332,7 +1332,7 @@
                             <templateId root="2.16.840.1.113883.10.20.22.4.14" />
                             <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400001" />
                             <id root="1.3.6.1.4.1.22812.3.2009316.3.4.7" extension="545069400003" />
-                            <code code="416940007" codeSystem="2.16.840.1.113883.6.96" displayName="H/O chest x-ray">
+                            <code code="416940007" codeSystem="2.16.840.1.113883.6.96" displayName="History of Procedure (situation)" codeSystemName="SNOMED CT" >
                                 <originalText>
                                     <reference value="#_dfcf353c-538f-498a-9a53-80dda209e456" />
                                 </originalText>
@@ -1634,7 +1634,6 @@
                             <routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Intramuscular Route of Administration" />
                             <approachSiteCode code="700022004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Muscle and/or tendon structure of upper limb" />
                             <doseQuantity value="60" unit="ug" />
-                            <administrationUnitCode code="C44278" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="National Cancer Institute (NCI) Thesaurus" displayName="Unit"/>
                             <consumable>
                                 <manufacturedProduct classCode="MANU">
                                     <!-- ** Immunization medication information ** -->
@@ -1881,11 +1880,15 @@
                     <!-- Gender Identity -->
                     <entry>
                         <observation classCode="OBS" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.200" extension="2016-06-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.34.3.45" extension="2022-06-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
                             <id root="1f1d050a-61c8-489a-b339-7529f97b6358"/>
                             <code code="76691-5" codeSystem="2.16.840.1.113883.6.1" displayName="Gender identity"/>
                             <statusCode code="completed"/>
-                            <effectiveTime value="20161003"/>
+                            <effectiveTime>
+                                <low value="20161003"/>
+                            </effectiveTime>
                             <value xsi:type="CD" code="446141000124107" codeSystem="2.16.840.1.113883.6.96" displayName="Identifies as female gender"/>
                         </observation>
                     </entry>
@@ -1900,10 +1903,24 @@
                             <value xsi:type="CD" code="20430005" codeSystem="2.16.840.1.113883.6.96" displayName="Heterosexual"/>
                         </observation>
                     </entry>
+                    <!-- Sex Parameter for Clinical Use (SPCU) - USCDI v3 -->
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <templateId root="2.16.840.1.113883.10.20.22.4.513"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
+                            <id root="e8f9a7c2-3b5d-4e6f-9a1c-2d8e4f7b0c3a"/>
+                            <code code="99501-9" codeSystem="2.16.840.1.113883.6.1" displayName="Sex parameter for clinical use"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20161003"/>
+                            <value xsi:type="CD" code="LA32969-2" codeSystem="2.16.840.1.113883.6.1" displayName="Female-typical parameter"/>
+                        </observation>
+                    </entry>
                     <!-- Substance Use - Alcohol -->
                     <entry>
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.38" extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
                             <id root="d5c346a2-4b1b-4096-b4e6-cd45a3ba505c"/>
                             <code code="74013-4" codeSystem="2.16.840.1.113883.6.1" displayName="Alcoholic drinks per day"/>
                             <statusCode code="completed"/>
@@ -1959,7 +1976,7 @@
                             <templateId root="2.16.840.1.113883.10.20.22.4.121"/>
                             <templateId root="2.16.840.1.113883.10.20.22.4.44"/>
                             <id root="2a620155-9d11-439e-92b3-5d9815ff4dd4"/>
-                            <code code="289169006" displayName="weight loss" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                            <code code="262285001" displayName="Weight decreased (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
                                 <originalText>
                                     <reference value="#Goal1_desc"/>
                                 </originalText>
@@ -2088,14 +2105,6 @@
                                     </representedOrganization>
                                 </assignedEntity>
                             </performer>
-                            <specimen typeCode="SPC">
-                                <specimenRole classCode="SPEC">
-                                    <id root="a7b2c3d4-e5f6-4a1b-8c9d-0e1f2a3b4c5d"/>
-                                    <specimenPlayingEntity>
-                                        <code code="122575003" codeSystem="2.16.840.1.113883.6.96" displayName="Urine specimen"/>
-                                    </specimenPlayingEntity>
-                                </specimenRole>
-                            </specimen>
                             <!-- components removed to simplify example -->
                             <component>
                                 <observation classCode="OBS" moodCode="EVN">
@@ -2116,6 +2125,14 @@
                                     <effectiveTime value="20150622"/>
                                     <value xsi:type="PQ" value="1.015" unit="1"/>
                                     <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" displayName="Normal"/>
+                                    <specimen typeCode="SPC">
+                                        <specimenRole classCode="SPEC">
+                                            <id root="a7b2c3d4-e5f6-4a1b-8c9d-0e1f2a3b4c5d"/>
+                                            <specimenPlayingEntity>
+                                                <code code="122575003" codeSystem="2.16.840.1.113883.6.96" displayName="Urine specimen"/>
+                                            </specimenPlayingEntity>
+                                        </specimenRole>
+                                    </specimen>
                                     <referenceRange>
                                         <observationRange>
                                             <text>
@@ -2350,6 +2367,7 @@
                             </text>
                             <!-- August 15, 2012 - added time (pacific time) since but not present in test data -->
                             <effectiveTime value="201208151000-0800"/>
+                            <sdtc:dischargeDispositionCode code="01" codeSystem="2.16.840.1.113883.12.112" displayName="Discharged to home"/>
                             <!-- Not specified in test data, but could infer Dr. Khan from the test scenario narrative-->
                             <performer>
                                 <assignedEntity>
@@ -2370,7 +2388,6 @@
                                     </assignedPerson>
                                 </assignedEntity>
                             </performer>
-                            <sdtc:dischargeDispositionCode code="01" codeSystem="2.16.840.1.113883.12.112" displayName="Discharged to home"/>
                             <participant typeCode="LOC">
                                 <participantRole classCode="SDLOC">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.32"/>
@@ -2710,9 +2727,15 @@
                             <entryRelationship typeCode="REFR">
                                 <observation classCode="OBS" moodCode="EVN">
                                     <templateId root="2.16.840.1.113883.10.20.22.4.4" extension="2015-08-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
                                     <id root="a17fb89d-be84-4644-80f9-3d61ff46b762"/>
-                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem"/>
+                                    <code code="55607006" codeSystem="2.16.840.1.113883.6.96" displayName="Problem">
+                                        <translation code="75326-9" codeSystem="2.16.840.1.113883.6.1" displayName="Problem"/>
+                                    </code>
                                     <statusCode code="completed"/>
+                                    <effectiveTime>
+                                        <low value="20100315"/>
+                                    </effectiveTime>
                                     <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" displayName="Asthma"/>
                                 </observation>
                             </entryRelationship>
@@ -2741,11 +2764,12 @@
                                 <low value="20120815"/>
                             </effectiveTime>
                             <component>
-                                <observation classCode="OBS" moodCode="EVN">
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.501" extension="2022-06-01"/>
+                                <!-- Care Team Member Act V2 -->
+                                <act classCode="PCPR" moodCode="EVN">
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.500.1" extension="2022-06-01"/>
                                     <id root="93b45fd0-32ee-4d0d-b722-216618a0d450"/>
-                                    <code code="85847-2" codeSystem="2.16.840.1.113883.6.1" displayName="Care team member"/>
-                                    <statusCode code="completed"/>
+                                    <code code="85847-2" codeSystem="2.16.840.1.113883.6.1" displayName="Patient Care team information"/>
+                                    <statusCode code="active"/>
                                     <effectiveTime>
                                         <low value="20120815"/>
                                     </effectiveTime>
@@ -2772,7 +2796,7 @@
                                             </representedOrganization>
                                         </assignedEntity>
                                     </performer>
-                                </observation>
+                                </act>
                             </component>
                         </organizer>
                     </entry>
@@ -2782,6 +2806,7 @@
             <component>
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.22.2.18" extension="2015-08-01"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
                     <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
                     <title>Health Insurance Information</title>
                     <text>
@@ -2795,18 +2820,24 @@
                         </list>
                     </text>
                     <entry typeCode="DRIV">
+                        <!-- Coverage Activity (V3) - outer wrapper -->
                         <act classCode="ACT" moodCode="EVN">
-                            <templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01"/>
-                            <id root="18fb5c51-b51e-490e-815b-0e813fea1a8a"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
+                            <id root="2cdadcd4-ead2-48d6-af87-83640d7aa391"/>
                             <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" displayName="Payment sources"/>
-                            <statusCode code="active"/>
+                            <statusCode code="completed"/>
                             <entryRelationship typeCode="COMP">
+                                <!-- Policy Activity (V3) - contains payer details -->
                                 <act classCode="ACT" moodCode="EVN">
-                                    <templateId root="2.16.840.1.113883.10.20.22.4.60" extension="2015-08-01"/>
-                                    <id root="2cdadcd4-ead2-48d6-af87-83640d7aa391"/>
-                                    <code code="MA" codeSystem="2.16.840.1.113883.5.4" displayName="Medicare Part A"/>
-                                    <statusCode code="active"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.61" extension="2015-08-01"/>
+                                    <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
+                                    <id root="18fb5c51-b51e-490e-815b-0e813fea1a8a"/>
+                                    <code code="1" codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="Source of Payment Typology" displayName="Medicare"/>
+                                    <statusCode code="completed"/>
+                                    <!-- Payer (performer) -->
                                     <performer typeCode="PRF">
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.87"/>
                                         <assignedEntity>
                                             <id root="2.16.840.1.113883.4.6" extension="CMS"/>
                                             <representedOrganization>
@@ -2814,13 +2845,27 @@
                                             </representedOrganization>
                                         </assignedEntity>
                                     </performer>
+                                    <!-- Coverage (participant) -->
                                     <participant typeCode="COV">
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.89"/>
+                                        <time>
+                                            <low value="20100101"/>
+                                        </time>
                                         <participantRole classCode="PAT">
                                             <id root="2.16.840.1.113883.4.6" extension="1EG4-TE5-MK72"/>
                                             <code code="SELF" codeSystem="2.16.840.1.113883.5.111" displayName="Self"/>
+                                            <playingEntity>
+                                                <name>
+                                                    <given>Myra</given>
+                                                    <family>Jones</family>
+                                                </name>
+                                                <sdtc:birthTime value="19470501"/>
+                                            </playingEntity>
                                         </participantRole>
                                     </participant>
+                                    <!-- Policy Holder (participant) -->
                                     <participant typeCode="HLD">
+                                        <templateId root="2.16.840.1.113883.10.20.22.4.90"/>
                                         <participantRole>
                                             <id root="2.16.840.1.113883.4.6" extension="1EG4-TE5-MK72"/>
                                             <addr>
@@ -2831,11 +2876,18 @@
                                             </addr>
                                         </participantRole>
                                     </participant>
+                                    <!-- Authorization Activity -->
                                     <entryRelationship typeCode="REFR">
                                         <act classCode="ACT" moodCode="EVN">
+                                            <templateId root="2.16.840.1.113883.10.20.1.19"/>
                                             <id root="13f64113-f22f-42d6-89cc-4e5839ab7181" extension="GRP-98765"/>
                                             <code nullFlavor="NA"/>
                                             <statusCode code="completed"/>
+                                            <entryRelationship typeCode="SUBJ">
+                                                <procedure classCode="PROC" moodCode="PRMS">
+                                                    <code code="73761001" codeSystem="2.16.840.1.113883.6.96" displayName="Colonoscopy"/>
+                                                </procedure>
+                                            </entryRelationship>
                                         </act>
                                     </entryRelationship>
                                 </act>
@@ -2844,11 +2896,12 @@
                     </entry>
                 </section>
             </component>
-            <!-- Health Status/Assessments Section -->
+            <!-- Health Status/Assessments Section (Mental Status) -->
             <component>
                 <section>
                     <templateId root="2.16.840.1.113883.10.20.22.2.56" extension="2015-08-01"/>
-                    <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem list"/>
+                    <templateId root="2.16.840.1.113883.10.20.22.2.56"/>
+                    <code code="10190-7" codeSystem="2.16.840.1.113883.6.1" displayName="Mental status"/>
                     <title>Health Status/Assessments</title>
                     <text>
                         <list>
@@ -2862,6 +2915,7 @@
                     <entry>
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.67" extension="2014-06-09"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.67"/>
                             <id root="e44edd02-f78f-42e0-ba0e-9403ff3e0274"/>
                             <code code="54522-8" codeSystem="2.16.840.1.113883.6.1" displayName="Functional status"/>
                             <statusCode code="completed"/>
@@ -2873,6 +2927,7 @@
                     <entry>
                         <observation classCode="OBS" moodCode="EVN">
                             <templateId root="2.16.840.1.113883.10.20.22.4.74" extension="2015-08-01"/>
+                            <templateId root="2.16.840.1.113883.10.20.22.4.74"/>
                             <id root="4a41c5e5-0e11-4975-bd46-a00dc8529035"/>
                             <code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Cognitive function finding">
                                 <translation code="75275-8" codeSystem="2.16.840.1.113883.6.1" displayName="Cognitive function [Interpretation]"/>
@@ -2918,16 +2973,6 @@
                             <id root="642e051d-80c6-4360-bc7b-72b706816662"/>
                             <code code="42349-1" codeSystem="2.16.840.1.113883.6.1" displayName="Reason for referral"/>
                             <statusCode code="active"/>
-                            <effectiveTime value="20160908"/>
-                        </act>
-                    </entry>
-                </section>
-            </component>
-        </structuredBody>
-    </component>
-</ClinicalDocument>
-
-="active"/>
                             <effectiveTime value="20160908"/>
                         </act>
                     </entry>
